@@ -1,0 +1,6 @@
+Sea Zone 8  (350,3580)
+Sea Zone 22  (1770,1370)
+Sea Zone 31  (3735,1410)
+Sea Zone 49  (6165,947)
+Sea Zone 56  (6278,3567)
+Sea Zone 72  (3795,3635)
