@@ -13,7 +13,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-
+    secure: hejL00XDv4TVM+cZZQjovMHbCMFuwgPBOOozvHvr8Se+EXA/aQNMgYITRHXv8BOpnpOwBmFDFcrIpwodCMqk4btn6X9AtCDEIAS59vyuDEsbEiGT2JrHJPJ1GKdBu4TCWrGrO0/t2JxNE/pQlzaDPSiQuELIufbcJ6acUfqwW5mdPTMox/+JWbuqjSbvYSYTxvdeSW7DcdKUeUCIQxUiNFmrblHKVWcftRYAkPGelRm/2MRpckKZvLz/8hJoXEDL4MRx96YX29e/LtlkgnpgapPTv0f41jMRqJ/aUK1XW8pkgEzMIM/chK1Lrm1nt3EDt+Re8uk9XAKi+yVOQU1EJrYFgjgt97gwpGBWUI+IBAwMTA57DVUtnGVmSWgl8RaLQLKA1dNp/QsUcGSZHZtEvkYPLCvNhfgWz+YV8vEQ1pBcBIvb4IbcBKA7Vp3P6e4gqK+frxZH7wwv2f8lvp92GYwyCs58whhmS+VR1dQhr01soYnm7ehw3cWBcwuDcakzh81aTSDtn1/o/MCJttyzp91sFGFITsUp/rStaaisUBprnRMe0k2CZIolSvM7YIFi5M1+n2+tXX1fZGpVjThbIlwgydXj+xZOFXZU6HNGHsbA664d8LBJDOvuA6UNThYm93JrUzEgWBMlZd6mT0hkB44Z3u6mIVIzgBhVV47t/pA=
   file: "$REPO_NAME.zip"
   skip_cleanup: true
   prerelease: true
