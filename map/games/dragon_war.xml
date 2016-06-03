@@ -3,7 +3,7 @@
 <game>
     <info name="Dragon War" version="1.0.1"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
-    <triplea minimumVersion="1.8.0.9"/>
+    <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
 
     <map>
