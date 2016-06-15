@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.0.1"/>
+    <info name="Dragon War" version="1.2.1"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -6763,7 +6763,7 @@
             <territoryOwner territory="Sea Zone 48" owner="AI-Pirates"/>
             <territoryOwner territory="Sea Zone 49" owner="Undead"/>
             <territoryOwner territory="Sea Zone 50" owner="AI-Pirates"/>
-            <territoryOwner territory="Sea Zone 51" owner="Undead"/>
+            <territoryOwner territory="Sea Zone 51" owner="AI-Pirates"/>
             <territoryOwner territory="Sea Zone 52" owner="AI-Pirates"/>
             <territoryOwner territory="Sea Zone 53" owner="AI-Pirates"/>
             <territoryOwner territory="Sea Zone 54" owner="AI-Pirates"/>
@@ -7292,7 +7292,7 @@
 <br><span style="font-size:14px;color:FFFFFF;">Nations start out with 15 PU incomes, but they also have Capital-City expenses of 15 PUs.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Nations can only buy new units after expanding their land and raising their PU income.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Expect 2-3 rounds to pass before being able to afford and buy new units.</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">Bought units can be placed in Villages (3 units), Towns (4 units) and Cities (5 units).</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Bought units can be placed in Villages (1 unit), Towns (2 units) and Cities (3 units).</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Units do not need to be placed in the same round as they are bought.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Each capital has a naval blockade zone. If enemies blockade this zone, PU income from all the surrounding territories may be lost.</span><br>
 <br>
@@ -7325,10 +7325,6 @@
 <br>
 <br><b><span style="font-size:16px;color:FFFA74;">Game Options:</span></b><br>
 <br><span style="font-size:14px;color:FFFFFF;">Music can be turned off by disabling Game - Sound Options - Start of Your Turn Control.</span><br>
-<br>
-<br><b><span style="font-size:16px;color:FFFA74;">Changelog:</span></b><br>
-<br><span style="font-size:14px;color:FFFFFF;">Version 1.0 to 1.0.1 (By Frostion)</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">The Young-Water-Dragon is now capturable.</span><br>
 <br>
 <br><b><span style="font-size:16px;color:FFFA74;">Credits:</span></b><br>
 <br><span style="font-size:14px;color:FFFFFF;">Map artwork credits goes to Gamera. He has allowed me to bring his drawing of a fantasy world to life in TripleA. Visit the his interesting art website at http://gammatelier.free.fr.</span><br>
