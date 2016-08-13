@@ -7168,7 +7168,7 @@
         <property name="Convoy Blockades Roll Dice For Cost" value="false" editable="false">
             <boolean/>
         </property>
-        <property name="Battleships repair at beginning of round" value="true" editable="false">
+        <property name="Units repair at beginning of round" value="true" editable="false">
             <boolean/>
         </property>
         <property name="Two HitPoint Units Require Repair Facilities" value="true" editable="false">
