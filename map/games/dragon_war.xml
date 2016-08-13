@@ -3046,7 +3046,7 @@
         <attachment name="territoryAttachment" attachTo="Unit List" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
             <option name="production" value="0"/>
             <option name="originalOwner" value="Neutral"/>
-            <option name="isImpassible" value="true"/>
+            <option name="isImpassable" value="true"/>
         </attachment>        
 
         <attachment name="territoryAttachment" attachTo="Stormwood" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
