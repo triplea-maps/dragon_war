@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.1"/>
+    <info name="Dragon War" version="1.2.2"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -7243,7 +7243,7 @@
         <property name="Neutrals Are Blitzable" value="true" editable="false">
             <boolean/>
         </property>
-        <property name="Abandoned Territories May Be Taken Over Immediately" value="true" editable="false">
+        <property name="Abandoned Territories May Be Taken Over Immediately" value="false" editable="false">
             <boolean/>
         </property>
         
