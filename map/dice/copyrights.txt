@@ -1,8 +1,12 @@
-Images by Cernel. No rights reserved.
+Images by Cernel.
+No rights reserved.
+
 Original fonts used:
 http://www.fontspace.com/gemfonts/knights-quest
+
 Knights Quest font — Created in 1999 by GemFonts - Licensed as: Freeware
 
-Note by Frostion:
-The red ”hit” images used with the Dragon War map have all been reduced -65 in brightness with GIMP compared to the original dice pictures by Cernel.
-The original dice picture set by cernel is d20. The Dragon War map only includes and uses d8.
+
+
+Note by Frostion: 
+The red ”hit” images used in the Dragon War map have all been reduced -65 in brightness with GIMP compared to the original dice pictures by Cernel.
