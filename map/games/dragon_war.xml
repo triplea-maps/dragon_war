@@ -2511,7 +2511,7 @@
             <option name="canBlitz" value="true"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="UnitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
+            <option name="unitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Wizard" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="1"/>
@@ -2522,7 +2522,7 @@
             <option name="movement" value="2"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="UnitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
+            <option name="unitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Priestess" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="1"/>
@@ -2533,7 +2533,7 @@
             <option name="movement" value="2"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="UnitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
+            <option name="unitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Air-Balloon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="1"/>
