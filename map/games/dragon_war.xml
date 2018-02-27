@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.3"/>
+    <info name="Dragon War" version="1.2.4"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -2511,7 +2511,7 @@
             <option name="canBlitz" value="true"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="unitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
+            <option name="UnitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Wizard" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="1"/>
@@ -2522,7 +2522,7 @@
             <option name="movement" value="2"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="unitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
+            <option name="UnitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Priestess" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="1"/>
@@ -2533,7 +2533,7 @@
             <option name="movement" value="2"/>
             <option name="transportCost" value="1"/>
             <option name="isAirTransportable" value="true"/>
-            <option name="unitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
+            <option name="UnitPlacementOnlyAllowedIn" value="Stormwood:Ironhorn:Athondir:Orcengor:Lionport:Necroloft"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Air-Balloon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="1"/>
@@ -7230,10 +7230,10 @@
         <property name="Neutrals Are Blitzable" value="true" editable="false">
             <boolean/>
         </property>
-        <property name="Abandoned Territories May Be Taken Over Immediately" value="true" editable="false">
+        <property name="Abandoned Territories May Be Taken Over Immediately" value="false" editable="false">
             <boolean/>
         </property>
-        
+
         <property name="notes">
             <value>
             <![CDATA[
