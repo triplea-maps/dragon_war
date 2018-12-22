@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.3"/>
+    <info name="Dragon War" version="1.2.4"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -1295,12 +1295,12 @@
     </resourceList>
 
     <playerList>
-        <player name="Lionia" optional="true"/>
-        <player name="Elves" optional="true"/>
-        <player name="Dwarves" optional="true"/>
         <player name="Crowton" optional="true"/>
         <player name="Greenskins" optional="true"/>
         <player name="Undead" optional="true"/>
+        <player name="Lionia" optional="true"/>
+        <player name="Dwarves" optional="true"/>
+        <player name="Elves" optional="true"/>
         <player name="Pirates" optional="true" defaultType="AI" isHidden="true"/>
         <player name="Barbarians" optional="true" defaultType="AI" isHidden="true"/>
         <player name="Murlocs" optional="true" defaultType="AI" isHidden="true"/>
@@ -1308,11 +1308,11 @@
         <player name="Gnolls" optional="true" defaultType="AI" isHidden="true"/>
         <player name="Ogres" optional="true" defaultType="AI" isHidden="true"/>
         <alliance player="Crowton" alliance="Evil"/>
-        <alliance player="Undead" alliance="Evil"/>
         <alliance player="Greenskins" alliance="Evil"/>
-        <alliance player="Elves" alliance="Good"/>
-        <alliance player="Dwarves" alliance="Good"/>
+        <alliance player="Undead" alliance="Evil"/>
         <alliance player="Lionia" alliance="Good"/>
+        <alliance player="Dwarves" alliance="Good"/>
+        <alliance player="Elves" alliance="Good"/>
         <alliance player="Pirates" alliance="AI"/>
         <alliance player="Barbarians" alliance="AI"/>
         <alliance player="Murlocs" alliance="AI"/>
@@ -1432,9 +1432,16 @@
         <delegate name="place" javaClass="games.strategy.triplea.delegate.PlaceDelegate" display="Place Units"/>
         <delegate name="endTurn" javaClass="games.strategy.triplea.delegate.EndTurnDelegate" display="Turn Complete"/>
         <delegate name="endRound" javaClass="games.strategy.triplea.delegate.EndRoundDelegate" display="Round Complete"/>
+        <delegate name="fake01" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake02" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake03" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake04" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake05" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
 
         <sequence>
             <step name="gameInitDelegate" delegate="initDelegate" maxRunCount="1"/>
+
+                <step name="Fake01" delegate="fake01" player="Pirates" display="Ongoing Battle"/>
 
             <step name="CrowtonCombatMove" delegate="move" player="Crowton" display="Combat Move"/>
             <step name="CrowtonBattle" delegate="battle" player="Crowton" display="Combat"/>
@@ -1447,16 +1454,7 @@
             </step>
             <step name="CrowtonEndTurn" delegate="endTurn" player="Crowton" display="Turn Complete"/>
 
-            <step name="ElvesCombatMove" delegate="move" player="Elves" display="Combat Move"/>
-            <step name="ElvesBattle" delegate="battle" player="Elves" display="Combat"/>
-            <step name="ElvesNonCombatMove" delegate="move" player="Elves" display="Non Combat Move">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="ElvesPurchase" delegate="purchase" player="Elves" display="Purchase Units"/>
-            <step name="ElvesPlace" delegate="place" player="Elves" display="Place Units">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="ElvesEndTurn" delegate="endTurn" player="Elves" display="Turn Complete"/>
+                <step name="Fake02" delegate="fake02" player="Pirates" display="Ongoing Battle"/>
 
             <step name="GreenskinsCombatMove" delegate="move" player="Greenskins" display="Combat Move"/>
             <step name="GreenskinsBattle" delegate="battle" player="Greenskins" display="Combat"/>
@@ -1469,16 +1467,7 @@
             </step>
             <step name="GreenskinsEndTurn" delegate="endTurn" player="Greenskins" display="Turn Complete"/>
 
-            <step name="LioniaCombatMove" delegate="move" player="Lionia" display="Combat Move"/>
-            <step name="LioniaBattle" delegate="battle" player="Lionia" display="Combat"/>
-            <step name="LioniaNonCombatMove" delegate="move" player="Lionia" display="Non Combat Move">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="LioniaPurchase" delegate="purchase" player="Lionia" display="Purchase Units"/>
-            <step name="LioniaPlace" delegate="place" player="Lionia" display="Place Units">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="LioniaEndTurn" delegate="endTurn" player="Lionia" display="Turn Complete"/>
+                <step name="Fake03" delegate="fake03" player="Pirates" display="Ongoing Battle"/>
 
             <step name="UndeadCombatMove" delegate="move" player="Undead" display="Combat Move"/>
             <step name="UndeadBattle" delegate="battle" player="Undead" display="Combat"/>
@@ -1491,6 +1480,19 @@
             </step>
             <step name="UndeadEndTurn" delegate="endTurn" player="Undead" display="Turn Complete"/>
 
+            <step name="LioniaCombatMove" delegate="move" player="Lionia" display="Combat Move"/>
+            <step name="LioniaBattle" delegate="battle" player="Lionia" display="Combat"/>
+            <step name="LioniaNonCombatMove" delegate="move" player="Lionia" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="LioniaPurchase" delegate="purchase" player="Lionia" display="Purchase Units"/>
+            <step name="LioniaPlace" delegate="place" player="Lionia" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="LioniaEndTurn" delegate="endTurn" player="Lionia" display="Turn Complete"/>
+
+                <step name="Fake04" delegate="fake04" player="Pirates" display="Ongoing Battle"/>
+
             <step name="DwarvesCombatMove" delegate="move" player="Dwarves" display="Combat Move"/>
             <step name="DwarvesBattle" delegate="battle" player="Dwarves" display="Combat"/>
             <step name="DwarvesNonCombatMove" delegate="move" player="Dwarves" display="Non Combat Move">
@@ -1501,6 +1503,19 @@
             <stepProperty name="removeAirThatCanNotLand" value="false"/>
             </step>
             <step name="DwarvesEndTurn" delegate="endTurn" player="Dwarves" display="Turn Complete"/>
+
+                <step name="Fake05" delegate="fake05" player="Pirates" display="Ongoing Battle"/>
+
+            <step name="ElvesCombatMove" delegate="move" player="Elves" display="Combat Move"/>
+            <step name="ElvesBattle" delegate="battle" player="Elves" display="Combat"/>
+            <step name="ElvesNonCombatMove" delegate="move" player="Elves" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="ElvesPurchase" delegate="purchase" player="Elves" display="Purchase Units"/>
+            <step name="ElvesPlace" delegate="place" player="Elves" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="ElvesEndTurn" delegate="endTurn" player="Elves" display="Turn Complete"/>
 
             <step name="PiratesCombatMove" delegate="move" player="Pirates" display="Combat Move"/>
             <step name="PiratesBattle" delegate="battle" player="Pirates" display="Combat"/>
@@ -1582,7 +1597,10 @@
             <result resourceOrUnit="Marines" quantity="1"/>
         </productionRule>
         <productionRule name="buyAuxiliaries">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="7"/>
+            <cost resource="Food" quantity="5"/>
+            <cost resource="Wood" quantity="1"/>
+            <cost resource="Metal" quantity="1"/>
             <result resourceOrUnit="Auxiliaries" quantity="1"/>
         </productionRule>
         <productionRule name="buyCrossbowmen">
@@ -1733,65 +1751,65 @@
             <result resourceOrUnit="Crow-Swarm" quantity="1"/>
         </productionRule>
         <productionRule name="buyGiant-Bat">
-            <cost resource="PUs" quantity="12"/>
-            <cost resource="Food" quantity="8"/>
+            <cost resource="PUs" quantity="10"/>
+            <cost resource="Food" quantity="6"/>
             <cost resource="Wood" quantity="2"/>
             <cost resource="Metal" quantity="2"/>
             <result resourceOrUnit="Giant-Bat" quantity="1"/>
         </productionRule>
         <productionRule name="buyGiant-Eagle">
-            <cost resource="PUs" quantity="15"/>
-            <cost resource="Food" quantity="9"/>
+            <cost resource="PUs" quantity="13"/>
+            <cost resource="Food" quantity="7"/>
             <cost resource="Wood" quantity="3"/>
             <cost resource="Metal" quantity="3"/>
             <result resourceOrUnit="Giant-Eagle" quantity="1"/>
         </productionRule>
         <productionRule name="buyGreen-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="20"/>
             <result resourceOrUnit="Green-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyBrown-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="25"/>
             <result resourceOrUnit="Brown-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyWater-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="30"/>
             <result resourceOrUnit="Water-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyWhite-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="35"/>
             <result resourceOrUnit="White-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyBlue-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="40"/>
             <result resourceOrUnit="Blue-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyRed-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="45"/>
             <result resourceOrUnit="Red-Dragon" quantity="1"/>
         </productionRule>
        <productionRule name="buyYoung-Green-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="8"/>
             <result resourceOrUnit="Young-Green-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Brown-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Young-Brown-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Water-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="12"/>
             <result resourceOrUnit="Young-Water-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-White-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="14"/>
             <result resourceOrUnit="Young-White-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Blue-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="16"/>
             <result resourceOrUnit="Young-Blue-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Red-Dragon">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="18"/>
             <result resourceOrUnit="Young-Red-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyTransport-Ship">
@@ -1922,39 +1940,39 @@
             <result resourceOrUnit="Pirate-Ship" quantity="1"/>
         </productionRule>
         <productionRule name="buyPirate-Hideout">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Pirate-Hideout" quantity="1"/>
         </productionRule>
         <productionRule name="buyOgre-Village">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Ogre-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyMurloc-Village">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Murloc-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyKobold-Village">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Kobold-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyBarbarian-Village">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Barbarian-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyGnoll-Village">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Gnoll-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyHalflings">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="7"/>
             <result resourceOrUnit="Halflings" quantity="1"/>
         </productionRule>
         <productionRule name="buyGnomes">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="7"/>
             <result resourceOrUnit="Gnomes" quantity="1"/>
         </productionRule>
         <productionRule name="buyZombies">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="7"/>
             <result resourceOrUnit="Zombies" quantity="1"/>
         </productionRule>
         <productionRule name="buyZombie-Plague">
@@ -1962,39 +1980,39 @@
             <result resourceOrUnit="Zombie-Plague" quantity="1"/>
         </productionRule>
         <productionRule name="buyWood-Elves">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="8"/>
             <result resourceOrUnit="Wood-Elves" quantity="1"/>
         </productionRule>
         <productionRule name="buyCrusaders">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="9"/>
             <result resourceOrUnit="Crusaders" quantity="1"/>
         </productionRule>
         <productionRule name="buyFish">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="20"/>
             <result resourceOrUnit="Fish" quantity="1"/>
         </productionRule>
         <productionRule name="buyWhales">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="30"/>
             <result resourceOrUnit="Whales" quantity="1"/>
         </productionRule>
         <productionRule name="buySheep">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Sheep" quantity="1"/>
         </productionRule>
         <productionRule name="buyCattle">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="20"/>
             <result resourceOrUnit="Cattle" quantity="1"/>
         </productionRule>
         <productionRule name="buyWindmill">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="30"/>
             <result resourceOrUnit="Windmill" quantity="1"/>
         </productionRule>
         <productionRule name="buySawmill">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="30"/>
             <result resourceOrUnit="Sawmill" quantity="1"/>
         </productionRule>
         <productionRule name="buyMine">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="30"/>
             <result resourceOrUnit="Mine" quantity="1"/>
         </productionRule>
         <productionRule name="buyBuy-5-Food">
@@ -2043,39 +2061,6 @@
             <frontierRules name="buyBuy-5-Metal"/>
         </productionFrontier>
 
-        <productionFrontier name="production_Elves">
-            <frontierRules name="buyMarines"/>
-            <frontierRules name="buyCrossbowmen"/>
-            <frontierRules name="buyBowmen"/>
-            <frontierRules name="buySpearmen"/>
-            <frontierRules name="buyLgt-Infantry"/>
-            <frontierRules name="buyHvy-Infantry"/>
-            <frontierRules name="buyLgt-Cavalry"/>
-            <frontierRules name="buyHvy-Cavalry"/>
-            <frontierRules name="buyRangers"/>
-            <frontierRules name="buyKnights"/>
-            <frontierRules name="buyMonster"/>
-            <frontierRules name="buyBallista"/>
-            <frontierRules name="buyCatapult"/>
-            <frontierRules name="buyTrebuchet"/>
-            <frontierRules name="buyCannon"/>
-            <frontierRules name="buyMortar"/>
-            <frontierRules name="buyGiant-Eagle"/>
-            <frontierRules name="buyTransport-Ship"/>
-            <frontierRules name="buyBireme"/>
-            <frontierRules name="buyTrireme"/>
-            <frontierRules name="buyBattering-Ram"/>
-            <frontierRules name="buySiege-Towers"/>
-            <frontierRules name="buyFort"/>
-            <frontierRules name="buyCastle"/>
-            <frontierRules name="buyVillage"/>
-            <frontierRules name="buyTown"/>
-            <frontierRules name="buyCity"/>
-            <frontierRules name="buyBuy-5-Food"/>
-            <frontierRules name="buyBuy-5-Wood"/>
-            <frontierRules name="buyBuy-5-Metal"/>
-        </productionFrontier>
-
         <productionFrontier name="production_Greenskins">
             <frontierRules name="buyMarines"/>
             <frontierRules name="buyCrossbowmen"/>
@@ -2097,39 +2082,6 @@
             <frontierRules name="buyTransport-Ship"/>
             <frontierRules name="buyMonoreme"/>
             <frontierRules name="buyBireme"/>
-            <frontierRules name="buyBattering-Ram"/>
-            <frontierRules name="buySiege-Towers"/>
-            <frontierRules name="buyFort"/>
-            <frontierRules name="buyCastle"/>
-            <frontierRules name="buyVillage"/>
-            <frontierRules name="buyTown"/>
-            <frontierRules name="buyCity"/>
-            <frontierRules name="buyBuy-5-Food"/>
-            <frontierRules name="buyBuy-5-Wood"/>
-            <frontierRules name="buyBuy-5-Metal"/>
-        </productionFrontier>
-
-        <productionFrontier name="production_Lionia">
-            <frontierRules name="buyMarines"/>
-            <frontierRules name="buyCrossbowmen"/>
-            <frontierRules name="buyBowmen"/>
-            <frontierRules name="buySpearmen"/>
-            <frontierRules name="buyLgt-Infantry"/>
-            <frontierRules name="buyHvy-Infantry"/>
-            <frontierRules name="buyLgt-Cavalry"/>
-            <frontierRules name="buyHvy-Cavalry"/>
-            <frontierRules name="buyRangers"/>
-            <frontierRules name="buyKnights"/>
-            <frontierRules name="buyMonster"/>
-            <frontierRules name="buyBallista"/>
-            <frontierRules name="buyCatapult"/>
-            <frontierRules name="buyTrebuchet"/>
-            <frontierRules name="buyCannon"/>
-            <frontierRules name="buyMortar"/>
-            <frontierRules name="buyAir-Balloon"/>
-            <frontierRules name="buyTransport-Ship"/>
-            <frontierRules name="buySmall-Ship"/>
-            <frontierRules name="buyLarge-Ship"/>
             <frontierRules name="buyBattering-Ram"/>
             <frontierRules name="buySiege-Towers"/>
             <frontierRules name="buyFort"/>
@@ -2175,6 +2127,39 @@
             <frontierRules name="buyBuy-5-Metal"/>
         </productionFrontier>
 
+        <productionFrontier name="production_Lionia">
+            <frontierRules name="buyMarines"/>
+            <frontierRules name="buyCrossbowmen"/>
+            <frontierRules name="buyBowmen"/>
+            <frontierRules name="buySpearmen"/>
+            <frontierRules name="buyLgt-Infantry"/>
+            <frontierRules name="buyHvy-Infantry"/>
+            <frontierRules name="buyLgt-Cavalry"/>
+            <frontierRules name="buyHvy-Cavalry"/>
+            <frontierRules name="buyRangers"/>
+            <frontierRules name="buyKnights"/>
+            <frontierRules name="buyMonster"/>
+            <frontierRules name="buyBallista"/>
+            <frontierRules name="buyCatapult"/>
+            <frontierRules name="buyTrebuchet"/>
+            <frontierRules name="buyCannon"/>
+            <frontierRules name="buyMortar"/>
+            <frontierRules name="buyAir-Balloon"/>
+            <frontierRules name="buyTransport-Ship"/>
+            <frontierRules name="buySmall-Ship"/>
+            <frontierRules name="buyLarge-Ship"/>
+            <frontierRules name="buyBattering-Ram"/>
+            <frontierRules name="buySiege-Towers"/>
+            <frontierRules name="buyFort"/>
+            <frontierRules name="buyCastle"/>
+            <frontierRules name="buyVillage"/>
+            <frontierRules name="buyTown"/>
+            <frontierRules name="buyCity"/>
+            <frontierRules name="buyBuy-5-Food"/>
+            <frontierRules name="buyBuy-5-Wood"/>
+            <frontierRules name="buyBuy-5-Metal"/>
+        </productionFrontier>
+
         <productionFrontier name="production_Dwarves">
             <frontierRules name="buyMarines"/>
             <frontierRules name="buyCrossbowmen"/>
@@ -2196,6 +2181,39 @@
             <frontierRules name="buyTransport-Ship"/>
             <frontierRules name="buySmall-Ship"/>
             <frontierRules name="buyMonoreme"/>
+            <frontierRules name="buyBattering-Ram"/>
+            <frontierRules name="buySiege-Towers"/>
+            <frontierRules name="buyFort"/>
+            <frontierRules name="buyCastle"/>
+            <frontierRules name="buyVillage"/>
+            <frontierRules name="buyTown"/>
+            <frontierRules name="buyCity"/>
+            <frontierRules name="buyBuy-5-Food"/>
+            <frontierRules name="buyBuy-5-Wood"/>
+            <frontierRules name="buyBuy-5-Metal"/>
+        </productionFrontier>
+
+        <productionFrontier name="production_Elves">
+            <frontierRules name="buyMarines"/>
+            <frontierRules name="buyCrossbowmen"/>
+            <frontierRules name="buyBowmen"/>
+            <frontierRules name="buySpearmen"/>
+            <frontierRules name="buyLgt-Infantry"/>
+            <frontierRules name="buyHvy-Infantry"/>
+            <frontierRules name="buyLgt-Cavalry"/>
+            <frontierRules name="buyHvy-Cavalry"/>
+            <frontierRules name="buyRangers"/>
+            <frontierRules name="buyKnights"/>
+            <frontierRules name="buyMonster"/>
+            <frontierRules name="buyBallista"/>
+            <frontierRules name="buyCatapult"/>
+            <frontierRules name="buyTrebuchet"/>
+            <frontierRules name="buyCannon"/>
+            <frontierRules name="buyMortar"/>
+            <frontierRules name="buyGiant-Eagle"/>
+            <frontierRules name="buyTransport-Ship"/>
+            <frontierRules name="buyBireme"/>
+            <frontierRules name="buyTrireme"/>
             <frontierRules name="buyBattering-Ram"/>
             <frontierRules name="buySiege-Towers"/>
             <frontierRules name="buyFort"/>
@@ -2234,12 +2252,12 @@
             <frontierRules name="buyOgre"/>
         </productionFrontier>
 
-        <playerProduction player="Lionia" frontier="production_Lionia"/>
-        <playerProduction player="Elves" frontier="production_Elves"/>
-        <playerProduction player="Dwarves" frontier="production_Dwarves"/>
         <playerProduction player="Crowton" frontier="production_Crowton"/>
         <playerProduction player="Greenskins" frontier="production_Greenskins"/>
         <playerProduction player="Undead" frontier="production_Undead"/>
+        <playerProduction player="Lionia" frontier="production_Lionia"/>
+        <playerProduction player="Dwarves" frontier="production_Dwarves"/>
+        <playerProduction player="Elves" frontier="production_Elves"/>
         <playerProduction player="Pirates" frontier="production_Pirates"/>
         <playerProduction player="Barbarians" frontier="production_Barbarians"/>
         <playerProduction player="Gnolls" frontier="production_Gnolls"/>
@@ -2302,38 +2320,38 @@
         <attachment name="techAttachment" attachTo="Crowton" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
             <option name="paratroopers" value="true"/>
         </attachment>
-        <attachment name="techAttachment" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-            <option name="paratroopers" value="true"/>
-        </attachment>
         <attachment name="techAttachment" attachTo="Greenskins" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
-            <option name="paratroopers" value="true"/>
-        </attachment>
-        <attachment name="techAttachment" attachTo="Elves" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
             <option name="paratroopers" value="true"/>
         </attachment>
         <attachment name="techAttachment" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
             <option name="paratroopers" value="true"/>
         </attachment>
+        <attachment name="techAttachment" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
+            <option name="paratroopers" value="true"/>
+        </attachment>
         <attachment name="techAttachment" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
+            <option name="paratroopers" value="true"/>
+        </attachment>
+        <attachment name="techAttachment" attachTo="Elves" javaClass="games.strategy.triplea.attachments.TechAttachment" type="player">
             <option name="paratroopers" value="true"/>
         </attachment>
         
         <attachment name="rulesAttachment" attachTo="Crowton" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="placementCapturedTerritory" value="true"/>
 	</attachment>
-        <attachment name="rulesAttachment" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="placementCapturedTerritory" value="true"/>
-	</attachment>
         <attachment name="rulesAttachment" attachTo="Greenskins" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="placementCapturedTerritory" value="true"/>
-	</attachment>
-        <attachment name="rulesAttachment" attachTo="Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="placementCapturedTerritory" value="true"/>
 	</attachment>
         <attachment name="rulesAttachment" attachTo="Undead" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="placementCapturedTerritory" value="true"/>
 	</attachment>
+        <attachment name="rulesAttachment" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="placementCapturedTerritory" value="true"/>
+	</attachment>
         <attachment name="rulesAttachment" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="placementCapturedTerritory" value="true"/>
+	</attachment>
+        <attachment name="rulesAttachment" attachTo="Elves" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="placementCapturedTerritory" value="true"/>
 	</attachment>
 
@@ -2365,15 +2383,7 @@
             <option name="retainCapitalProduceNumber" value="0"/>
             <option name="retainCapitalNumber" value="0"/>
         </attachment>
-        <attachment name="playerAttachment" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
-            <option name="retainCapitalProduceNumber" value="0"/>
-            <option name="retainCapitalNumber" value="0"/>
-        </attachment>
         <attachment name="playerAttachment" attachTo="Greenskins" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
-            <option name="retainCapitalProduceNumber" value="0"/>
-            <option name="retainCapitalNumber" value="0"/>
-        </attachment>
-        <attachment name="playerAttachment" attachTo="Elves" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
             <option name="retainCapitalProduceNumber" value="0"/>
             <option name="retainCapitalNumber" value="0"/>
         </attachment>
@@ -2381,7 +2391,15 @@
             <option name="retainCapitalProduceNumber" value="0"/>
             <option name="retainCapitalNumber" value="0"/>
         </attachment>
+        <attachment name="playerAttachment" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
+            <option name="retainCapitalProduceNumber" value="0"/>
+            <option name="retainCapitalNumber" value="0"/>
+        </attachment>
         <attachment name="playerAttachment" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
+            <option name="retainCapitalProduceNumber" value="0"/>
+            <option name="retainCapitalNumber" value="0"/>
+        </attachment>
+        <attachment name="playerAttachment" attachTo="Elves" javaClass="games.strategy.triplea.attachments.PlayerAttachment" type="player">
             <option name="retainCapitalProduceNumber" value="0"/>
             <option name="retainCapitalNumber" value="0"/>
         </attachment>
@@ -2540,7 +2558,7 @@
             <option name="attack" value="1"/>
             <option name="defense" value="1"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -2550,53 +2568,53 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="2"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Crow-Swarm" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="5"/>
-            <option name="attack" value="2"/>
-            <option name="defense" value="2"/>
+            <option name="attack" value="1"/>
+            <option name="defense" value="1"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Giant-Bat" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="4"/>
-            <option name="attack" value="3"/>
-            <option name="defense" value="3"/>
+            <option name="attack" value="2"/>
+            <option name="defense" value="2"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Giant-Eagle" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="3"/>
-            <option name="attack" value="4"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Green-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="attack" value="4"/>
-            <option name="defense" value="5"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="6"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Brown-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
+            <option name="attack" value="4"/>
             <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="6"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -2604,20 +2622,20 @@
             <option name="repairsUnits" value="1:Brown-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Water-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
-            <option name="defense" value="5"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="3"/>
             <option name="hitPoints" value="3"/>
             <option name="repairsUnits" value="1:Water-Dragon"/>
             <option name="blockade" value="3"/>
             <option name="unitPlacementRestrictions" value="Unit List:Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="White-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="5"/>
-            <option name="defense" value="6"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="6"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -2625,10 +2643,10 @@
             <option name="repairsUnits" value="1:White-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Blue-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="6"/>
-            <option name="defense" value="5"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="6"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -2636,10 +2654,10 @@
             <option name="repairsUnits" value="1:Blue-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Red-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="6"/>
-            <option name="defense" value="6"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="6"/>
+            <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
@@ -2653,12 +2671,11 @@
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
             <option name="attack" value="3"/>
-            <option name="defense" value="4"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="any:any:true:Green-Dragon:1"/>
-            <option name="unitPlacementRestrictions" value="Unit List"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Young-Brown-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -2666,13 +2683,12 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="4"/>
+            <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="any:any:true:Brown-Dragon:1"/>
-            <option name="unitPlacementRestrictions" value="Unit List"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Young-Water-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -2680,13 +2696,12 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="4"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="blockade" value="3"/>
             <option name="whenCapturedChangesInto" value="any:any:true:Water-Dragon:1"/>
-            <option name="unitPlacementRestrictions" value="Unit List:Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Young-White-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -2694,13 +2709,12 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="4"/>
-            <option name="defense" value="5"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="any:any:true:White-Dragon:1"/>
-            <option name="unitPlacementRestrictions" value="Unit List"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Young-Blue-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -2708,13 +2722,12 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="5"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="any:any:true:Blue-Dragon:1"/>
-            <option name="unitPlacementRestrictions" value="Unit List"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Young-Red-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -2722,19 +2735,18 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="5"/>
-            <option name="defense" value="5"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
-            <option name="movement" value="5"/>
+            <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
             <option name="whenCapturedChangesInto" value="any:any:true:Red-Dragon:1"/>
-            <option name="unitPlacementRestrictions" value="Unit List"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Transport-Ship" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="attack" value="2"/>
             <option name="defense" value="2"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="9"/>
             <option name="blockade" value="1"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
@@ -2743,7 +2755,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="4"/>
             <option name="blockade" value="2"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
@@ -2752,7 +2764,7 @@
             <option name="attack" value="4"/>
             <option name="defense" value="4"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="6"/>
             <option name="blockade" value="3"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
@@ -2761,7 +2773,7 @@
             <option name="attack" value="5"/>
             <option name="defense" value="5"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="3"/>
+            <option name="movement" value="2"/>
             <option name="transportCapacity" value="4"/>
             <option name="blockade" value="4"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
@@ -2770,7 +2782,7 @@
             <option name="attack" value="6"/>
             <option name="defense" value="6"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="3"/>
+            <option name="movement" value="2"/>
             <option name="transportCapacity" value="6"/>
             <option name="blockade" value="5"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
@@ -2779,7 +2791,7 @@
             <option name="attack" value="7"/>
             <option name="defense" value="7"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="3"/>
+            <option name="movement" value="2"/>
             <option name="transportCapacity" value="8"/>
             <option name="blockade" value="6"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
@@ -2833,6 +2845,7 @@
             <option name="movement" value="1"/>
             <option name="isMarine" value="true"/>
             <option name="transportCost" value="2"/>
+            <option name="tuv" value="8"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Murloc" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="25"/>
@@ -2840,6 +2853,7 @@
             <option name="attack" value="2"/>
             <option name="defense" value="2"/>
             <option name="movement" value="1"/>
+            <option name="tuv" value="7"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Kobold" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="22"/>
@@ -2847,6 +2861,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="movement" value="1"/>
+            <option name="tuv" value="9"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Gnoll" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="20"/>
@@ -2854,6 +2869,7 @@
             <option name="attack" value="3"/>
             <option name="defense" value="4"/>
             <option name="movement" value="1"/>
+            <option name="tuv" value="9"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Barbarian" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="20"/>
@@ -2861,32 +2877,36 @@
             <option name="attack" value="4"/>
             <option name="defense" value="3"/>
             <option name="movement" value="1"/>
+            <option name="tuv" value="9"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Ogre" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="16"/>
             <option name="attack" value="4"/>
             <option name="defense" value="4"/>
             <option name="movement" value="1"/>
+            <option name="tuv" value="10"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Pirate-Boat" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="5"/>
             <option name="attack" value="3"/>
             <option name="defense" value="3"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="4"/>
             <option name="blockade" value="2"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
+            <option name="tuv" value="9"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Pirate-Ship" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="maxBuiltPerPlayer" value="5"/>
             <option name="attack" value="4"/>
             <option name="defense" value="4"/>
             <option name="isSea" value="true"/>
-            <option name="movement" value="4"/>
+            <option name="movement" value="3"/>
             <option name="transportCapacity" value="6"/>
             <option name="blockade" value="3"/>
             <option name="unitPlacementRestrictions" value="Inland Sea:Pool of Souls:Lake Longtear:Loch Mordant:Vile Deep:Putrid Pond:Lake Moondeer:Loch Wellness:Black Lake:Lake Mudspit:Mining Pool:High Mere:Tarn Myrin:Lake Doom:Lake Bryol:Loch Hedan:Ice Basin"/>
+            <option name="tuv" value="11"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Pirate-Hideout" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -2981,6 +3001,7 @@
             <option name="maxConstructionsPerTypePerTerr" value="2"/>
             <option name="repairsUnits" value="3:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="2"/>
+            <option name="tuv" value="20"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="City" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -2993,6 +3014,7 @@
             <option name="maxConstructionsPerTypePerTerr" value="2"/>
             <option name="repairsUnits" value="4:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="3"/>
+            <option name="tuv" value="30"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Capital-City" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -3003,6 +3025,7 @@
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
             <option name="repairsUnits" value="4:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="createsResourcesList" value="-15:PUs"/>
+            <option name="tuv" value="100"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Fish" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -4859,30 +4882,30 @@
             <option name="side" value="offence:defence"/>
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
-            <option name="number" value="10"/>
-            <option name="bonusType" value="character"/>
+            <option name="number" value="5"/>
+            <option name="bonusType" value="General"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
         <attachment name="supportAttachmentWizard" attachTo="Wizard" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="General:Priestess:Marines:Auxiliaries:Spearmen:Lgt-Infantry:Hvy-Infantry:Bowmen:Crossbowmen:Halflings:Gnomes:Crusaders:Zombies:Wood-Elves:Lgt-Cavalry:Hvy-Cavalry:Knights:Rangers:Monster:Ballista:Catapult:Trebuchet:Cannon:Mortar:Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Transport-Ship:Small-Ship:Large-Ship:Monoreme:Bireme:Trireme:Barbarian:Gnoll:Kobold:Murloc:Pirate:Ogre:Pirate-Boat:Pirate-Ship:Green-Dragon:Young-Green-Dragon:Brown-Dragon:Young-Brown-Dragon:Water-Dragon:Young-Water-Dragon:White-Dragon:Young-White-Dragon:Blue-Dragon:Young-Blue-Dragon:Red-Dragon:Young-Red-Dragon"/>
-            <option name="faction" value="enemy"/>
+            <option name="faction" value="allied"/>
             <option name="side" value="offence"/>
             <option name="dice" value="strength"/>
-            <option name="bonus" value="-1"/>
+            <option name="bonus" value="1"/>
             <option name="number" value="10"/>
-            <option name="bonusType" value="character"/>
+            <option name="bonusType" value="Wizard"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
         <attachment name="supportAttachmentPriestess" attachTo="Priestess" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="General:Wizard:Marines:Auxiliaries:Spearmen:Lgt-Infantry:Hvy-Infantry:Bowmen:Crossbowmen:Halflings:Gnomes:Crusaders:Zombies:Wood-Elves:Lgt-Cavalry:Hvy-Cavalry:Knights:Rangers:Monster:Ballista:Catapult:Trebuchet:Cannon:Mortar:Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Transport-Ship:Small-Ship:Large-Ship:Monoreme:Bireme:Trireme:Barbarian:Gnoll:Kobold:Murloc:Pirate:Ogre:Pirate-Boat:Pirate-Ship:Green-Dragon:Young-Green-Dragon:Brown-Dragon:Young-Brown-Dragon:Water-Dragon:Young-Water-Dragon:White-Dragon:Young-White-Dragon:Blue-Dragon:Young-Blue-Dragon:Red-Dragon:Young-Red-Dragon"/>
-            <option name="faction" value="enemy"/>
+            <option name="faction" value="allied"/>
             <option name="side" value="defence"/>
             <option name="dice" value="strength"/>
-            <option name="bonus" value="-1"/>
+            <option name="bonus" value="1"/>
             <option name="number" value="10"/>
-            <option name="bonusType" value="character"/>
+            <option name="bonusType" value="Priestess"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4893,7 +4916,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="spear"/>
+            <option name="bonusType" value="Spear"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4904,7 +4927,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="spear"/>
+            <option name="bonusType" value="Spear"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4915,7 +4938,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="panic"/>
+            <option name="bonusType" value="Will"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4926,7 +4949,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="panic"/>
+            <option name="bonusType" value="Will"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4937,7 +4960,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="15"/>
-            <option name="bonusType" value="wall"/>
+            <option name="bonusType" value="Wall"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4948,7 +4971,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="30"/>
-            <option name="bonusType" value="wall"/>
+            <option name="bonusType" value="Wall"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4959,7 +4982,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="battering ram"/>
+            <option name="bonusType" value="Battering Ram"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4970,7 +4993,7 @@
             <option name="dice" value="roll"/>
             <option name="bonus" value="8"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="battering ram"/>
+            <option name="bonusType" value="Battering Ram"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4981,7 +5004,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="battering ram"/>
+            <option name="bonusType" value="Battering Ram"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -4992,7 +5015,7 @@
             <option name="dice" value="roll"/>
             <option name="bonus" value="7"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="battering ram"/>
+            <option name="bonusType" value="Battering Ram"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5003,7 +5026,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="8"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="siege tower"/>
+            <option name="bonusType" value="Siege Tower"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5014,7 +5037,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="8"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="siege tower"/>
+            <option name="bonusType" value="Siege Tower"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5025,7 +5048,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="cavalry"/>
+            <option name="bonusType" value="Cavalry"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5036,7 +5059,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="cavalry"/>
+            <option name="bonusType" value="Cavalry"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5047,7 +5070,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="cavalry"/>
+            <option name="bonusType" value="Cavalry"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5058,7 +5081,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="cavalry"/>
+            <option name="bonusType" value="Cavalry"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5069,7 +5092,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="artillery"/>
+            <option name="bonusType" value="Artillery"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5080,7 +5103,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="artillery"/>
+            <option name="bonusType" value="Artillery"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5091,7 +5114,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="artillery"/>
+            <option name="bonusType" value="Artillery"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5102,7 +5125,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="artillery"/>
+            <option name="bonusType" value="Artillery"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5113,7 +5136,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="artillery"/>
+            <option name="bonusType" value="Artillery"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5124,7 +5147,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5135,7 +5158,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="2"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5146,7 +5169,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5157,7 +5180,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="4"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5168,7 +5191,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5179,7 +5202,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="6"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5190,7 +5213,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="1"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5201,7 +5224,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="2"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5212,7 +5235,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="3"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5223,7 +5246,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="4"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5234,7 +5257,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="5"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5245,7 +5268,7 @@
             <option name="dice" value="strength"/>
             <option name="bonus" value="-1"/>
             <option name="number" value="6"/>
-            <option name="bonusType" value="terror"/>
+            <option name="bonusType" value="Fighting"/>
             <option name="players" value="Crowton:Lionia:Greenskins:Elves:Undead:Dwarves:Pirates:Barbarians:Murlocs:Kobolds:Gnolls:Ogres"/>
             <option name="impArtTech" value="false"/>
         </attachment>
@@ -5266,16 +5289,16 @@
         <attachment name="conditionAttachmentSpawnDragon1" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="rounds" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon2" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmentSpawnDragon2" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="rounds" value="1"/>
         </attachment>
         <attachment name="conditionAttachmentSpawnDragon3" attachTo="Gnolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="rounds" value="2"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon4" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmentSpawnDragon4" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="rounds" value="2"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon5" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+        <attachment name="conditionAttachmentSpawnDragon5" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="rounds" value="3"/>
         </attachment>
         <attachment name="conditionAttachmentSpawnDragon6" attachTo="Barbarians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -5296,17 +5319,17 @@
             <option name="notification" value="DragonNote1"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="triggerAttachmentNew_Green_Dragon" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+        <attachment name="triggerAttachmentNew_Green_Dragon" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmentSpawnDragon2"/>
             <option name="purchase" value="Young-Green-Dragon" count="1"/>
-            <option name="players" value="Kobolds"/>
-            <option name="when" value="before:KoboldsPurchase"/>
+            <option name="players" value="Murlocs"/>
+            <option name="when" value="before:MurlocsPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="triggerAttachmentNew_Green_Dragon_Note" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+        <attachment name="triggerAttachmentNew_Green_Dragon_Note" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmentSpawnDragon2"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
-            <option name="when" value="after:KoboldsPlace"/>
+            <option name="when" value="after:MurlocsPlace"/>
             <option name="notification" value="DragonNote2"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -5324,31 +5347,31 @@
             <option name="notification" value="DragonNote3"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="triggerAttachmentNew_White_Dragon" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+        <attachment name="triggerAttachmentNew_White_Dragon" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmentSpawnDragon4"/>
             <option name="purchase" value="Young-White-Dragon" count="1"/>
-            <option name="players" value="Murlocs"/>
-            <option name="when" value="before:MurlocsPurchase"/>
-            <option name="uses" value="1"/>
-        </attachment>
-        <attachment name="triggerAttachmentNew_White_Dragon_Note" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon4"/>
-            <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
-            <option name="when" value="after:MurlocsPlace"/>
-            <option name="notification" value="DragonNote4"/>
-            <option name="uses" value="1"/>
-        </attachment>
-        <attachment name="triggerAttachmentNew_Blue_Dragon" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
-            <option name="purchase" value="Young-Blue-Dragon" count="1"/>
             <option name="players" value="Ogres"/>
             <option name="when" value="before:OgresPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
-        <attachment name="triggerAttachmentNew_Blue_Dragon_Note" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
+        <attachment name="triggerAttachmentNew_White_Dragon_Note" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon4"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
             <option name="when" value="after:OgresPlace"/>
+            <option name="notification" value="DragonNote4"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentNew_Blue_Dragon" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
+            <option name="purchase" value="Young-Blue-Dragon" count="1"/>
+            <option name="players" value="Kobolds"/>
+            <option name="when" value="before:KoboldsPurchase"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentNew_Blue_Dragon_Note" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
+            <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
+            <option name="when" value="after:KoboldsPlace"/>
             <option name="notification" value="DragonNote5"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -5420,63 +5443,63 @@
         <attachment name="triggerAttachment_Auxiliaries_in_Stormwood" attachTo="Crowton" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Auxiliaries_in_Stormwood"/>
             <option name="placement" value="Stormwood:Auxiliaries"/>
-            <option name="when" value="after:CrowtonEndTurn"/>
+            <option name="when" value="before:CrowtonEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Auxiliaries_in_Lionport" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Auxiliaries_in_Lionport"/>
             <option name="placement" value="Lionport:Auxiliaries"/>
-            <option name="when" value="after:LioniaEndTurn"/>
+            <option name="when" value="before:LioniaEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Auxiliaries_in_Orcengor" attachTo="Greenskins" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Auxiliaries_in_Orcengor"/>
             <option name="placement" value="Orcengor:Auxiliaries"/>
-            <option name="when" value="after:GreenskinsEndTurn"/>
+            <option name="when" value="before:GreenskinsEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Auxiliaries_in_Athondir" attachTo="Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Auxiliaries_in_Athondir"/>
             <option name="placement" value="Athondir:Auxiliaries"/>
-            <option name="when" value="after:ElvesEndTurn"/>
+            <option name="when" value="before:ElvesEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Auxiliaries_in_Necroloft" attachTo="Undead" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Auxiliaries_in_Necroloft"/>
             <option name="placement" value="Necroloft:Auxiliaries"/>
-            <option name="when" value="after:UndeadEndTurn"/>
+            <option name="when" value="before:UndeadEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Auxiliaries_in_Ironhorn" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Auxiliaries_in_Ironhorn"/>
             <option name="placement" value="Ironhorn:Auxiliaries"/>
-            <option name="when" value="after:DwarvesEndTurn"/>
+            <option name="when" value="before:DwarvesEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Halflings_in_Halfling_Meadows" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Halflings_in_Halfling_Meadows"/>
             <option name="placement" value="Halfling Meadows:Halflings"/>
-            <option name="when" value="after:DwarvesEndTurn"/>
+            <option name="when" value="before:DwarvesEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Gnomes_in_Gnomen_Lowland" attachTo="Dwarves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Gnomes_in_Gnomen_Lowland"/>
             <option name="placement" value="Gnomen Lowland:Gnomes"/>
-            <option name="when" value="after:DwarvesEndTurn"/>
+            <option name="when" value="before:DwarvesEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Wood-Elves_in_Oorsik_Forest" attachTo="Elves" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Wood-Elves_in_Oorsik_Forest"/>
             <option name="placement" value="Oorsik Forest:Wood-Elves"/>
-            <option name="when" value="after:ElvesEndTurn"/>
+            <option name="when" value="before:ElvesEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Crusaders_in_Jade_Mountains" attachTo="Lionia" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Crusaders_in_Jade_Mountains"/>
             <option name="placement" value="Jade Mountains:Crusaders"/>
-            <option name="when" value="after:LioniaEndTurn"/>
+            <option name="when" value="before:LioniaEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Rangers_in_Warg_Caves" attachTo="Greenskins" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Rangers_in_Warg_Caves"/>
             <option name="placement" value="Warg Caves:Rangers"/>
-            <option name="when" value="after:GreenskinsEndTurn"/>
+            <option name="when" value="before:GreenskinsEndTurn"/>
         </attachment>
         <attachment name="triggerAttachment_Small-Ship_in_Glassville" attachTo="Crowton" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachment_New_Small-Ship_in_Glassville"/>
             <option name="placement" value="Sea Zone 19:Small-Ship"/>
             <option name="placement" value="Glassville:Marines"/>
-            <option name="when" value="after:CrowtonNonCombatMove"/>
+            <option name="when" value="before:CrowtonNonCombatMove"/>
         </attachment>
 
 <!-- Fishing stuff - Check if a nation is in the sea zone -->
@@ -6793,7 +6816,7 @@
             <unitPlacement unitType="Pirate-Hideout" territory="Whitebone Island" quantity="1" owner="Pirates"/>
             <unitPlacement unitType="Pirate" territory="Whitebone Island" quantity="2" owner="Pirates"/>
             <unitPlacement unitType="Pirate-Hideout" territory="Drake Island" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate" territory="Drake Island" quantity="4" owner="Pirates"/>
+            <unitPlacement unitType="Pirate" territory="Drake Island" quantity="1" owner="Pirates"/>
             <unitPlacement unitType="Pirate-Hideout" territory="Bluebeard Island" quantity="1" owner="Pirates"/>
             <unitPlacement unitType="Pirate" territory="Bluebeard Island" quantity="2" owner="Pirates"/>
             <unitPlacement unitType="Ogre" territory="Arctic Zone 17" quantity="2" owner="Ogres"/>
