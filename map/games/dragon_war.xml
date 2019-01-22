@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.4"/>
+    <info name="Dragon War" version="1.2.5"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -1437,11 +1437,21 @@
         <delegate name="fake03" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
         <delegate name="fake04" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
         <delegate name="fake05" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake06" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake07" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake08" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake09" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
+        <delegate name="fake10" javaClass="games.strategy.triplea.delegate.UserActionDelegate" display="Ongoing Battle"/>
 
         <sequence>
             <step name="gameInitDelegate" delegate="initDelegate" maxRunCount="1"/>
 
                 <step name="Fake01" delegate="fake01" player="Pirates" display="Ongoing Battle"/>
+                <step name="Fake02" delegate="fake01" player="Barbarians" display="Ongoing Battle"/>
+                <step name="Fake03" delegate="fake01" player="Murlocs" display="Ongoing Battle"/>
+                <step name="Fake04" delegate="fake01" player="Kobolds" display="Ongoing Battle"/>
+                <step name="Fake05" delegate="fake01" player="Gnolls" display="Ongoing Battle"/>
+                <step name="Fake06" delegate="fake01" player="Ogres" display="Ongoing Battle"/>
 
             <step name="CrowtonCombatMove" delegate="move" player="Crowton" display="Combat Move"/>
             <step name="CrowtonBattle" delegate="battle" player="Crowton" display="Combat"/>
@@ -1454,7 +1464,7 @@
             </step>
             <step name="CrowtonEndTurn" delegate="endTurn" player="Crowton" display="Turn Complete"/>
 
-                <step name="Fake02" delegate="fake02" player="Pirates" display="Ongoing Battle"/>
+                <step name="Fake07" delegate="fake02" player="Pirates" display="Ongoing Battle"/>
 
             <step name="GreenskinsCombatMove" delegate="move" player="Greenskins" display="Combat Move"/>
             <step name="GreenskinsBattle" delegate="battle" player="Greenskins" display="Combat"/>
@@ -1467,7 +1477,7 @@
             </step>
             <step name="GreenskinsEndTurn" delegate="endTurn" player="Greenskins" display="Turn Complete"/>
 
-                <step name="Fake03" delegate="fake03" player="Pirates" display="Ongoing Battle"/>
+                <step name="Fake08" delegate="fake03" player="Pirates" display="Ongoing Battle"/>
 
             <step name="UndeadCombatMove" delegate="move" player="Undead" display="Combat Move"/>
             <step name="UndeadBattle" delegate="battle" player="Undead" display="Combat"/>
@@ -1479,43 +1489,6 @@
             <stepProperty name="removeAirThatCanNotLand" value="false"/>
             </step>
             <step name="UndeadEndTurn" delegate="endTurn" player="Undead" display="Turn Complete"/>
-
-            <step name="LioniaCombatMove" delegate="move" player="Lionia" display="Combat Move"/>
-            <step name="LioniaBattle" delegate="battle" player="Lionia" display="Combat"/>
-            <step name="LioniaNonCombatMove" delegate="move" player="Lionia" display="Non Combat Move">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="LioniaPurchase" delegate="purchase" player="Lionia" display="Purchase Units"/>
-            <step name="LioniaPlace" delegate="place" player="Lionia" display="Place Units">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="LioniaEndTurn" delegate="endTurn" player="Lionia" display="Turn Complete"/>
-
-                <step name="Fake04" delegate="fake04" player="Pirates" display="Ongoing Battle"/>
-
-            <step name="DwarvesCombatMove" delegate="move" player="Dwarves" display="Combat Move"/>
-            <step name="DwarvesBattle" delegate="battle" player="Dwarves" display="Combat"/>
-            <step name="DwarvesNonCombatMove" delegate="move" player="Dwarves" display="Non Combat Move">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="DwarvesPurchase" delegate="purchase" player="Dwarves" display="Purchase Units"/>
-            <step name="DwarvesPlace" delegate="place" player="Dwarves" display="Place Units">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="DwarvesEndTurn" delegate="endTurn" player="Dwarves" display="Turn Complete"/>
-
-                <step name="Fake05" delegate="fake05" player="Pirates" display="Ongoing Battle"/>
-
-            <step name="ElvesCombatMove" delegate="move" player="Elves" display="Combat Move"/>
-            <step name="ElvesBattle" delegate="battle" player="Elves" display="Combat"/>
-            <step name="ElvesNonCombatMove" delegate="move" player="Elves" display="Non Combat Move">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="ElvesPurchase" delegate="purchase" player="Elves" display="Purchase Units"/>
-            <step name="ElvesPlace" delegate="place" player="Elves" display="Place Units">
-            <stepProperty name="removeAirThatCanNotLand" value="false"/>
-            </step>
-            <step name="ElvesEndTurn" delegate="endTurn" player="Elves" display="Turn Complete"/>
 
             <step name="PiratesCombatMove" delegate="move" player="Pirates" display="Combat Move"/>
             <step name="PiratesBattle" delegate="battle" player="Pirates" display="Combat"/>
@@ -1582,6 +1555,109 @@
             <stepProperty name="removeAirThatCanNotLand" value="false"/>
             </step>
             <step name="OgresEndTurn" delegate="endTurn" player="Ogres" display="Turn Complete"/>
+
+            <step name="LioniaCombatMove" delegate="move" player="Lionia" display="Combat Move"/>
+            <step name="LioniaBattle" delegate="battle" player="Lionia" display="Combat"/>
+            <step name="LioniaNonCombatMove" delegate="move" player="Lionia" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="LioniaPurchase" delegate="purchase" player="Lionia" display="Purchase Units"/>
+            <step name="LioniaPlace" delegate="place" player="Lionia" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="LioniaEndTurn" delegate="endTurn" player="Lionia" display="Turn Complete"/>
+
+                <step name="Fake09" delegate="fake04" player="Pirates" display="Ongoing Battle"/>
+
+            <step name="DwarvesCombatMove" delegate="move" player="Dwarves" display="Combat Move"/>
+            <step name="DwarvesBattle" delegate="battle" player="Dwarves" display="Combat"/>
+            <step name="DwarvesNonCombatMove" delegate="move" player="Dwarves" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="DwarvesPurchase" delegate="purchase" player="Dwarves" display="Purchase Units"/>
+            <step name="DwarvesPlace" delegate="place" player="Dwarves" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="DwarvesEndTurn" delegate="endTurn" player="Dwarves" display="Turn Complete"/>
+
+                <step name="Fake10" delegate="fake05" player="Pirates" display="Ongoing Battle"/>
+
+            <step name="ElvesCombatMove" delegate="move" player="Elves" display="Combat Move"/>
+            <step name="ElvesBattle" delegate="battle" player="Elves" display="Combat"/>
+            <step name="ElvesNonCombatMove" delegate="move" player="Elves" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="ElvesPurchase" delegate="purchase" player="Elves" display="Purchase Units"/>
+            <step name="ElvesPlace" delegate="place" player="Elves" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="ElvesEndTurn" delegate="endTurn" player="Elves" display="Turn Complete"/>
+
+            <step name="Pirates2CombatMove" delegate="move" player="Pirates" display="Combat Move"/>
+            <step name="Pirates2Battle" delegate="battle" player="Pirates" display="Combat"/>
+            <step name="Pirates2NonCombatMove" delegate="move" player="Pirates" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Pirates2Purchase" delegate="purchase" player="Pirates" display="Purchase Units"/>
+            <step name="Pirates2Place" delegate="place" player="Pirates" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Pirates2EndTurn" delegate="endTurn" player="Pirates" display="Turn Complete"/>
+
+            <step name="Barbarians2CombatMove" delegate="move" player="Barbarians" display="Combat Move"/>
+            <step name="Barbarians2Battle" delegate="battle" player="Barbarians" display="Combat"/>
+            <step name="Barbarians2NonCombatMove" delegate="move" player="Barbarians" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Barbarians2Purchase" delegate="purchase" player="Barbarians" display="Purchase Units"/>
+            <step name="Barbarians2Place" delegate="place" player="Barbarians" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Barbarians2EndTurn" delegate="endTurn" player="Barbarians" display="Turn Complete"/>
+
+            <step name="Murlocs2CombatMove" delegate="move" player="Murlocs" display="Combat Move"/>
+            <step name="Murlocs2Battle" delegate="battle" player="Murlocs" display="Combat"/>
+            <step name="Murlocs2NonCombatMove" delegate="move" player="Murlocs" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Murlocs2Purchase" delegate="purchase" player="Murlocs" display="Purchase Units"/>
+            <step name="Murlocs2Place" delegate="place" player="Murlocs" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Murlocs2EndTurn" delegate="endTurn" player="Murlocs" display="Turn Complete"/>
+
+            <step name="Kobolds2CombatMove" delegate="move" player="Kobolds" display="Combat Move"/>
+            <step name="Kobolds2Battle" delegate="battle" player="Kobolds" display="Combat"/>
+            <step name="Kobolds2NonCombatMove" delegate="move" player="Kobolds" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Kobolds2Purchase" delegate="purchase" player="Kobolds" display="Purchase Units"/>
+            <step name="Kobolds2Place" delegate="place" player="Kobolds" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Kobolds2EndTurn" delegate="endTurn" player="Kobolds" display="Turn Complete"/>
+
+            <step name="Gnolls2CombatMove" delegate="move" player="Gnolls" display="Combat Move"/>
+            <step name="Gnolls2Battle" delegate="battle" player="Gnolls" display="Combat"/>
+            <step name="Gnolls2NonCombatMove" delegate="move" player="Gnolls" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Gnolls2Purchase" delegate="purchase" player="Gnolls" display="Purchase Units"/>
+            <step name="Gnolls2Place" delegate="place" player="Gnolls" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Gnolls2EndTurn" delegate="endTurn" player="Gnolls" display="Turn Complete"/>
+
+            <step name="Ogres2CombatMove" delegate="move" player="Ogres" display="Combat Move"/>
+            <step name="Ogres2Battle" delegate="battle" player="Ogres" display="Combat"/>
+            <step name="Ogres2NonCombatMove" delegate="move" player="Ogres" display="Non Combat Move">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Ogres2Purchase" delegate="purchase" player="Ogres" display="Purchase Units"/>
+            <step name="Ogres2Place" delegate="place" player="Ogres" display="Place Units">
+            <stepProperty name="removeAirThatCanNotLand" value="false"/>
+            </step>
+            <step name="Ogres2EndTurn" delegate="endTurn" player="Ogres" display="Turn Complete"/>
 
             <step name="endRoundStep" delegate="endRound" display="Round Complete"/>
         </sequence>
@@ -1765,51 +1841,51 @@
             <result resourceOrUnit="Giant-Eagle" quantity="1"/>
         </productionRule>
         <productionRule name="buyGreen-Dragon">
-            <cost resource="PUs" quantity="20"/>
+            <cost resource="PUs" quantity="100"/>
             <result resourceOrUnit="Green-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyBrown-Dragon">
-            <cost resource="PUs" quantity="25"/>
+            <cost resource="PUs" quantity="120"/>
             <result resourceOrUnit="Brown-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyWater-Dragon">
-            <cost resource="PUs" quantity="30"/>
+            <cost resource="PUs" quantity="140"/>
             <result resourceOrUnit="Water-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyWhite-Dragon">
-            <cost resource="PUs" quantity="35"/>
+            <cost resource="PUs" quantity="160"/>
             <result resourceOrUnit="White-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyBlue-Dragon">
-            <cost resource="PUs" quantity="40"/>
+            <cost resource="PUs" quantity="180"/>
             <result resourceOrUnit="Blue-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyRed-Dragon">
-            <cost resource="PUs" quantity="45"/>
+            <cost resource="PUs" quantity="200"/>
             <result resourceOrUnit="Red-Dragon" quantity="1"/>
         </productionRule>
        <productionRule name="buyYoung-Green-Dragon">
-            <cost resource="PUs" quantity="8"/>
+            <cost resource="PUs" quantity="100"/>
             <result resourceOrUnit="Young-Green-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Brown-Dragon">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="120"/>
             <result resourceOrUnit="Young-Brown-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Water-Dragon">
-            <cost resource="PUs" quantity="12"/>
+            <cost resource="PUs" quantity="140"/>
             <result resourceOrUnit="Young-Water-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-White-Dragon">
-            <cost resource="PUs" quantity="14"/>
+            <cost resource="PUs" quantity="160"/>
             <result resourceOrUnit="Young-White-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Blue-Dragon">
-            <cost resource="PUs" quantity="16"/>
+            <cost resource="PUs" quantity="180"/>
             <result resourceOrUnit="Young-Blue-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Red-Dragon">
-            <cost resource="PUs" quantity="18"/>
+            <cost resource="PUs" quantity="200"/>
             <result resourceOrUnit="Young-Red-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyTransport-Ship">
@@ -1904,63 +1980,63 @@
             <result resourceOrUnit="City" quantity="1"/>
         </productionRule>
         <productionRule name="buyCapital-City">
-            <cost resource="PUs" quantity="1"/>
+            <cost resource="PUs" quantity="100"/>
             <result resourceOrUnit="Capital-City" quantity="1"/>
         </productionRule>
         <productionRule name="buyGnoll">
-            <cost resource="PUs" quantity="45"/>
+            <cost resource="PUs" quantity="180"/>
             <result resourceOrUnit="Gnoll" quantity="1"/>
         </productionRule>
         <productionRule name="buyOgre">
-            <cost resource="PUs" quantity="50"/>
+            <cost resource="PUs" quantity="200"/>
             <result resourceOrUnit="Ogre" quantity="1"/>
         </productionRule>
         <productionRule name="buyPirate">
-            <cost resource="PUs" quantity="40"/>
+            <cost resource="PUs" quantity="160"/>
             <result resourceOrUnit="Pirate" quantity="1"/>
         </productionRule>
         <productionRule name="buyMurloc">
-            <cost resource="PUs" quantity="35"/>
+            <cost resource="PUs" quantity="140"/>
             <result resourceOrUnit="Murloc" quantity="1"/>
         </productionRule>
         <productionRule name="buyKobold">
-            <cost resource="PUs" quantity="45"/>
+            <cost resource="PUs" quantity="180"/>
             <result resourceOrUnit="Kobold" quantity="1"/>
         </productionRule>
         <productionRule name="buyBarbarian">
-            <cost resource="PUs" quantity="45"/>
+            <cost resource="PUs" quantity="180"/>
             <result resourceOrUnit="Barbarian" quantity="1"/>
         </productionRule>
         <productionRule name="buyPirate-Boat">
-            <cost resource="PUs" quantity="45"/>
+            <cost resource="PUs" quantity="180"/>
             <result resourceOrUnit="Pirate-Boat" quantity="1"/>
         </productionRule>
         <productionRule name="buyPirate-Ship">
-            <cost resource="PUs" quantity="55"/>
+            <cost resource="PUs" quantity="220"/>
             <result resourceOrUnit="Pirate-Ship" quantity="1"/>
         </productionRule>
         <productionRule name="buyPirate-Hideout">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Pirate-Hideout" quantity="1"/>
         </productionRule>
         <productionRule name="buyOgre-Village">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Ogre-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyMurloc-Village">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Murloc-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyKobold-Village">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Kobold-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyBarbarian-Village">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Barbarian-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyGnoll-Village">
-            <cost resource="PUs" quantity="10"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Gnoll-Village" quantity="1"/>
         </productionRule>
         <productionRule name="buyHalflings">
@@ -1988,11 +2064,11 @@
             <result resourceOrUnit="Crusaders" quantity="1"/>
         </productionRule>
         <productionRule name="buyFish">
-            <cost resource="PUs" quantity="20"/>
+            <cost resource="PUs" quantity="10"/>
             <result resourceOrUnit="Fish" quantity="1"/>
         </productionRule>
         <productionRule name="buyWhales">
-            <cost resource="PUs" quantity="30"/>
+            <cost resource="PUs" quantity="15"/>
             <result resourceOrUnit="Whales" quantity="1"/>
         </productionRule>
         <productionRule name="buySheep">
@@ -2972,6 +3048,7 @@
             <option name="constructionType" value="small defensive building"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
+            <option name="tuv" value="5"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Castle" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -2979,6 +3056,7 @@
             <option name="constructionType" value="large defensive building"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
+            <option name="tuv" value="10"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Village" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -2989,6 +3067,7 @@
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
             <option name="repairsUnits" value="2:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="1"/>
+            <option name="tuv" value="5"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Town" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -3001,7 +3080,7 @@
             <option name="maxConstructionsPerTypePerTerr" value="2"/>
             <option name="repairsUnits" value="3:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="2"/>
-            <option name="tuv" value="20"/>
+            <option name="tuv" value="10"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="City" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -3014,7 +3093,7 @@
             <option name="maxConstructionsPerTypePerTerr" value="2"/>
             <option name="repairsUnits" value="4:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="3"/>
-            <option name="tuv" value="30"/>
+            <option name="tuv" value="15"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Capital-City" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isFactory" value="true"/>
@@ -3025,7 +3104,6 @@
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
             <option name="repairsUnits" value="4:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="createsResourcesList" value="-15:PUs"/>
-            <option name="tuv" value="100"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Fish" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="isInfrastructure" value="true"/>
@@ -5286,106 +5364,238 @@
         </attachment>
 
 <!-- The dragons spawn on the map -->
+        <attachment name="conditionAttachmentSpawnDragon_1" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="rounds" value="1"/>
+        </attachment>        
         <attachment name="conditionAttachmentSpawnDragon1" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="rounds" value="1"/>
+            <option name="switch" value="true"/>
+        </attachment>       
+        <attachment name="conditionAttachmentNotSpawnDragon1" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon1"/>
+            <option name="invert" value="true"/>
+        </attachment>       
+        <attachment name="conditionAttachmentSpawnDragon2" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="switch" value="true"/>
+        </attachment>       
+        <attachment name="conditionAttachmentNotSpawnDragon2" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon2"/>
+            <option name="invert" value="true"/>
+        </attachment>       
+        <attachment name="conditionAttachmentSpawnDragon3" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="switch" value="true"/>
+        </attachment>        
+        <attachment name="conditionAttachmentNotSpawnDragon3" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon3"/>
+            <option name="invert" value="true"/>
+        </attachment>        
+        <attachment name="conditionAttachmentSpawnDragon4" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="switch" value="true"/>
+        </attachment>       
+        <attachment name="conditionAttachmentNotSpawnDragon4" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon4"/>
+            <option name="invert" value="true"/>
+        </attachment>        
+        <attachment name="conditionAttachmentSpawnDragon5" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="switch" value="true"/>
+        </attachment>        
+        <attachment name="conditionAttachmentNotSpawnDragon5" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
+            <option name="invert" value="true"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon2" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="rounds" value="1"/>
+        <attachment name="triggerAttachmentNew_Water_Dragon_5" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="players" value="Pirates"/>
+            <option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachmentSpawnDragon5"/>
+            <option name="playerProperty" value="switch" count="false"/>
+            <option name="when" value="after:PiratesNonCombatMove"/>
+            <option name="chance" value="1:2"/>
+            <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon3" attachTo="Gnolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="rounds" value="2"/>
+        <attachment name="triggerAttachmentNew_Water_Dragon_4" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="players" value="Pirates"/>
+            <option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachmentSpawnDragon4"/>
+            <option name="playerProperty" value="switch" count="false"/>
+            <option name="activateTrigger" value="triggerAttachmentNew_Water_Dragon_5:1:false:false:false:true"/>
+            <option name="when" value="after:PiratesNonCombatMove"/>
+            <option name="chance" value="2:3"/>
+            <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon4" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="rounds" value="2"/>
+        <attachment name="triggerAttachmentNew_Water_Dragon_3" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="players" value="Pirates"/>
+            <option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachmentSpawnDragon3"/>
+            <option name="playerProperty" value="switch" count="false"/>
+            <option name="activateTrigger" value="triggerAttachmentNew_Water_Dragon_4:1:false:false:false:true"/>
+            <option name="when" value="after:PiratesNonCombatMove"/>
+            <option name="chance" value="3:4"/>
+            <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon5" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="rounds" value="3"/>
+        <attachment name="triggerAttachmentNew_Water_Dragon_2" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">            
+            <option name="players" value="Pirates"/>
+            <option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachmentSpawnDragon2"/>
+            <option name="playerProperty" value="switch" count="false"/>
+            <option name="activateTrigger" value="triggerAttachmentNew_Water_Dragon_3:1:false:false:false:true"/>
+            <option name="when" value="after:PiratesNonCombatMove"/>
+            <option name="chance" value="4:5"/>
+            <option name="uses" value="1"/>
         </attachment>
-        <attachment name="conditionAttachmentSpawnDragon6" attachTo="Barbarians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-            <option name="rounds" value="3"/>
+        <attachment name="triggerAttachmentNew_Water_Dragon_1" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentSpawnDragon_1"/>
+            <option name="players" value="Pirates"/>
+            <option name="playerAttachmentName" value="RulesAttachment" count="conditionAttachmentSpawnDragon1"/>
+            <option name="playerProperty" value="switch" count="false"/>
+            <option name="activateTrigger" value="triggerAttachmentNew_Water_Dragon_2:1:false:false:false:true"/>
+            <option name="when" value="after:PiratesNonCombatMove"/>
+            <option name="chance" value="5:6"/>
+            <option name="uses" value="1"/>
         </attachment>
-
-        <attachment name="triggerAttachmentNew_Water_Dragon" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+        <attachment name="triggerAttachmentPlace_Water_Dragon_1" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
             <option name="conditions" value="conditionAttachmentSpawnDragon1"/>
             <option name="placement" value="Sea Zone 33:Young-Water-Dragon"/>
+            <option name="placement" value="Sea Zone 33:Pirate-Ship"/>
+            <option name="placement" value="Sea Zone 33:Pirate-Boat"/>
+            <option name="players" value="Pirates"/>
+            <option name="when" value="before:PiratesPurchase"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentPlace_Water_Dragon_2" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentNotSpawnDragon1:conditionAttachmentSpawnDragon2"/>
+            <option name="placement" value="Sea Zone 35:Young-Water-Dragon"/>
+            <option name="placement" value="Sea Zone 35:Pirate-Ship"/>
+            <option name="placement" value="Sea Zone 35:Pirate-Boat"/>
+            <option name="players" value="Pirates"/>
+            <option name="when" value="before:PiratesPurchase"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentPlace_Water_Dragon_3" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentNotSpawnDragon1:conditionAttachmentNotSpawnDragon2:conditionAttachmentSpawnDragon3"/>
+            <option name="placement" value="Sea Zone 40:Young-Water-Dragon"/>
+            <option name="placement" value="Sea Zone 40:Pirate-Ship"/>
+            <option name="placement" value="Sea Zone 40:Pirate-Boat"/>
+            <option name="players" value="Pirates"/>
+            <option name="when" value="before:PiratesPurchase"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentPlace_Water_Dragon_4" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentNotSpawnDragon1:conditionAttachmentNotSpawnDragon2:conditionAttachmentNotSpawnDragon3:conditionAttachmentSpawnDragon4"/>
+            <option name="placement" value="Sea Zone 46:Young-Water-Dragon"/>
+            <option name="placement" value="Sea Zone 46:Pirate-Ship"/>
+            <option name="placement" value="Sea Zone 46:Pirate-Boat"/>
+            <option name="players" value="Pirates"/>
+            <option name="when" value="before:PiratesPurchase"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentPlace_Water_Dragon_5" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentNotSpawnDragon1:conditionAttachmentNotSpawnDragon2:conditionAttachmentNotSpawnDragon3:conditionAttachmentNotSpawnDragon4:conditionAttachmentSpawnDragon5"/>
+            <option name="placement" value="Sea Zone 12:Young-Water-Dragon"/>
+            <option name="placement" value="Sea Zone 12:Pirate-Ship"/>
+            <option name="placement" value="Sea Zone 12:Pirate-Boat"/>
+            <option name="players" value="Pirates"/>
+            <option name="when" value="before:PiratesPurchase"/>
+            <option name="uses" value="1"/>
+        </attachment>
+        <attachment name="triggerAttachmentPlace_Water_Dragon_6" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
+            <option name="conditions" value="conditionAttachmentNotSpawnDragon1:conditionAttachmentNotSpawnDragon2:conditionAttachmentNotSpawnDragon3:conditionAttachmentNotSpawnDragon4:conditionAttachmentNotSpawnDragon5"/>
+            <option name="placement" value="Sea Zone 71:Young-Water-Dragon"/>
+            <option name="placement" value="Sea Zone 71:Pirate-Ship"/>
+            <option name="placement" value="Sea Zone 71:Pirate-Boat"/>
             <option name="players" value="Pirates"/>
             <option name="when" value="before:PiratesPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Water_Dragon_Note" attachTo="Pirates" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon1"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_1"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
             <option name="when" value="after:PiratesPlace"/>
             <option name="notification" value="DragonNote1"/>
             <option name="uses" value="1"/>
         </attachment>
+        
+        <attachment name="conditionAttachmentSpawnDragon_2" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="rounds" value="1"/>
+        </attachment>
+        <attachment name="conditionAttachmentSpawnDragon_3" attachTo="Gnolls" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="rounds" value="2"/>
+        </attachment>
+        <attachment name="conditionAttachmentSpawnDragon_4" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="rounds" value="2"/>
+        </attachment>
+        <attachment name="conditionAttachmentSpawnDragon_5" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="rounds" value="3"/>
+        </attachment>
+        <attachment name="conditionAttachmentSpawnDragon_6" attachTo="Barbarians" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
+            <option name="rounds" value="3"/>
+        </attachment>
         <attachment name="triggerAttachmentNew_Green_Dragon" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon2"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_2"/>
             <option name="purchase" value="Young-Green-Dragon" count="1"/>
+            <option name="purchase" value="Murloc" count="1"/>
             <option name="players" value="Murlocs"/>
-            <option name="when" value="before:MurlocsPurchase"/>
+            <option name="when" value="before:Murlocs2Purchase"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Green_Dragon_Note" attachTo="Murlocs" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon2"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_2"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
-            <option name="when" value="after:MurlocsPlace"/>
+            <option name="when" value="after:Murlocs2Place"/>
             <option name="notification" value="DragonNote2"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Brown_Dragon" attachTo="Gnolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon3"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_3"/>
             <option name="purchase" value="Young-Brown-Dragon" count="1"/>
+            <option name="purchase" value="Gnoll" count="1"/>
             <option name="players" value="Gnolls"/>
             <option name="when" value="before:GnollsPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Brown_Dragon_Note" attachTo="Gnolls" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon3"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_3"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
             <option name="when" value="after:GnollsPlace"/>
             <option name="notification" value="DragonNote3"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_White_Dragon" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon4"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_4"/>
             <option name="purchase" value="Young-White-Dragon" count="1"/>
+            <option name="purchase" value="Ogre" count="1"/>
             <option name="players" value="Ogres"/>
-            <option name="when" value="before:OgresPurchase"/>
+            <option name="when" value="before:Ogres2Purchase"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_White_Dragon_Note" attachTo="Ogres" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon4"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_4"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
-            <option name="when" value="after:OgresPlace"/>
+            <option name="when" value="after:Ogres2Place"/>
             <option name="notification" value="DragonNote4"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Blue_Dragon" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_5"/>
             <option name="purchase" value="Young-Blue-Dragon" count="1"/>
+            <option name="purchase" value="Kobold" count="1"/>
             <option name="players" value="Kobolds"/>
             <option name="when" value="before:KoboldsPurchase"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Blue_Dragon_Note" attachTo="Kobolds" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon5"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_5"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
             <option name="when" value="after:KoboldsPlace"/>
             <option name="notification" value="DragonNote5"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Red_Dragon" attachTo="Barbarians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon6"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_6"/>
             <option name="purchase" value="Young-Red-Dragon" count="1"/>
+            <option name="purchase" value="Barbarian" count="1"/>
             <option name="players" value="Barbarians"/>
-            <option name="when" value="before:BarbariansPurchase"/>
+            <option name="when" value="before:Barbarians2Purchase"/>
             <option name="uses" value="1"/>
         </attachment>
         <attachment name="triggerAttachmentNew_Red_Dragon_Note" attachTo="Barbarians" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
-            <option name="conditions" value="conditionAttachmentSpawnDragon6"/>
+            <option name="conditions" value="conditionAttachmentSpawnDragon_6"/>
             <option name="players" value="Crowton:Elves:Greenskins:Lionia:Undead:Dwarves"/>
-            <option name="when" value="after:BarbariansPlace"/>
+            <option name="when" value="after:Barbarians2Place"/>
             <option name="notification" value="DragonNote6"/>
             <option name="uses" value="1"/>
         </attachment>
@@ -5437,7 +5647,6 @@
         </attachment>
         <attachment name="conditionAttachment_New_Small-Ship_in_Glassville" attachTo="Crowton" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
             <option name="alliedOwnershipTerritories" value="1:Glassville"/>
-            <!-- <option name="rounds" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96"/> -->
             <option name="rounds" value="3:6:9:12:15:18:21:24:27:30:33:36:39:42:45:48:51:54:57:60:63:66:69:72:75:78:81:84:87:90:93:96:99"/>
         </attachment>
         <attachment name="triggerAttachment_Auxiliaries_in_Stormwood" attachTo="Crowton" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -6809,198 +7018,206 @@
             <territoryOwner territory="Sea Zone 72" owner="Greenskins"/>
         </ownerInitialize>
         <unitInitialize>
-            <unitPlacement unitType="Pirate-Hideout" territory="Oorsik Island" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate" territory="Oorsik Island" quantity="2" owner="Pirates"/>
-            <unitPlacement unitType="Pirate-Hideout" territory="Buccan Refuge" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate" territory="Buccan Refuge" quantity="2" owner="Pirates"/>
-            <unitPlacement unitType="Pirate-Hideout" territory="Whitebone Island" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate" territory="Whitebone Island" quantity="2" owner="Pirates"/>
-            <unitPlacement unitType="Pirate-Hideout" territory="Drake Island" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate" territory="Drake Island" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate-Hideout" territory="Bluebeard Island" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate" territory="Bluebeard Island" quantity="2" owner="Pirates"/>
-            <unitPlacement unitType="Ogre" territory="Arctic Zone 17" quantity="2" owner="Ogres"/>
-            <unitPlacement unitType="Ogre-Village" territory="Arctic Zone 17" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Ogre" territory="Hinderland Settlement" quantity="2" owner="Ogres"/>
-            <unitPlacement unitType="Ogre-Village" territory="Hinderland Settlement" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Village" territory="Blackwell" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Blackwell" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Kobold-Village" territory="Gillshore" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Kobold" territory="Gillshore" quantity="2" owner="Kobolds"/>
-            <unitPlacement unitType="Lgt-Cavalry" territory="Forsaken Mountains" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Fort" territory="Forsaken Mountains" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Capital-City" territory="Necroloft" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Hvy-Infantry" territory="Necroloft" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Castle" territory="Necroloft" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Spearmen" territory="Necroloft" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Necroloft" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Gnoll" territory="Hexmire" quantity="2" owner="Gnolls"/>
-            <unitPlacement unitType="Gnoll-Village" territory="Hexmire" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Murloc" territory="Hellbrook" quantity="3" owner="Murlocs"/>
-            <unitPlacement unitType="Murloc-Village" territory="Hellbrook" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Barbarian-Village" territory="Duskwick" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Barbarian" territory="Duskwick" quantity="2" owner="Barbarians"/>
-            <unitPlacement unitType="Castle" territory="Grimholt" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Lgt-Cavalry" territory="Freegrass" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Fort" territory="Freegrass" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Barbarian-Village" territory="Illyria" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Barbarian" territory="Illyria" quantity="2" owner="Barbarians"/>
-            <unitPlacement unitType="Capital-City" territory="Lionport" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Hvy-Infantry" territory="Lionport" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Castle" territory="Lionport" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Spearmen" territory="Lionport" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Lionport" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Village" territory="Millshire" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Millshire" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Murloc" territory="Morassia" quantity="3" owner="Murlocs"/>
-            <unitPlacement unitType="Murloc-Village" territory="Morassia" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Gnoll" territory="Samarkum" quantity="2" owner="Gnolls"/>
-            <unitPlacement unitType="Gnoll-Village" territory="Samarkum" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Castle" territory="Scavenberg" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Kobold-Village" territory="Goldenheim" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Kobold" territory="Goldenheim" quantity="2" owner="Kobolds"/>
-            <unitPlacement unitType="Murloc" territory="Dathiwatch" quantity="3" owner="Murlocs"/>
-            <unitPlacement unitType="Murloc-Village" territory="Dathiwatch" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Capital-City" territory="Ironhorn" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Hvy-Infantry" territory="Ironhorn" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Castle" territory="Ironhorn" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Spearmen" territory="Ironhorn" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Ironhorn" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Faranwall" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Kobold-Village" territory="Mithrildon" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Kobold" territory="Mithrildon" quantity="2" owner="Kobolds"/>
-            <unitPlacement unitType="Village" territory="Dol Ulum" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Fort" territory="Dol Ulum" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Lgt-Cavalry" territory="Dol Ulum" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Ogre" territory="Silverdeep" quantity="2" owner="Ogres"/>
-            <unitPlacement unitType="Ogre-Village" territory="Silverdeep" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Castle" territory="Silverdeep" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Ogre" territory="Ogreville" quantity="2" owner="Ogres"/>
-            <unitPlacement unitType="Ogre-Village" territory="Ogreville" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Capital-City" territory="Orcengor" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Hvy-Infantry" territory="Orcengor" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Castle" territory="Orcengor" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Spearmen" territory="Orcengor" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Orcengor" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Village" territory="Rackelton" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Rackelton" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Lgt-Cavalry" territory="Kargol Keep" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Fort" territory="Kargol Keep" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Barbarian-Village" territory="Bahars Landing" quantity="1" owner="Barbarians"/>
             <unitPlacement unitType="Barbarian" territory="Bahars Landing" quantity="2" owner="Barbarians"/>
-            <unitPlacement unitType="Castle" territory="Surigard" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Castle" territory="Baldor Castle" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Gnoll" territory="Ponticor" quantity="2" owner="Gnolls"/>
-            <unitPlacement unitType="Gnoll-Village" territory="Ponticor" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Murloc" territory="Trinity Coast" quantity="3" owner="Murlocs"/>
-            <unitPlacement unitType="Murloc-Village" territory="Trinity Coast" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Village" territory="Durlan North Coast" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Durlan North Coast" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Capital-City" territory="Athondir" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Hvy-Infantry" territory="Athondir" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Castle" territory="Athondir" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Spearmen" territory="Athondir" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Athondir" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Lgt-Cavalry" territory="Durlan Steppes" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Fort" territory="Durlan Steppes" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Kobold-Village" territory="Oorsik Tirith" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Kobold" territory="Oorsik Tirith" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Barbarian-Village" territory="Kallingdor" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian" territory="Duskwick" quantity="2" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian" territory="Farhaven" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian" territory="Illyria" quantity="2" owner="Barbarians"/>
             <unitPlacement unitType="Barbarian" territory="Kallingdor" quantity="2" owner="Barbarians"/>
-            <unitPlacement unitType="Ogre" territory="Huntingwath" quantity="2" owner="Ogres"/>
-            <unitPlacement unitType="Ogre-Village" territory="Huntingwath" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Ogre" territory="Gelidost" quantity="2" owner="Ogres"/>
-            <unitPlacement unitType="Ogre-Village" territory="Gelidost" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Barbarian-Village" territory="Winterash" quantity="1" owner="Barbarians"/>
             <unitPlacement unitType="Barbarian" territory="Winterash" quantity="2" owner="Barbarians"/>
-            <unitPlacement unitType="Lgt-Cavalry" territory="Oldengard" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Fort" territory="Oldengard" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Capital-City" territory="Stormwood" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Hvy-Infantry" territory="Stormwood" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Castle" territory="Stormwood" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Spearmen" territory="Stormwood" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Stormwood" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Village" territory="Glassville" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Lgt-Infantry" territory="Glassville" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Pirate-Boat" territory="Sea Zone 6" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Barbarian-Village" territory="Bahars Landing" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian-Village" territory="Duskwick" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian-Village" territory="Farhaven" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian-Village" territory="Illyria" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian-Village" territory="Kallingdor" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Barbarian-Village" territory="Winterash" quantity="1" owner="Barbarians"/>
             <unitPlacement unitType="Bireme" territory="Sea Zone 8" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Capital-City" territory="Athondir" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Capital-City" territory="Ironhorn" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Capital-City" territory="Lionport" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Capital-City" territory="Necroloft" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Capital-City" territory="Orcengor" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Capital-City" territory="Stormwood" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Castle" territory="Athondir" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Castle" territory="Baldor Castle" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Castle" territory="Grimholt" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Castle" territory="Ironhorn" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Castle" territory="Lionport" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Castle" territory="Necroloft" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Castle" territory="Orcengor" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Castle" territory="Scavenberg" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Castle" territory="Silverdeep" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Castle" territory="Stormwood" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Castle" territory="Surigard" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Cattle" territory="Badlands" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Cattle" territory="Bahars Landing" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Cattle" territory="Crystal Strand" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Cattle" territory="Kallingdor" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Cattle" territory="Lionian Outback" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Cattle" territory="North Savanna" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Cattle" territory="Slavebridge" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Fort" territory="Dol Ulum" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Fort" territory="Durlan Steppes" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Fort" territory="Forsaken Mountains" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Fort" territory="Freegrass" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Fort" territory="Kargol Keep" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Fort" territory="Oldengard" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Gnoll" territory="Hexmire" quantity="2" owner="Gnolls"/>
+            <unitPlacement unitType="Gnoll" territory="Ponticor" quantity="2" owner="Gnolls"/>
+            <unitPlacement unitType="Gnoll" territory="Samarkum" quantity="2" owner="Gnolls"/>
+            <unitPlacement unitType="Gnoll-Village" territory="Hexmire" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Gnoll-Village" territory="Ponticor" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Gnoll-Village" territory="Samarkum" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Hvy-Infantry" territory="Athondir" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Hvy-Infantry" territory="Ironhorn" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Hvy-Infantry" territory="Lionport" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Hvy-Infantry" territory="Necroloft" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Hvy-Infantry" territory="Orcengor" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Hvy-Infantry" territory="Stormwood" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Kobold" territory="Gillshore" quantity="2" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold" territory="Goldenheim" quantity="2" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold" territory="Mithrildon" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold" territory="Oorsik Tirith" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold-Village" territory="Gillshore" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold-Village" territory="Goldenheim" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold-Village" territory="Mithrildon" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Kobold-Village" territory="Oorsik Tirith" quantity="1" owner="Kobolds"/>
             <unitPlacement unitType="Large-Ship" territory="Sea Zone 22" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Pirate-Ship" territory="Sea Zone 34" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Monoreme" territory="Sea Zone 31" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Pirate-Ship" territory="Sea Zone 37" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Pirate-Ship" territory="Sea Zone 47" quantity="1" owner="Pirates"/>
             <unitPlacement unitType="Large-Ship" territory="Sea Zone 51" quantity="1" owner="Undead"/>
             <unitPlacement unitType="Large-Ship" territory="Sea Zone 56" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Pirate-Boat" territory="Sea Zone 69" quantity="1" owner="Pirates"/>
-            <unitPlacement unitType="Monoreme" territory="Sea Zone 72" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Murloc" territory="Wetwood" quantity="3" owner="Murlocs"/>
-            <unitPlacement unitType="Murloc-Village" territory="Wetwood" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Zombie-Plague" territory="Plagued Fields" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Barbarian" territory="Farhaven" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Barbarian-Village" territory="Farhaven" quantity="1" owner="Barbarians"/>
-
-            <unitPlacement unitType="Mine" territory="Strongnin" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Mine" territory="South Durlan Hills" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Mine" territory="Kargolia" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Mine" territory="Avalonia" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Mine" territory="Forsaken Mountains" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Mine" territory="Faranwall" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Mine" territory="Silverdeep" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Lgt-Cavalry" territory="Dol Ulum" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Lgt-Cavalry" territory="Durlan Steppes" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Lgt-Cavalry" territory="Forsaken Mountains" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Lgt-Cavalry" territory="Freegrass" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Lgt-Cavalry" territory="Kargol Keep" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Lgt-Cavalry" territory="Oldengard" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Athondir" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Blackwell" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Durlan North Coast" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Faranwall" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Glassville" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Ironhorn" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Lionport" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Millshire" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Necroloft" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Orcengor" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Rackelton" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Lgt-Infantry" territory="Stormwood" quantity="1" owner="Crowton"/>
             <unitPlacement unitType="Mine" territory="Adamant Mines" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Mine" territory="Avalonia" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Mine" territory="Bridge of No Return" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Mine" territory="East Foothills" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Mine" territory="Faranwall" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Mine" territory="Farhaven" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Mine" territory="Forsaken Mountains" quantity="1" owner="Undead"/>
             <unitPlacement unitType="Mine" territory="Godheim" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Mine" territory="Kargolia" quantity="1" owner="Greenskins"/>
             <unitPlacement unitType="Mine" territory="Lost Mountains" quantity="1" owner="Murlocs"/>
             <unitPlacement unitType="Mine" territory="Mount Myrin" quantity="1" owner="Barbarians"/>
             <unitPlacement unitType="Mine" territory="Scavendeep" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Mine" territory="Bridge of No Return" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Mine" territory="East Foothills" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Mine" territory="White Slopes" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Mine" territory="Silverdeep" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Mine" territory="South Durlan Hills" quantity="1" owner="Elves"/>
             <unitPlacement unitType="Mine" territory="South Witching Mountains" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Mine" territory="Farhaven" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Sawmill" territory="Oldengard" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Sawmill" territory="Deldrach" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Sawmill" territory="Godheim Pass" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Sawmill" territory="Kingwood" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Mine" territory="Strongnin" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Mine" territory="White Slopes" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Monoreme" territory="Sea Zone 31" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Monoreme" territory="Sea Zone 72" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Murloc" territory="Dathiwatch" quantity="2" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc" territory="Hellbrook" quantity="2" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc" territory="Morassia" quantity="2" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc" territory="Trinity Coast" quantity="2" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc" territory="Wetwood" quantity="2" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc-Village" territory="Dathiwatch" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc-Village" territory="Hellbrook" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc-Village" territory="Morassia" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc-Village" territory="Trinity Coast" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Murloc-Village" territory="Wetwood" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Ogre" territory="Arctic Zone 17" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre" territory="Gelidost" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre" territory="Hinderland Settlement" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre" territory="Huntingwath" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre" territory="Ogreville" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre" territory="Silverdeep" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre-Village" territory="Arctic Zone 17" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre-Village" territory="Gelidost" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre-Village" territory="Hinderland Settlement" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre-Village" territory="Huntingwath" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre-Village" territory="Ogreville" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Ogre-Village" territory="Silverdeep" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Pirate" territory="Bluebeard Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate" territory="Buccan Refuge" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate" territory="Drake Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate" territory="Oorsik Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate" territory="Whitebone Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Boat" territory="Sea Zone 6" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Boat" territory="Sea Zone 69" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Hideout" territory="Bluebeard Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Hideout" territory="Buccan Refuge" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Hideout" territory="Drake Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Hideout" territory="Oorsik Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Hideout" territory="Whitebone Island" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Ship" territory="Sea Zone 34" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Ship" territory="Sea Zone 37" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Pirate-Ship" territory="Sea Zone 47" quantity="1" owner="Pirates"/>
+            <unitPlacement unitType="Sawmill" territory="Bahar Longcliff" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Sawmill" territory="Bahar Woods" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Sawmill" territory="Northern Baldoria" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Sawmill" territory="Bog of Eternal Stench" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Sawmill" territory="Dathic South" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Sawmill" territory="Dathiwatch" quantity="1" owner="Murlocs"/>
             <unitPlacement unitType="Sawmill" territory="Decaying Soils" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Sawmill" territory="Deldrach" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Sawmill" territory="Dolmarsh" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Sawmill" territory="East Savanna" quantity="1" owner="Kobolds"/>
             <unitPlacement unitType="Sawmill" territory="Gnomen Lowland" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Sawmill" territory="Oorsik Tirith" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Sawmill" territory="Godheim Pass" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Sawmill" territory="Greenshore" quantity="1" owner="Barbarians"/>
+            <unitPlacement unitType="Sawmill" territory="Greyhood Holdings" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Sawmill" territory="Hellbrook" quantity="1" owner="Murlocs"/>
             <unitPlacement unitType="Sawmill" territory="Hexmire" quantity="1" owner="Gnolls"/>
             <unitPlacement unitType="Sawmill" territory="Kallingholt" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Sawmill" territory="Kingwood" quantity="1" owner="Lionia"/>
             <unitPlacement unitType="Sawmill" territory="Lost Furlongs" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Sawmill" territory="Bahar Woods" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Sawmill" territory="Dathiwatch" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Sawmill" territory="East Savanna" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Sawmill" territory="Sinfjord" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Sawmill" territory="Bahar Longcliff" quantity="1" owner="Ogres"/>
-            <unitPlacement unitType="Sawmill" territory="Morassia" quantity="1" owner="Murlocs"/>
             <unitPlacement unitType="Sawmill" territory="Maragorn" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Windmill" territory="Fromont" quantity="1" owner="Crowton"/>
-            <unitPlacement unitType="Windmill" territory="Durlan South Coast" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Windmill" territory="North Goronmok" quantity="1" owner="Greenskins"/>
-            <unitPlacement unitType="Windmill" territory="Millshire" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Windmill" territory="Plagued Fields" quantity="1" owner="Undead"/>
-            <unitPlacement unitType="Windmill" territory="Kumbadur Hills" quantity="1" owner="Dwarves"/>
-            <unitPlacement unitType="Windmill" territory="Ponticor" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Windmill" territory="Samarkum" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Cattle" territory="Lionian Outback" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Cattle" territory="Kallingdor" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Cattle" territory="Bahars Landing" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Cattle" territory="North Savanna" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Cattle" territory="Badlands" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Cattle" territory="Slavebridge" quantity="1" owner="Barbarians"/>
-            <unitPlacement unitType="Cattle" territory="Crystal Strand" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Sheep" territory="Freegrass" quantity="1" owner="Lionia"/>
-            <unitPlacement unitType="Sheep" territory="Lakelot" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Sheep" territory="Rimdell" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Sheep" territory="Hexmire" quantity="1" owner="Gnolls"/>
-            <unitPlacement unitType="Sheep" territory="Durlan Steppes" quantity="1" owner="Elves"/>
-            <unitPlacement unitType="Sheep" territory="Halfling Meadows" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Sawmill" territory="Millshire" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Sawmill" territory="Morassia" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Sawmill" territory="Oldengard" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Sawmill" territory="Oorsik Forest" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Sawmill" territory="Oorsik Tirith" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Sawmill" territory="Sinfjord" quantity="1" owner="Kobolds"/>
             <unitPlacement unitType="Sheep" territory="Dathic Coast" quantity="1" owner="Murlocs"/>
-            <unitPlacement unitType="Sheep" territory="Garwald" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Sheep" territory="Hinderland Settlement" quantity="1" owner="Ogres"/>
             <unitPlacement unitType="Sheep" territory="Drake Peninsula" quantity="1" owner="Murlocs"/>
+            <unitPlacement unitType="Sheep" territory="Durlan Steppes" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Sheep" territory="Freegrass" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Sheep" territory="Garwald" quantity="1" owner="Kobolds"/>
+            <unitPlacement unitType="Sheep" territory="Halfling Meadows" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Sheep" territory="Hexmire" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Sheep" territory="Hinderland Settlement" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Sheep" territory="Lakelot" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Sheep" territory="Ogreville" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Sheep" territory="Rimdell" quantity="1" owner="Murlocs"/>
             <unitPlacement unitType="Sheep" territory="Safe Haven" quantity="1" owner="Kobolds"/>
             <unitPlacement unitType="Sheep" territory="Troglodyte Coast" quantity="1" owner="Kobolds"/>
-            <unitPlacement unitType="Sheep" territory="Ogreville" quantity="1" owner="Ogres"/>
+            <unitPlacement unitType="Spearmen" territory="Durlan North Coast" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Spearmen" territory="Ironhorn" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Spearmen" territory="Lionport" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Spearmen" territory="Necroloft" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Spearmen" territory="Orcengor" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Spearmen" territory="Stormwood" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Village" territory="Blackwell" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Village" territory="Dol Ulum" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Village" territory="Durlan North Coast" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Village" territory="Glassville" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Village" territory="Millshire" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Village" territory="Rackelton" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Windmill" territory="Durlan South Coast" quantity="1" owner="Elves"/>
+            <unitPlacement unitType="Windmill" territory="Fromont" quantity="1" owner="Crowton"/>
+            <unitPlacement unitType="Windmill" territory="Kumbadur Hills" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="Windmill" territory="Millshire" quantity="1" owner="Lionia"/>
+            <unitPlacement unitType="Windmill" territory="North Goronmok" quantity="1" owner="Greenskins"/>
+            <unitPlacement unitType="Windmill" territory="Plagued Fields" quantity="1" owner="Undead"/>
+            <unitPlacement unitType="Windmill" territory="Ponticor" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Windmill" territory="Samarkum" quantity="1" owner="Gnolls"/>
+            <unitPlacement unitType="Zombie-Plague" territory="Plagued Fields" quantity="1" owner="Undead"/>
         </unitInitialize>
 
         <resourceInitialize>
@@ -7265,7 +7482,7 @@
 
             
 
-            
+
 
             
 
@@ -7303,7 +7520,7 @@
 <br><span style="font-size:14px;color:FFFFFF;">Nations start out with 15 PU incomes, but they also have Capital-City expenses of 15 PUs.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Nations can only buy new units after expanding their land and raising their PU income.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Expect 2-3 rounds to pass before being able to buy new units.</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">Bought units can be placed in Villages (1 unit), Towns (2 units) and Cities (3 units).</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Bought units can be placed in Villages (1 unit), Towns (2 units) and Cities (3 units). These three types of settlements can only be placed on respectively 1 PU, 2 PU and 3 PU territories.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Units do not need to be placed in the same round as they are bought.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Each capital has a naval blockade zone. If enemies blockade this zone, PU income from all the surrounding territories may be lost.</span><br>
 <br>
@@ -7316,42 +7533,39 @@
 <br><span style="color:FFFFFF;">Air (most can carry characters around the map.)</span></li><br>
 <br><span style="color:FFFFFF;">Characters (give all above units att. and/or def. support. They are obtained automatically and for free throughout the game.)</span></li><br>
 <br><span style="color:FFFFFF;">Forts/Castles (give all above units def. support. They may be bought and placed in any owned territory, including newly conquered.)</span></li><br>
-<br><span style="color:FFFFFF;">Towers/Rams (only work against Forts/Castles and attackers can only make use of 1 of each. They may be bought and placed in any owned territory, including newly conquered.)</span></li><br>
+<br><span style="color:FFFFFF;">Towers/Rams (only work at Forts/Castles and attackers can only make use of 1 of each. They may be bought and placed in any owned territory, including newly conquered.)</span></li><br>
 <br><span style="color:FFFFFF;">Sea (can transport land units and do battle at sea.)</span></li>
 </ul>
-<br><span style="font-size:14px;color:FFFFFF;">Nations have the same land unit types.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Nations share the same land unit types.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Nations receive free land Auxiliaries in their capitals every round. An exception to this is the Undead. They only receive their Skeleton Auxiliaries every second round.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Nations receive free Generals, free Wizards and free Priestesses as the game progresses.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Nations have different air and sea unit types.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">All air units have a maximum build allowed. All, except the Greenskins, have the ability to transport characters by air. Only the Dwarves have the ability to transport Marines by air.</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">Young dragons will appear on the map. They are hostile to the six nations as they belong to the primitive races. However, young dragons can be captured in combat by defeating them. When young dragons are captured, they grown up to become regular dragons with multiple hit points. All types of dragons will weaken enemy units by inducing terror.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Young dragons will appear on the map. They are hostile to the six player nations as they belong to the primitive races. However, young dragons can be captured in combat by defeating their protecting master units. When young dragons are captured, they grown up to become regular dragons with multiple hit points. All types of dragons will weaken enemy units by inducing terror.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">A damaged dragon will heal 1 hit point per round. However, by flying it to an allied Village, Town or City, the dragon will heal an additional 1, 2 or 3 hit points.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Air units, including dragons, can fly around freely. They do not need to land in friendly territories by the end of a turn. They can even end up in and survive in sea territories. However, no air units are able to capture enemy territories on their own. They can only do this by carrying characters with them, or Marines in case of the dwarves.</span><br>
 <br>
 <br><b><span style="font-size:16px;color:FFFA74;">National Advantages:</span></b><br>
-<br><span style="font-size:14px;color:FFFFFF;">Crowton is an old and seafaring nation. A Small-Ship with a Marine is built at "Glassville" and added to the Crowton fleet every third round, but only as long as Crowton dominates the village.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Crowton is an old and seafaring nation. A Small-Ship with a Marine is built at "Glassville" and added to the Crowton fleet every third round, but only as long as Crowton dominates this village.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Elves can hold and protect the "Oorsik Forest". The native Wood Elves living there will in return give an endless supply of elven bowmen.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Greenskins have a free and endless supply of Warg Rider Rangers as long as they hold the "Warg Caves".</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Lionia and its people are adamant on destroying the undead threat to the world. Volunteer Crusaders will rally at the teleporting gate in the "Jade Mountains" as long as Lionia secures this mountain area.</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">Undead are in control of a deadly Zombie-Plague. The plague is airborne and creates undead zombies every turn. However, when the plague faces an enemy army, the enemies will try to eradicate it.</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">Dwarves can hold and protect the "Halfling Meadows" and "Gnome Lowlands". Halflings and Gnomes will in return give an endless supply of military auxiliary units.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Undead are in control of a deadly Zombie-Plague. The plague is airborne and creates undead Zombies every turn. However, when the plague faces an enemy army, the enemies will try to eradicate it.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Dwarves can hold and protect the "Halfling Meadows" and "Gnomen Lowland". Halflings and Gnomes will in return give an endless supply of military auxiliary units.</span><br>
 <br>
 <br><b><span style="font-size:16px;color:FFFA74;">Game Options:</span></b><br>
-<br><span style="font-size:14px;color:FFFFFF;">Music can be turned off by disabling Game - Sound Options - Start of Your Turn Control.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Music can be turned off by disabling the setting Game - Sound Options - Start of Your Turn Control.</span><br>
 <br>
 <br><b><span style="font-size:16px;color:FFFA74;">Credits:</span></b><br>
 <br><span style="font-size:14px;color:FFFFFF;">Map artwork credits goes to Gamera. He has allowed me to bring his drawing of a fantasy world to life in TripleA. Visit the his interesting art website at http://gammatelier.free.fr.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Shield dice images are made by TripleA community member Cernel.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Thanks to community members Redrum and Black_Elk for a lot of map testing, ideas and input.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Unit images are from various fantasy sources on the WWW.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Many sounds are from the Warcraft PC games.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Music is from the old Conan movies.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Map idea and design by Frostion</span><br>
 <br>
 </html>
-
-           
-            
-
             ]]>
             </value>
         </property>
