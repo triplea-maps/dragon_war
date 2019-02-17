@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.5"/>
+    <info name="Dragon War" version="1.2.6"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -1841,51 +1841,51 @@
             <result resourceOrUnit="Giant-Eagle" quantity="1"/>
         </productionRule>
         <productionRule name="buyGreen-Dragon">
-            <cost resource="PUs" quantity="100"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Green-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyBrown-Dragon">
-            <cost resource="PUs" quantity="120"/>
+            <cost resource="PUs" quantity="60"/>
             <result resourceOrUnit="Brown-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyWater-Dragon">
-            <cost resource="PUs" quantity="140"/>
+            <cost resource="PUs" quantity="70"/>
             <result resourceOrUnit="Water-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyWhite-Dragon">
-            <cost resource="PUs" quantity="160"/>
+            <cost resource="PUs" quantity="80"/>
             <result resourceOrUnit="White-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyBlue-Dragon">
-            <cost resource="PUs" quantity="180"/>
+            <cost resource="PUs" quantity="90"/>
             <result resourceOrUnit="Blue-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyRed-Dragon">
-            <cost resource="PUs" quantity="200"/>
+            <cost resource="PUs" quantity="100"/>
             <result resourceOrUnit="Red-Dragon" quantity="1"/>
         </productionRule>
        <productionRule name="buyYoung-Green-Dragon">
-            <cost resource="PUs" quantity="100"/>
+            <cost resource="PUs" quantity="50"/>
             <result resourceOrUnit="Young-Green-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Brown-Dragon">
-            <cost resource="PUs" quantity="120"/>
+            <cost resource="PUs" quantity="60"/>
             <result resourceOrUnit="Young-Brown-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Water-Dragon">
-            <cost resource="PUs" quantity="140"/>
+            <cost resource="PUs" quantity="70"/>
             <result resourceOrUnit="Young-Water-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-White-Dragon">
-            <cost resource="PUs" quantity="160"/>
+            <cost resource="PUs" quantity="80"/>
             <result resourceOrUnit="Young-White-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Blue-Dragon">
-            <cost resource="PUs" quantity="180"/>
+            <cost resource="PUs" quantity="90"/>
             <result resourceOrUnit="Young-Blue-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyYoung-Red-Dragon">
-            <cost resource="PUs" quantity="200"/>
+            <cost resource="PUs" quantity="100"/>
             <result resourceOrUnit="Young-Red-Dragon" quantity="1"/>
         </productionRule>
         <productionRule name="buyTransport-Ship">
@@ -2389,7 +2389,7 @@
         <attachment name="relationshipTypeAttachment" attachTo="Neutral" javaClass="games.strategy.triplea.attachments.RelationshipTypeAttachment" type="relationship">
             <option name="archeType" value="allied"/>
             <option name="canMoveLandUnitsOverOwnedLand" value="false"/>
-            <option name="canMoveAirUnitsOverOwnedLand" value="false"/>
+            <option name="canMoveAirUnitsOverOwnedLand" value="true"/>
             <option name="canLandAirUnitsOnOwnedLand" value="false"/>
         </attachment>
 
@@ -2678,13 +2678,15 @@
             <option name="isKamikaze" value="true"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Green-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="4"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
+            <option name="hitPoints" value="2"/>
+            <option name="repairsUnits" value="1:Green-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Brown-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
             <option name="attack" value="4"/>
@@ -2698,8 +2700,8 @@
             <option name="repairsUnits" value="1:Brown-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Water-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="4"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isSea" value="true"/>
             <option name="movement" value="3"/>
             <option name="hitPoints" value="3"/>
@@ -2715,18 +2717,18 @@
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
-            <option name="hitPoints" value="4"/>
+            <option name="hitPoints" value="3"/>
             <option name="repairsUnits" value="1:White-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Blue-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-            <option name="attack" value="4"/>
-            <option name="defense" value="4"/>
+            <option name="attack" value="3"/>
+            <option name="defense" value="3"/>
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
-            <option name="hitPoints" value="5"/>
+            <option name="hitPoints" value="4"/>
             <option name="repairsUnits" value="1:Blue-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Red-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -2737,7 +2739,7 @@
             <option name="transportCapacity" value="1"/>
             <option name="isAirTransport" value="true"/>
             <option name="isKamikaze" value="true"/>
-            <option name="hitPoints" value="6"/>
+            <option name="hitPoints" value="4"/>
             <option name="repairsUnits" value="1:Red-Dragon"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Young-Green-Dragon" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -2759,8 +2761,8 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="3"/>
-            <option name="defense" value="3"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
@@ -2785,8 +2787,8 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="3"/>
-            <option name="defense" value="3"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
@@ -2811,8 +2813,8 @@
             <option name="constructionType" value="dragon"/>
             <option name="constructionsPerTerrPerTypePerTurn" value="1"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="attack" value="3"/>
-            <option name="defense" value="3"/>
+            <option name="attack" value="4"/>
+            <option name="defense" value="4"/>
             <option name="isAir" value="true"/>
             <option name="movement" value="4"/>
             <option name="isKamikaze" value="true"/>
@@ -3065,7 +3067,7 @@
             <option name="canProduceXUnits" value="1"/>
             <option name="constructionType" value="settlement"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="repairsUnits" value="2:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
+            <option name="repairsUnits" value="2:Green-Dragon:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="1"/>
             <option name="tuv" value="5"/>
         </attachment>
@@ -3078,7 +3080,7 @@
             <option name="canProduceXUnits" value="2"/>
             <option name="constructionType" value="settlement"/>
             <option name="maxConstructionsPerTypePerTerr" value="2"/>
-            <option name="repairsUnits" value="3:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
+            <option name="repairsUnits" value="3:Green-Dragon:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="2"/>
             <option name="tuv" value="10"/>
         </attachment>
@@ -3091,7 +3093,7 @@
             <option name="canProduceXUnits" value="3"/>
             <option name="constructionType" value="settlement"/>
             <option name="maxConstructionsPerTypePerTerr" value="2"/>
-            <option name="repairsUnits" value="4:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
+            <option name="repairsUnits" value="4:Green-Dragon:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="canOnlyBePlacedInTerritoryValuedAtX" value="3"/>
             <option name="tuv" value="15"/>
         </attachment>
@@ -3102,7 +3104,7 @@
             <option name="canProduceXUnits" value="3"/>
             <option name="constructionType" value="settlement"/>
             <option name="maxConstructionsPerTypePerTerr" value="1"/>
-            <option name="repairsUnits" value="4:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
+            <option name="repairsUnits" value="4:Green-Dragon:Brown-Dragon:Water-Dragon:White-Dragon:Blue-Dragon:Red-Dragon"/>
             <option name="createsResourcesList" value="-15:PUs"/>
         </attachment>
         <attachment name="unitAttachment" attachTo="Fish" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -6751,8 +6753,8 @@
             <territoryOwner territory="Plagued Fields" owner="Undead"/>
             <territoryOwner territory="Runedelf" owner="Kobolds"/>
             <territoryOwner territory="Zool Twins" owner="Kobolds"/>
-            <territoryOwner territory="Dreadpass" owner="Barbarians"/>
-            <territoryOwner territory="Lifeless Barrens" owner="Barbarians"/>
+            <territoryOwner territory="Dreadpass" owner="Gnolls"/>
+            <territoryOwner territory="Lifeless Barrens" owner="Gnolls"/>
             <territoryOwner territory="Forsaken Mountains" owner="Undead"/>
             <territoryOwner territory="Necroloft" owner="Undead"/>
             <territoryOwner territory="Haunted Moorland" owner="Gnolls"/>
@@ -6765,15 +6767,15 @@
             <territoryOwner territory="East Witching Mountains" owner="Gnolls"/>
             <territoryOwner territory="Great Combe" owner="Gnolls"/>
             <territoryOwner territory="The Witching Mountains" owner="Gnolls"/>
-            <territoryOwner territory="South Witching Mountains" owner="Murlocs"/>
-            <territoryOwner territory="Cape Despair" owner="Murlocs"/>
+            <territoryOwner territory="South Witching Mountains" owner="Gnolls"/>
+            <territoryOwner territory="Cape Despair" owner="Gnolls"/>
             <territoryOwner territory="Hellbrook" owner="Murlocs"/>
             <territoryOwner territory="Hells Crossing" owner="Murlocs"/>
             <territoryOwner territory="Mount Chaos" owner="Murlocs"/>
             <territoryOwner territory="Hells Bayou" owner="Murlocs"/>
             <territoryOwner territory="Spectoria" owner="Murlocs"/>
             <territoryOwner territory="Bridge of No Return" owner="Barbarians"/>
-            <territoryOwner territory="Wild Arids" owner="Barbarians"/>
+            <territoryOwner territory="Wild Arids" owner="Murlocs"/>
             <territoryOwner territory="Troll Mountains" owner="Barbarians"/>
             <territoryOwner territory="Duskwick" owner="Barbarians"/>
             <territoryOwner territory="Mount Terror" owner="Barbarians"/>
@@ -6797,13 +6799,13 @@
             <territoryOwner territory="Orangerock Mountains" owner="Kobolds"/>
             <territoryOwner territory="Avalonia" owner="Lionia"/>
             <territoryOwner territory="Millshire" owner="Lionia"/>
-            <territoryOwner territory="Seatopian Hills" owner="Murlocs"/>
+            <territoryOwner territory="Seatopian Hills" owner="Kobolds"/>
             <territoryOwner territory="Gemrock Mines" owner="Murlocs"/>
             <territoryOwner territory="Fanebrow" owner="Murlocs"/>
             <territoryOwner territory="Wolfendale" owner="Murlocs"/>
             <territoryOwner territory="Morassia" owner="Murlocs"/>
-            <territoryOwner territory="Morassia Highlands" owner="Kobolds"/>
-            <territoryOwner territory="Grand Peaks" owner="Kobolds"/>
+            <territoryOwner territory="Morassia Highlands" owner="Murlocs"/>
+            <territoryOwner territory="Grand Peaks" owner="Murlocs"/>
             <territoryOwner territory="Scavendeep" owner="Kobolds"/>
             <territoryOwner territory="Crystal Strand" owner="Gnolls"/>
             <territoryOwner territory="Samarkum" owner="Gnolls"/>
@@ -6823,9 +6825,9 @@
             <territoryOwner territory="Dathiwatch" owner="Murlocs"/>
             <territoryOwner territory="Wild Mire" owner="Murlocs"/>
             <territoryOwner territory="Badlands" owner="Gnolls"/>
-            <territoryOwner territory="Dathic East" owner="Murlocs"/>
+            <territoryOwner territory="Dathic East" owner="Gnolls"/>
             <territoryOwner territory="Dusty Heights" owner="Gnolls"/>
-            <territoryOwner territory="Dathic South" owner="Murlocs"/>
+            <territoryOwner territory="Dathic South" owner="Gnolls"/>
             <territoryOwner territory="Dusty Mountains" owner="Gnolls"/>
             <territoryOwner territory="Greyhood Holdings" owner="Murlocs"/>
             <territoryOwner territory="Ironhorn" owner="Dwarves"/>
@@ -6849,8 +6851,8 @@
             <territoryOwner territory="Silverdeep" owner="Ogres"/>
             <territoryOwner territory="Westerfoss" owner="Ogres"/>
             <territoryOwner territory="Dathic North" owner="Murlocs"/>
-            <territoryOwner territory="Dathic Jungle" owner="Murlocs"/>
-            <territoryOwner territory="Dathic West" owner="Murlocs"/>
+            <territoryOwner territory="Dathic Jungle" owner="Gnolls"/>
+            <territoryOwner territory="Dathic West" owner="Ogres"/>
             <territoryOwner territory="Ogreville" owner="Ogres"/>
             <territoryOwner territory="Orcengor" owner="Greenskins"/>
             <territoryOwner territory="North Goronmok" owner="Greenskins"/>
@@ -6869,20 +6871,20 @@
             <territoryOwner territory="Bleak Borderlands" owner="Gnolls"/>
             <territoryOwner territory="Eastern Pontic Desert" owner="Gnolls"/>
             <territoryOwner territory="Bahar Woods" owner="Barbarians"/>
-            <territoryOwner territory="Oboro Plains" owner="Barbarians"/>
+            <territoryOwner territory="Oboro Plains" owner="Ogres"/>
             <territoryOwner territory="Surigard" owner="Barbarians"/>
             <territoryOwner territory="Southern Pontic Desert" owner="Barbarians"/>
             <territoryOwner territory="South Western Pontic Desert" owner="Gnolls"/>
             <territoryOwner territory="Pontic Desert" owner="Gnolls"/>
             <territoryOwner territory="Pontic Salt Desert" owner="Gnolls"/>
             <territoryOwner territory="North Eastern Pontic Desert" owner="Gnolls"/>
-            <territoryOwner territory="Kings Summit" owner="Barbarians"/>
-            <territoryOwner territory="West Bahar Woods" owner="Barbarians"/>
+            <territoryOwner territory="Kings Summit" owner="Ogres"/>
+            <territoryOwner territory="West Bahar Woods" owner="Gnolls"/>
             <territoryOwner territory="Baldorian Crossing" owner="Murlocs"/>
-            <territoryOwner territory="Baldor Castle" owner="Barbarians"/>
-            <territoryOwner territory="Northern Baldoria" owner="Barbarians"/>
-            <territoryOwner territory="Southern Baldoria" owner="Barbarians"/>
-            <territoryOwner territory="East Lost Mountains" owner="Barbarians"/>
+            <territoryOwner territory="Baldor Castle" owner="Ogres"/>
+            <territoryOwner territory="Northern Baldoria" owner="Pirates"/>
+            <territoryOwner territory="Southern Baldoria" owner="Pirates"/>
+            <territoryOwner territory="East Lost Mountains" owner="Gnolls"/>
             <territoryOwner territory="Lost Mountains" owner="Murlocs"/>
             <territoryOwner territory="Northern Wilds" owner="Gnolls"/>
             <territoryOwner territory="Ponticor" owner="Gnolls"/>
@@ -6909,8 +6911,8 @@
             <territoryOwner territory="Oorsik Hills" owner="Kobolds"/>
             <territoryOwner territory="Oorsik Tirith" owner="Kobolds"/>
             <territoryOwner territory="Oorsik Forest" owner="Kobolds"/>
-            <territoryOwner territory="Mount Myrin" owner="Barbarians"/>
-            <territoryOwner territory="Kallingpass" owner="Barbarians"/>
+            <territoryOwner territory="Mount Myrin" owner="Kobolds"/>
+            <territoryOwner territory="Kallingpass" owner="Ogres"/>
             <territoryOwner territory="Kallingdor" owner="Barbarians"/>
             <territoryOwner territory="Strydon Wetlands" owner="Ogres"/>
             <territoryOwner territory="Strydon Fields" owner="Ogres"/>
@@ -6922,9 +6924,9 @@
             <territoryOwner territory="Kallingbog" owner="Barbarians"/>
             <territoryOwner territory="Huntingwath" owner="Ogres"/>
             <territoryOwner territory="Kallingrock" owner="Barbarians"/>
-            <territoryOwner territory="Kallingholt" owner="Murlocs"/>
+            <territoryOwner territory="Kallingholt" owner="Barbarians"/>
             <territoryOwner territory="Rimdell Inlands" owner="Murlocs"/>
-            <territoryOwner territory="Western White Slopes" owner="Murlocs"/>
+            <territoryOwner territory="Western White Slopes" owner="Ogres"/>
             <territoryOwner territory="Rimdell Backlands" owner="Murlocs"/>
             <territoryOwner territory="White Slopes" owner="Murlocs"/>
             <territoryOwner territory="Wetwood" owner="Murlocs"/>
@@ -6943,7 +6945,6 @@
             <territoryOwner territory="Coldrock" owner="Crowton"/>
             <territoryOwner territory="Strongnin" owner="Crowton"/>
             <territoryOwner territory="Glassville" owner="Crowton"/>
-            
             <territoryOwner territory="Sea Zone 1" owner="Pirates"/>
             <territoryOwner territory="Sea Zone 2" owner="Pirates"/>
             <territoryOwner territory="Sea Zone 3" owner="Pirates"/>
