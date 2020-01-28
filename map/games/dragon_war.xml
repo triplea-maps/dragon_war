@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.6"/>
+    <info name="Dragon War" version="1.2.7"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
@@ -1285,6 +1285,150 @@
         <connection t1="Sea Zone 69" t2="Sea Zone 70"/>
         <connection t1="Sea Zone 69" t2="Sea Zone 71"/>
         <connection t1="Sea Zone 70" t2="Sea Zone 71"/>
+        
+        <connection t1="Athondir" t2="Oorsik Forest"/>
+        <connection t1="Athondir" t2="Oorsik Tirith"/>
+        <connection t1="Avalonia" t2="Lionian Outback"/>
+        <connection t1="Avalonia" t2="Orangerock Mountains"/>
+        <connection t1="Avalonia" t2="Wolfendale"/>
+        <connection t1="Bahar Longcliff" t2="Bahars Landing"/>
+        <connection t1="Bahar Longcliff" t2="Misty Forest"/>
+        <connection t1="Bahars Landing" t2="Godheim"/>
+        <connection t1="Bahars Landing" t2="Godheim Reach"/>
+        <connection t1="Baldorian Crossing" t2="West Bahar Woods"/>
+        <connection t1="Blackwell" t2="Forsaken Mountains"/>
+        <connection t1="Blackwell" t2="Hinderland Zone 3"/>
+        <connection t1="Blackwell" t2="Hinderland Zone 5"/>
+        <connection t1="Blackwell" t2="Hinderland Zone 7"/>
+        <connection t1="Blackwell" t2="Plagued Fields"/>
+        <connection t1="Blackwell" t2="The Hinderlands"/>
+        <connection t1="Bleak Borderlands" t2="Godheim"/>
+        <connection t1="Bleak Borderlands" t2="Godheim Reach"/>
+        <connection t1="Bleak Wall" t2="Godheim"/>
+        <connection t1="Bleak Wall" t2="Godheim Pass"/>
+        <connection t1="Blood Hills" t2="Volodar Point"/>
+        <connection t1="Blood Hills" t2="The Outlands"/>
+        <connection t1="Bog of Eternal Stench" t2="Hexmire"/>
+        <connection t1="Bog of Eternal Stench" t2="North Witching Mountains"/>
+        <connection t1="Bridge of No Return" t2="Runedelf"/>
+        <connection t1="Bridge of No Return" t2="Wild Arids"/>
+        <connection t1="Crystal Strand" t2="East Samark"/>
+        <connection t1="Dathic Coast" t2="Dathiwatch"/>
+        <connection t1="Dathic East" t2="Dathic North"/>
+        <connection t1="Dathic East" t2="Dathiwatch"/>
+        <connection t1="Dathic Jungle" t2="Dathic North"/>
+        <connection t1="Dathic Jungle" t2="Dathic South"/>
+        <connection t1="Dathic Jungle" t2="Westerfoss"/>
+        <connection t1="Dathic South" t2="Dathic West"/>
+        <connection t1="Dathic South" t2="Ogreville"/>
+        <connection t1="Dathic West" t2="Ogreville"/>
+        <connection t1="Dathic West" t2="Westerfoss"/>
+        <connection t1="Dathiwatch" t2="Wild Mire"/>
+        <connection t1="Decaying Soils" t2="Near Freezelond"/>
+        <connection t1="Decaying Soils" t2="Necroloft"/>
+        <connection t1="Dol Ulum" t2="Kumbadur Hills"/>
+        <connection t1="Dol Ulum" t2="Mount Thoril"/>
+        <connection t1="Doomed Passage" t2="Ponticor"/>
+        <connection t1="Doomed Passage" t2="Western Pontic Desert"/>
+        <connection t1="Durlan Ranges" t2="North Savanna"/>
+        <connection t1="Durlan Ranges" t2="West Savanna"/>
+        <connection t1="Durlan Steppes" t2="Oorsik Hills"/>
+        <connection t1="Durlan Steppes" t2="Oorsik Tirith"/>
+        <connection t1="Duskwick" t2="Lost Furlongs"/>
+        <connection t1="Duskwick" t2="Mount Terror"/>
+        <connection t1="Duskwick" t2="Wild Arids"/>
+        <connection t1="Dusty Heights" t2="Slavebridge"/>
+        <connection t1="Dusty Mountains" t2="Ogreville"/>
+        <connection t1="East Foothills" t2="Runedelf"/>
+        <connection t1="East Foothills" t2="The Hinderlands"/>
+        <connection t1="East Samark" t2="Slavebridge"/>
+        <connection t1="East Witching Mountains" t2="South Witching Mountains"/>
+        <connection t1="Eastern Pontic Desert" t2="Godheim Reach"/>
+        <connection t1="Eastern Pontic Desert" t2="North Eastern Pontic Desert"/>
+        <connection t1="Fanebrow" t2="Gemrock Mines"/>
+        <connection t1="Far Freezelond" t2="Hinderland Zone 9"/>
+        <connection t1="Faranwall" t2="Mount Thoril"/>
+        <connection t1="Freegrass" t2="Jade Rivers"/>
+        <connection t1="Freegrass" t2="Lionian Plains"/>
+        <connection t1="Fromont" t2="Sealonia"/>
+        <connection t1="Garwald" t2="Maragorn"/>
+        <connection t1="Garwald" t2="Mount Thoril"/>
+        <connection t1="Gillshore" t2="Hinderland Settlement"/>
+        <connection t1="Gillshore" t2="The Hinderlands"/>
+        <connection t1="Gnomen Lowland" t2="Kumbadur Hills"/>
+        <connection t1="Godheim" t2="Low Mocrag"/>
+        <connection t1="Godheim Pass" t2="High Mocrag"/>
+        <connection t1="Godheim Pass" t2="Kargol Keep"/>
+        <connection t1="Godheim Pass" t2="Low Mocrag"/>
+        <connection t1="Godheim Reach" t2="Oboro Plains"/>
+        <connection t1="Grand Peaks" t2="Halefoss Mountains"/>
+        <connection t1="Grand Peaks" t2="Scavenberg"/>
+        <connection t1="Grand Peaks" t2="Wetshore"/>
+        <connection t1="Great Combe" t2="Lakelot"/>
+        <connection t1="Great Combe" t2="Mount Chaos"/>
+        <connection t1="Great Combe" t2="The Witching Mountains"/>
+        <connection t1="Greyhood Holdings" t2="Halfling Meadows"/>
+        <connection t1="Halfling Meadows" t2="Kumbadur Hills"/>
+        <connection t1="Haunted Moorland" t2="Hexmire"/>
+        <connection t1="Hellbrook" t2="Hells Bayou"/>
+        <connection t1="High Mocrag" t2="Orcengor"/>
+        <connection t1="Hinderland Zone 9" t2="Near Freezelond"/>
+        <connection t1="Huntingwath" t2="Kallingbog"/>
+        <connection t1="Huntingwath" t2="Kallingrock"/>
+        <connection t1="Huntingwath" t2="Wetwood"/>
+        <connection t1="Iceburn" t2="Strongnin"/>
+        <connection t1="Jade Rivers" t2="Lion Heights"/>
+        <connection t1="Kallingbog" t2="Ogrebog"/>
+        <connection t1="Kallingpass" t2="South Western Pontic Desert"/>
+        <connection t1="Kallingpass" t2="Southern Pontic Desert"/>
+        <connection t1="Kallingrock" t2="Wetwood"/>
+        <connection t1="Kargolia" t2="Orcengor"/>
+        <connection t1="Kargolia" t2="South Goronmok"/>
+        <connection t1="Kargolia" t2="Warg Caves"/>
+        <connection t1="Kingwood" t2="Millshire"/>
+        <connection t1="Kumbadur Hills" t2="Mount Thoril"/>
+        <connection t1="Lakelot" t2="Spectoria"/>
+        <connection t1="Lakelot" t2="West Witching Mountains"/>
+        <connection t1="Lifeless Barrens" t2="Plagued Fields"/>
+        <connection t1="Maragorn" t2="Mount Thoril"/>
+        <connection t1="Mebach" t2="Silverdeep"/>
+        <connection t1="Mid Samark" t2="Slavebridge"/>
+        <connection t1="Mid Samark" t2="South Samark"/>
+        <connection t1="Morassia" t2="Wetshore"/>
+        <connection t1="Morassia" t2="Wolfendale"/>
+        <connection t1="Morassia Highlands" t2="Wetshore"/>
+        <connection t1="Morassia Highlands" t2="Wolfendale"/>
+        <connection t1="Mount Chaos" t2="South Witching Mountains"/>
+        <connection t1="Mount Myrin" t2="South Western Pontic Desert"/>
+        <connection t1="Mount Myrin" t2="Strydon Mountains"/>
+        <connection t1="North Eastern Pontic Desert" t2="Oboro Plains"/>
+        <connection t1="North Eastern Pontic Desert" t2="Pontic Salt Desert"/>
+        <connection t1="North Eastern Pontic Desert" t2="Ponticor"/>
+        <connection t1="North Savanna" t2="The Outlands"/>
+        <connection t1="North Witching Mountains" t2="The Witching Mountains"/>
+        <connection t1="Northern Baldoria" t2="Southern Baldoria"/>
+        <connection t1="Ogreville" t2="Orcengor"/>
+        <connection t1="Oldengard" t2="Sealonia"/>
+        <connection t1="Oldengard" t2="Strongnin"/>
+        <connection t1="Oorsik Hills" t2="Strydon Wetlands"/>
+        <connection t1="Orangerock Mountains" t2="Scavendeep"/>
+        <connection t1="Orangerock Mountains" t2="Wolfendale"/>
+        <connection t1="Plagued Fields" t2="Runedelf"/>
+        <connection t1="Rimdell" t2="Strydon Fields"/>
+        <connection t1="Rimdell Inlands" t2="Strydon Peak"/>
+        <connection t1="Runedelf" t2="Dreadpass"/>
+        <connection t1="Runedelf" t2="Troll Mountains"/>
+        <connection t1="Sealonia" t2="Stormwood"/>
+        <connection t1="Sealonia" t2="Strongnin"/>
+        <connection t1="Silverdeep" t2="Westerfoss"/>
+        <connection t1="Sinfjord" t2="Troll Mountains"/>
+        <connection t1="South Savanna" t2="Strydon Wetlands"/>
+        <connection t1="Southern Pontic Desert" t2="Surigard"/>
+        <connection t1="Strydon Peak" t2="Ogrehold"/>
+        <connection t1="Strydon Peak" t2="Western White Slopes"/>
+        <connection t1="The Outlands" t2="Volodar Point"/>
+        <connection t1="The Outlands" t2="Western Pontic Desert"/>
+        <connection t1="Safe Haven" t2="Troglodyte Coast"/>
     </map>
 
     <resourceList>
@@ -4955,6 +5099,1581 @@
         <attachment name="territoryEffectAttachment" attachTo="Lake" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
             <option name="unitsNotAllowed" value="Transport-Ship:Small-Ship:Large-Ship:Monoreme:Bireme:Trireme:Pirate-Boat:Pirate-Ship:Water-Dragon"/>
         </attachment>
+        
+<!-- Start Canals -->
+        <attachment name="canalAttachmentAthondir - Oorsik Forest" attachTo="Athondir" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Athondir and Oorsik Forest"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentAthondir - Oorsik Forest" attachTo="Oorsik Forest" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Athondir and Oorsik Forest"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentAthondir - Oorsik Tirith" attachTo="Athondir" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Athondir and Oorsik Tirith"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentAthondir - Oorsik Tirith" attachTo="Oorsik Tirith" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Athondir and Oorsik Tirith"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentAvalonia - Lionian Outback" attachTo="Avalonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Avalonia and Lionian Outback"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentAvalonia - Lionian Outback" attachTo="Lionian Outback" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Avalonia and Lionian Outback"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentAvalonia - Orangerock Mountains" attachTo="Avalonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Avalonia and Orangerock Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentAvalonia - Orangerock Mountains" attachTo="Orangerock Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Avalonia and Orangerock Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentAvalonia - Wolfendale" attachTo="Avalonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Avalonia and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentAvalonia - Wolfendale" attachTo="Wolfendale" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Avalonia and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBahar Longcliff - Bahars Landing" attachTo="Bahar Longcliff" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahar Longcliff and Bahars Landing"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBahar Longcliff - Bahars Landing" attachTo="Bahars Landing" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahar Longcliff and Bahars Landing"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBahar Longcliff - Misty Forest" attachTo="Bahar Longcliff" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahar Longcliff and Misty Forest"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBahar Longcliff - Misty Forest" attachTo="Misty Forest" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahar Longcliff and Misty Forest"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBahars Landing - Godheim" attachTo="Bahars Landing" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahars Landing and Godheim"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBahars Landing - Godheim" attachTo="Godheim" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahars Landing and Godheim"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBahars Landing - Godheim Reach" attachTo="Bahars Landing" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahars Landing and Godheim Reach"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBahars Landing - Godheim Reach" attachTo="Godheim Reach" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bahars Landing and Godheim Reach"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBaldorian Crossing - West Bahar Woods" attachTo="Baldorian Crossing" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Baldorian Crossing and West Bahar Woods"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBaldorian Crossing - West Bahar Woods" attachTo="West Bahar Woods" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Baldorian Crossing and West Bahar Woods"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlackwell - Forsaken Mountains" attachTo="Blackwell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Forsaken Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlackwell - Forsaken Mountains" attachTo="Forsaken Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Forsaken Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlackwell - Hinderland Zone 3" attachTo="Blackwell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Hinderland Zone 3"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlackwell - Hinderland Zone 3" attachTo="Hinderland Zone 3" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Hinderland Zone 3"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlackwell - Hinderland Zone 5" attachTo="Blackwell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Hinderland Zone 5"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlackwell - Hinderland Zone 5" attachTo="Hinderland Zone 5" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Hinderland Zone 5"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlackwell - Hinderland Zone 7" attachTo="Blackwell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Hinderland Zone 7"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlackwell - Hinderland Zone 7" attachTo="Hinderland Zone 7" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Hinderland Zone 7"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlackwell - Plagued Fields" attachTo="Blackwell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Plagued Fields"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlackwell - Plagued Fields" attachTo="Plagued Fields" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and Plagued Fields"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlackwell - The Hinderlands" attachTo="Blackwell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and The Hinderlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlackwell - The Hinderlands" attachTo="The Hinderlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blackwell and The Hinderlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBleak Borderlands - Godheim" attachTo="Bleak Borderlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Borderlands and Godheim"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBleak Borderlands - Godheim" attachTo="Godheim" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Borderlands and Godheim"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBleak Borderlands - Godheim Reach" attachTo="Bleak Borderlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Borderlands and Godheim Reach"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBleak Borderlands - Godheim Reach" attachTo="Godheim Reach" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Borderlands and Godheim Reach"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBleak Wall - Godheim" attachTo="Bleak Wall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Wall and Godheim"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBleak Wall - Godheim" attachTo="Godheim" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Wall and Godheim"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBleak Wall - Godheim Pass" attachTo="Bleak Wall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Wall and Godheim Pass"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBleak Wall - Godheim Pass" attachTo="Godheim Pass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bleak Wall and Godheim Pass"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlood Hills - Volodar Point" attachTo="Blood Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blood Hills and Volodar Point"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlood Hills - Volodar Point" attachTo="Volodar Point" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blood Hills and Volodar Point"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBlood Hills - The Outlands" attachTo="Blood Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blood Hills and The Outlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBlood Hills - The Outlands" attachTo="The Outlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Blood Hills and The Outlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBog of Eternal Stench - Hexmire" attachTo="Bog of Eternal Stench" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bog of Eternal Stench and Hexmire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBog of Eternal Stench - Hexmire" attachTo="Hexmire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bog of Eternal Stench and Hexmire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBog of Eternal Stench - North Witching Mountains" attachTo="Bog of Eternal Stench" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bog of Eternal Stench and North Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBog of Eternal Stench - North Witching Mountains" attachTo="North Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bog of Eternal Stench and North Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBridge of No Return - Runedelf" attachTo="Bridge of No Return" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bridge of No Return and Runedelf"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBridge of No Return - Runedelf" attachTo="Runedelf" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bridge of No Return and Runedelf"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentBridge of No Return - Wild Arids" attachTo="Bridge of No Return" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bridge of No Return and Wild Arids"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentBridge of No Return - Wild Arids" attachTo="Wild Arids" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Bridge of No Return and Wild Arids"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentCrystal Strand - East Samark" attachTo="Crystal Strand" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Crystal Strand and East Samark"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentCrystal Strand - East Samark" attachTo="East Samark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Crystal Strand and East Samark"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic Coast - Dathiwatch" attachTo="Dathic Coast" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Coast and Dathiwatch"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic Coast - Dathiwatch" attachTo="Dathiwatch" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Coast and Dathiwatch"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic East - Dathic North" attachTo="Dathic East" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic East and Dathic North"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic East - Dathic North" attachTo="Dathic North" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic East and Dathic North"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic East - Dathiwatch" attachTo="Dathic East" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic East and Dathiwatch"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic East - Dathiwatch" attachTo="Dathiwatch" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic East and Dathiwatch"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic Jungle - Dathic North" attachTo="Dathic Jungle" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Jungle and Dathic North"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic Jungle - Dathic North" attachTo="Dathic North" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Jungle and Dathic North"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic Jungle - Dathic South" attachTo="Dathic Jungle" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Jungle and Dathic South"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic Jungle - Dathic South" attachTo="Dathic South" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Jungle and Dathic South"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic Jungle - Westerfoss" attachTo="Dathic Jungle" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Jungle and Westerfoss"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic Jungle - Westerfoss" attachTo="Westerfoss" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic Jungle and Westerfoss"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic South - Dathic West" attachTo="Dathic South" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic South and Dathic West"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic South - Dathic West" attachTo="Dathic West" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic South and Dathic West"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic South - Ogreville" attachTo="Dathic South" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic South and Ogreville"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic South - Ogreville" attachTo="Ogreville" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic South and Ogreville"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic West - Ogreville" attachTo="Dathic West" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic West and Ogreville"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic West - Ogreville" attachTo="Ogreville" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic West and Ogreville"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathic West - Westerfoss" attachTo="Dathic West" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic West and Westerfoss"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathic West - Westerfoss" attachTo="Westerfoss" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathic West and Westerfoss"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDathiwatch - Wild Mire" attachTo="Dathiwatch" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathiwatch and Wild Mire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDathiwatch - Wild Mire" attachTo="Wild Mire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dathiwatch and Wild Mire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDecaying Soils - Near Freezelond" attachTo="Decaying Soils" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Decaying Soils and Near Freezelond"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDecaying Soils - Near Freezelond" attachTo="Near Freezelond" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Decaying Soils and Near Freezelond"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDecaying Soils - Necroloft" attachTo="Decaying Soils" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Decaying Soils and Necroloft"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDecaying Soils - Necroloft" attachTo="Necroloft" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Decaying Soils and Necroloft"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDol Ulum - Kumbadur Hills" attachTo="Dol Ulum" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dol Ulum and Kumbadur Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDol Ulum - Kumbadur Hills" attachTo="Kumbadur Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dol Ulum and Kumbadur Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDol Ulum - Mount Thoril" attachTo="Dol Ulum" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dol Ulum and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDol Ulum - Mount Thoril" attachTo="Mount Thoril" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dol Ulum and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDoomed Passage - Ponticor" attachTo="Doomed Passage" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Doomed Passage and Ponticor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDoomed Passage - Ponticor" attachTo="Ponticor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Doomed Passage and Ponticor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDoomed Passage - Western Pontic Desert" attachTo="Doomed Passage" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Doomed Passage and Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDoomed Passage - Western Pontic Desert" attachTo="Western Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Doomed Passage and Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDurlan Ranges - North Savanna" attachTo="Durlan Ranges" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Ranges and North Savanna"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDurlan Ranges - North Savanna" attachTo="North Savanna" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Ranges and North Savanna"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDurlan Ranges - West Savanna" attachTo="Durlan Ranges" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Ranges and West Savanna"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDurlan Ranges - West Savanna" attachTo="West Savanna" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Ranges and West Savanna"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDurlan Steppes - Oorsik Hills" attachTo="Durlan Steppes" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Steppes and Oorsik Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDurlan Steppes - Oorsik Hills" attachTo="Oorsik Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Steppes and Oorsik Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDurlan Steppes - Oorsik Tirith" attachTo="Durlan Steppes" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Steppes and Oorsik Tirith"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDurlan Steppes - Oorsik Tirith" attachTo="Oorsik Tirith" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Durlan Steppes and Oorsik Tirith"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDuskwick - Lost Furlongs" attachTo="Duskwick" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Duskwick and Lost Furlongs"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDuskwick - Lost Furlongs" attachTo="Lost Furlongs" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Duskwick and Lost Furlongs"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDuskwick - Mount Terror" attachTo="Duskwick" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Duskwick and Mount Terror"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDuskwick - Mount Terror" attachTo="Mount Terror" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Duskwick and Mount Terror"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDuskwick - Wild Arids" attachTo="Duskwick" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Duskwick and Wild Arids"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDuskwick - Wild Arids" attachTo="Wild Arids" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Duskwick and Wild Arids"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDusty Heights - Slavebridge" attachTo="Dusty Heights" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dusty Heights and Slavebridge"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDusty Heights - Slavebridge" attachTo="Slavebridge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dusty Heights and Slavebridge"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentDusty Mountains - Ogreville" attachTo="Dusty Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dusty Mountains and Ogreville"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentDusty Mountains - Ogreville" attachTo="Ogreville" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Dusty Mountains and Ogreville"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentEast Foothills - Runedelf" attachTo="East Foothills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Foothills and Runedelf"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentEast Foothills - Runedelf" attachTo="Runedelf" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Foothills and Runedelf"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentEast Foothills - The Hinderlands" attachTo="East Foothills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Foothills and The Hinderlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentEast Foothills - The Hinderlands" attachTo="The Hinderlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Foothills and The Hinderlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentEast Samark - Slavebridge" attachTo="East Samark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Samark and Slavebridge"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentEast Samark - Slavebridge" attachTo="Slavebridge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Samark and Slavebridge"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentEast Witching Mountains - South Witching Mountains" attachTo="East Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Witching Mountains and South Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentEast Witching Mountains - South Witching Mountains" attachTo="South Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between East Witching Mountains and South Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentEastern Pontic Desert - Godheim Reach" attachTo="Eastern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Eastern Pontic Desert and Godheim Reach"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentEastern Pontic Desert - Godheim Reach" attachTo="Godheim Reach" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Eastern Pontic Desert and Godheim Reach"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentEastern Pontic Desert - North Eastern Pontic Desert" attachTo="Eastern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Eastern Pontic Desert and North Eastern Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentEastern Pontic Desert - North Eastern Pontic Desert" attachTo="North Eastern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Eastern Pontic Desert and North Eastern Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentFanebrow - Gemrock Mines" attachTo="Fanebrow" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Fanebrow and Gemrock Mines"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentFanebrow - Gemrock Mines" attachTo="Gemrock Mines" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Fanebrow and Gemrock Mines"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentFar Freezelond - Hinderland Zone 9" attachTo="Far Freezelond" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Far Freezelond and Hinderland Zone 9"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentFar Freezelond - Hinderland Zone 9" attachTo="Hinderland Zone 9" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Far Freezelond and Hinderland Zone 9"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentFaranwall - Mount Thoril" attachTo="Faranwall" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Faranwall and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentFaranwall - Mount Thoril" attachTo="Mount Thoril" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Faranwall and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentFreegrass - Jade Rivers" attachTo="Freegrass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Freegrass and Jade Rivers"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentFreegrass - Jade Rivers" attachTo="Jade Rivers" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Freegrass and Jade Rivers"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentFreegrass - Lionian Plains" attachTo="Freegrass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Freegrass and Lionian Plains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentFreegrass - Lionian Plains" attachTo="Lionian Plains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Freegrass and Lionian Plains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentFromont - Sealonia" attachTo="Fromont" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Fromont and Sealonia"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentFromont - Sealonia" attachTo="Sealonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Fromont and Sealonia"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGarwald - Maragorn" attachTo="Garwald" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Garwald and Maragorn"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGarwald - Maragorn" attachTo="Maragorn" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Garwald and Maragorn"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGarwald - Mount Thoril" attachTo="Garwald" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Garwald and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGarwald - Mount Thoril" attachTo="Mount Thoril" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Garwald and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGillshore - Hinderland Settlement" attachTo="Gillshore" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Gillshore and Hinderland Settlement"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGillshore - Hinderland Settlement" attachTo="Hinderland Settlement" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Gillshore and Hinderland Settlement"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGillshore - The Hinderlands" attachTo="Gillshore" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Gillshore and The Hinderlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGillshore - The Hinderlands" attachTo="The Hinderlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Gillshore and The Hinderlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGnomen Lowland - Kumbadur Hills" attachTo="Gnomen Lowland" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Gnomen Lowland and Kumbadur Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGnomen Lowland - Kumbadur Hills" attachTo="Kumbadur Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Gnomen Lowland and Kumbadur Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGodheim - Low Mocrag" attachTo="Godheim" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim and Low Mocrag"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGodheim - Low Mocrag" attachTo="Low Mocrag" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim and Low Mocrag"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGodheim Pass - High Mocrag" attachTo="Godheim Pass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Pass and High Mocrag"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGodheim Pass - High Mocrag" attachTo="High Mocrag" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Pass and High Mocrag"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGodheim Pass - Kargol Keep" attachTo="Godheim Pass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Pass and Kargol Keep"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGodheim Pass - Kargol Keep" attachTo="Kargol Keep" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Pass and Kargol Keep"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGodheim Pass - Low Mocrag" attachTo="Godheim Pass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Pass and Low Mocrag"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGodheim Pass - Low Mocrag" attachTo="Low Mocrag" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Pass and Low Mocrag"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGodheim Reach - Oboro Plains" attachTo="Godheim Reach" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Reach and Oboro Plains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGodheim Reach - Oboro Plains" attachTo="Oboro Plains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Godheim Reach and Oboro Plains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGrand Peaks - Halefoss Mountains" attachTo="Grand Peaks" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Grand Peaks and Halefoss Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGrand Peaks - Halefoss Mountains" attachTo="Halefoss Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Grand Peaks and Halefoss Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGrand Peaks - Scavenberg" attachTo="Grand Peaks" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Grand Peaks and Scavenberg"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGrand Peaks - Scavenberg" attachTo="Scavenberg" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Grand Peaks and Scavenberg"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGrand Peaks - Wetshore" attachTo="Grand Peaks" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Grand Peaks and Wetshore"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGrand Peaks - Wetshore" attachTo="Wetshore" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Grand Peaks and Wetshore"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGreat Combe - Lakelot" attachTo="Great Combe" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Great Combe and Lakelot"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGreat Combe - Lakelot" attachTo="Lakelot" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Great Combe and Lakelot"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGreat Combe - Mount Chaos" attachTo="Great Combe" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Great Combe and Mount Chaos"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGreat Combe - Mount Chaos" attachTo="Mount Chaos" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Great Combe and Mount Chaos"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGreat Combe - The Witching Mountains" attachTo="Great Combe" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Great Combe and The Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGreat Combe - The Witching Mountains" attachTo="The Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Great Combe and The Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentGreyhood Holdings - Halfling Meadows" attachTo="Greyhood Holdings" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Greyhood Holdings and Halfling Meadows"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentGreyhood Holdings - Halfling Meadows" attachTo="Halfling Meadows" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Greyhood Holdings and Halfling Meadows"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHalfling Meadows - Kumbadur Hills" attachTo="Halfling Meadows" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Halfling Meadows and Kumbadur Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHalfling Meadows - Kumbadur Hills" attachTo="Kumbadur Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Halfling Meadows and Kumbadur Hills"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHaunted Moorland - Hexmire" attachTo="Haunted Moorland" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Haunted Moorland and Hexmire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHaunted Moorland - Hexmire" attachTo="Hexmire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Haunted Moorland and Hexmire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHellbrook - Hells Bayou" attachTo="Hellbrook" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Hellbrook and Hells Bayou"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHellbrook - Hells Bayou" attachTo="Hells Bayou" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Hellbrook and Hells Bayou"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHigh Mocrag - Orcengor" attachTo="High Mocrag" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between High Mocrag and Orcengor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHigh Mocrag - Orcengor" attachTo="Orcengor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between High Mocrag and Orcengor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHinderland Zone 9 - Near Freezelond" attachTo="Hinderland Zone 9" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Hinderland Zone 9 and Near Freezelond"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHinderland Zone 9 - Near Freezelond" attachTo="Near Freezelond" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Hinderland Zone 9 and Near Freezelond"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHuntingwath - Kallingbog" attachTo="Huntingwath" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Huntingwath and Kallingbog"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHuntingwath - Kallingbog" attachTo="Kallingbog" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Huntingwath and Kallingbog"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHuntingwath - Kallingrock" attachTo="Huntingwath" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Huntingwath and Kallingrock"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHuntingwath - Kallingrock" attachTo="Kallingrock" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Huntingwath and Kallingrock"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentHuntingwath - Wetwood" attachTo="Huntingwath" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Huntingwath and Wetwood"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentHuntingwath - Wetwood" attachTo="Wetwood" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Huntingwath and Wetwood"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentIceburn - Strongnin" attachTo="Iceburn" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Iceburn and Strongnin"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentIceburn - Strongnin" attachTo="Strongnin" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Iceburn and Strongnin"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentJade Rivers - Lion Heights" attachTo="Jade Rivers" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Jade Rivers and Lion Heights"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentJade Rivers - Lion Heights" attachTo="Lion Heights" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Jade Rivers and Lion Heights"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKallingbog - Ogrebog" attachTo="Kallingbog" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingbog and Ogrebog"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKallingbog - Ogrebog" attachTo="Ogrebog" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingbog and Ogrebog"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKallingpass - South Western Pontic Desert" attachTo="Kallingpass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingpass and South Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKallingpass - South Western Pontic Desert" attachTo="South Western Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingpass and South Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKallingpass - Southern Pontic Desert" attachTo="Kallingpass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingpass and Southern Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKallingpass - Southern Pontic Desert" attachTo="Southern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingpass and Southern Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKallingrock - Wetwood" attachTo="Kallingrock" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingrock and Wetwood"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKallingrock - Wetwood" attachTo="Wetwood" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kallingrock and Wetwood"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKargolia - Orcengor" attachTo="Kargolia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kargolia and Orcengor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKargolia - Orcengor" attachTo="Orcengor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kargolia and Orcengor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKargolia - South Goronmok" attachTo="Kargolia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kargolia and South Goronmok"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKargolia - South Goronmok" attachTo="South Goronmok" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kargolia and South Goronmok"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKargolia - Warg Caves" attachTo="Kargolia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kargolia and Warg Caves"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKargolia - Warg Caves" attachTo="Warg Caves" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kargolia and Warg Caves"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKingwood - Millshire" attachTo="Kingwood" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kingwood and Millshire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKingwood - Millshire" attachTo="Millshire" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kingwood and Millshire"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentKumbadur Hills - Mount Thoril" attachTo="Kumbadur Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kumbadur Hills and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentKumbadur Hills - Mount Thoril" attachTo="Mount Thoril" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Kumbadur Hills and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentLakelot - Spectoria" attachTo="Lakelot" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Lakelot and Spectoria"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentLakelot - Spectoria" attachTo="Spectoria" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Lakelot and Spectoria"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentLakelot - West Witching Mountains" attachTo="Lakelot" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Lakelot and West Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentLakelot - West Witching Mountains" attachTo="West Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Lakelot and West Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentLifeless Barrens - Plagued Fields" attachTo="Lifeless Barrens" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Lifeless Barrens and Plagued Fields"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentLifeless Barrens - Plagued Fields" attachTo="Plagued Fields" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Lifeless Barrens and Plagued Fields"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMaragorn - Mount Thoril" attachTo="Maragorn" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Maragorn and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMaragorn - Mount Thoril" attachTo="Mount Thoril" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Maragorn and Mount Thoril"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMebach - Silverdeep" attachTo="Mebach" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mebach and Silverdeep"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMebach - Silverdeep" attachTo="Silverdeep" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mebach and Silverdeep"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMid Samark - Slavebridge" attachTo="Mid Samark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mid Samark and Slavebridge"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMid Samark - Slavebridge" attachTo="Slavebridge" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mid Samark and Slavebridge"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMid Samark - South Samark" attachTo="Mid Samark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mid Samark and South Samark"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMid Samark - South Samark" attachTo="South Samark" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mid Samark and South Samark"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMorassia - Wetshore" attachTo="Morassia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia and Wetshore"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMorassia - Wetshore" attachTo="Wetshore" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia and Wetshore"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMorassia - Wolfendale" attachTo="Morassia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMorassia - Wolfendale" attachTo="Wolfendale" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMorassia Highlands - Wetshore" attachTo="Morassia Highlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia Highlands and Wetshore"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMorassia Highlands - Wetshore" attachTo="Wetshore" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia Highlands and Wetshore"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMorassia Highlands - Wolfendale" attachTo="Morassia Highlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia Highlands and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMorassia Highlands - Wolfendale" attachTo="Wolfendale" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Morassia Highlands and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMount Chaos - South Witching Mountains" attachTo="Mount Chaos" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mount Chaos and South Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMount Chaos - South Witching Mountains" attachTo="South Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mount Chaos and South Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMount Myrin - South Western Pontic Desert" attachTo="Mount Myrin" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mount Myrin and South Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMount Myrin - South Western Pontic Desert" attachTo="South Western Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mount Myrin and South Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentMount Myrin - Strydon Mountains" attachTo="Mount Myrin" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mount Myrin and Strydon Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentMount Myrin - Strydon Mountains" attachTo="Strydon Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Mount Myrin and Strydon Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentNorth Eastern Pontic Desert - Oboro Plains" attachTo="North Eastern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Eastern Pontic Desert and Oboro Plains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentNorth Eastern Pontic Desert - Oboro Plains" attachTo="Oboro Plains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Eastern Pontic Desert and Oboro Plains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentNorth Eastern Pontic Desert - Pontic Salt Desert" attachTo="North Eastern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Eastern Pontic Desert and Pontic Salt Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentNorth Eastern Pontic Desert - Pontic Salt Desert" attachTo="Pontic Salt Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Eastern Pontic Desert and Pontic Salt Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentNorth Eastern Pontic Desert - Ponticor" attachTo="North Eastern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Eastern Pontic Desert and Ponticor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentNorth Eastern Pontic Desert - Ponticor" attachTo="Ponticor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Eastern Pontic Desert and Ponticor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentNorth Savanna - The Outlands" attachTo="North Savanna" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Savanna and The Outlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentNorth Savanna - The Outlands" attachTo="The Outlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Savanna and The Outlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentNorth Witching Mountains - The Witching Mountains" attachTo="North Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Witching Mountains and The Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentNorth Witching Mountains - The Witching Mountains" attachTo="The Witching Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between North Witching Mountains and The Witching Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentNorthern Baldoria - Southern Baldoria" attachTo="Northern Baldoria" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Northern Baldoria and Southern Baldoria"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentNorthern Baldoria - Southern Baldoria" attachTo="Southern Baldoria" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Northern Baldoria and Southern Baldoria"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentOgreville - Orcengor" attachTo="Ogreville" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Ogreville and Orcengor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentOgreville - Orcengor" attachTo="Orcengor" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Ogreville and Orcengor"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentOldengard - Sealonia" attachTo="Oldengard" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Oldengard and Sealonia"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentOldengard - Sealonia" attachTo="Sealonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Oldengard and Sealonia"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentOldengard - Strongnin" attachTo="Oldengard" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Oldengard and Strongnin"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentOldengard - Strongnin" attachTo="Strongnin" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Oldengard and Strongnin"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentOorsik Hills - Strydon Wetlands" attachTo="Oorsik Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Oorsik Hills and Strydon Wetlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentOorsik Hills - Strydon Wetlands" attachTo="Strydon Wetlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Oorsik Hills and Strydon Wetlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentOrangerock Mountains - Scavendeep" attachTo="Orangerock Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Orangerock Mountains and Scavendeep"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentOrangerock Mountains - Scavendeep" attachTo="Scavendeep" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Orangerock Mountains and Scavendeep"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentOrangerock Mountains - Wolfendale" attachTo="Orangerock Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Orangerock Mountains and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentOrangerock Mountains - Wolfendale" attachTo="Wolfendale" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Orangerock Mountains and Wolfendale"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentPlagued Fields - Runedelf" attachTo="Plagued Fields" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Plagued Fields and Runedelf"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentPlagued Fields - Runedelf" attachTo="Runedelf" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Plagued Fields and Runedelf"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentRimdell - Strydon Fields" attachTo="Rimdell" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Rimdell and Strydon Fields"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentRimdell - Strydon Fields" attachTo="Strydon Fields" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Rimdell and Strydon Fields"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentRimdell Inlands - Strydon Peak" attachTo="Rimdell Inlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Rimdell Inlands and Strydon Peak"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentRimdell Inlands - Strydon Peak" attachTo="Strydon Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Rimdell Inlands and Strydon Peak"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentRunedelf - Dreadpass" attachTo="Runedelf" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Runedelf and Dreadpass"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentRunedelf - Dreadpass" attachTo="Dreadpass" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Runedelf and Dreadpass"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentRunedelf - Troll Mountains" attachTo="Runedelf" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Runedelf and Troll Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentRunedelf - Troll Mountains" attachTo="Troll Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Runedelf and Troll Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentSealonia - Stormwood" attachTo="Sealonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Sealonia and Stormwood"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSealonia - Stormwood" attachTo="Stormwood" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Sealonia and Stormwood"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentSealonia - Strongnin" attachTo="Sealonia" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Sealonia and Strongnin"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSealonia - Strongnin" attachTo="Strongnin" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Sealonia and Strongnin"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentSilverdeep - Westerfoss" attachTo="Silverdeep" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Silverdeep and Westerfoss"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSilverdeep - Westerfoss" attachTo="Westerfoss" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Silverdeep and Westerfoss"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentSinfjord - Troll Mountains" attachTo="Sinfjord" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Sinfjord and Troll Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSinfjord - Troll Mountains" attachTo="Troll Mountains" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Sinfjord and Troll Mountains"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentSouth Savanna - Strydon Wetlands" attachTo="South Savanna" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between South Savanna and Strydon Wetlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSouth Savanna - Strydon Wetlands" attachTo="Strydon Wetlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between South Savanna and Strydon Wetlands"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentSouthern Pontic Desert - Surigard" attachTo="Southern Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Southern Pontic Desert and Surigard"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSouthern Pontic Desert - Surigard" attachTo="Surigard" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Southern Pontic Desert and Surigard"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentStrydon Peak - Ogrehold" attachTo="Strydon Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Strydon Peak and Ogrehold"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentStrydon Peak - Ogrehold" attachTo="Ogrehold" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Strydon Peak and Ogrehold"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentStrydon Peak - Western White Slopes" attachTo="Strydon Peak" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Strydon Peak and Western White Slopes"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentStrydon Peak - Western White Slopes" attachTo="Western White Slopes" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Strydon Peak and Western White Slopes"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentThe Outlands - Volodar Point" attachTo="The Outlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between The Outlands and Volodar Point"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentThe Outlands - Volodar Point" attachTo="Volodar Point" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between The Outlands and Volodar Point"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+    
+        <attachment name="canalAttachmentThe Outlands - Western Pontic Desert" attachTo="The Outlands" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between The Outlands and Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentThe Outlands - Western Pontic Desert" attachTo="Western Pontic Desert" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between The Outlands and Western Pontic Desert"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        
+        <attachment name="canalAttachmentSafe Haven - Troglodyte Coast" attachTo="Safe Haven" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Safe Haven and Troglodyte Coast"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+        <attachment name="canalAttachmentSafe Haven - Troglodyte Coast" attachTo="Troglodyte Coast" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
+          <option name="canalName" value="a bridge between Safe Haven and Troglodyte Coast"/>
+          <option name="landTerritories" value="Unit List"/>
+          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
+        </attachment>
+<!-- Start Canals -->
 
         <attachment name="supportAttachmentGeneral" attachTo="General" javaClass="games.strategy.triplea.attachments.UnitSupportAttachment" type="unitType">
             <option name="unitType" value="Wizard:Priestess:Marines:Auxiliaries:Spearmen:Lgt-Infantry:Hvy-Infantry:Bowmen:Crossbowmen:Halflings:Gnomes:Crusaders:Zombies:Wood-Elves:Lgt-Cavalry:Hvy-Cavalry:Knights:Rangers:Monster:Ballista:Catapult:Trebuchet:Cannon:Mortar:Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Transport-Ship:Small-Ship:Large-Ship:Monoreme:Bireme:Trireme:Barbarian:Gnoll:Kobold:Murloc:Pirate:Ogre:Pirate-Boat:Pirate-Ship:Green-Dragon:Young-Green-Dragon:Brown-Dragon:Young-Brown-Dragon:Water-Dragon:Young-Water-Dragon:White-Dragon:Young-White-Dragon:Blue-Dragon:Young-Blue-Dragon:Red-Dragon:Young-Red-Dragon"/>
@@ -7499,12 +9218,12 @@
 <br><span style="font-size:14px;color:FFFFFF;">Economic Victory is achieved by an alliance producing 250 PUs at the end of a round. Total Victory is achieved by controlling 5 of the 6 capital cities at the end of a round.</span><br>
 <br>
 <br><b><span style="font-size:16px;color:FFFA74;">General Information:</span></b><br>
-<br><span style="font-size:14px;color:FFFFFF;">This is a 3 vs. 3 nation map.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">This is a 3 vs. 3 player map. But there are also several hostile AI players on the map. These players have 2 turns per round, one after evil and one after good.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">The dices used are 8-sided.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Combat Moves and Non Combat Moves are done before Purchases and Placements.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Land, sea and air battles can only last up to 5 battle rounds.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Nations may build constructions (settlements, fortifications, siege weapons etc.) in newly conquered territories.</span><br>
-<br><span style="font-size:14px;color:FFFFFF;">Rivers are impassable. Not even air units can cross rivers. Use the bridges.</span><br>
+<br><span style="font-size:14px;color:FFFFFF;">Rivers can only be crossed by air units. Land units can only cross by using bridges.</span><br>
 <br><span style="font-size:14px;color:FFFFFF;">Some territories have special effects on specific units. These territories have icons below their territory names. The following territory effects are in play:</span><br>
 <ul>
 <li><span style="color:FFFFFF;">Mountain (prevents attackers from blitzing.)</span></li><br>
