@@ -1,67 +1,31 @@
 <?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-    <info name="Dragon War" version="1.2.7"/>
+    <info name="Dragon War" version="1.2.8"/>
     <loader javaClass="games.strategy.triplea.TripleA"/>
     <triplea minimumVersion="1.9"/>
     <diceSides value="8"/>
 
     <map>
         <!-- Territory Definitions -->
-        <territory name="Whalebard"/>
-        <territory name="The Starfish Chain"/>
-        <territory name="Oorsik Island"/>
-        <territory name="Blood Island"/>
-        <territory name="Questos"/>
-        <territory name="Dragonback Island"/>
-        <territory name="Lone Island"/>
-        <territory name="Turtle Rock"/>
-        <territory name="Longkey Island"/>
-        <territory name="Cannibal Cays"/>
-        <territory name="Buccan Refuge"/>
-        <territory name="Fruity Lagoon"/>
-        <territory name="Whitebone Island"/>
-        <territory name="Icenholm"/>
-        <territory name="Fairy Islet"/>
-        <territory name="Drakeling Island"/>
-        <territory name="Drake Island"/>
-        <territory name="Fane Island"/>
-        <territory name="Dreadholm"/>
-        <territory name="Doryan Enclave"/>           
-        <territory name="Isle of Kings"/>
-        <territory name="Crab Island"/>
-        <territory name="Broken Peninsula"/>
-        <territory name="West Maroons"/>
-        <territory name="East Maroons"/>
-        <territory name="Bluebeard Island"/>
-        <territory name="Deadrock"/>
-        <territory name="Hopeless Skerry"/>
-        <territory name="Inland Sea" water="true"/>
-        <territory name="Pool of Souls" water="true"/>
-        <territory name="Lake Longtear" water="true"/>
-        <territory name="Loch Mordant" water="true"/>
-        <territory name="Vile Deep" water="true"/>
-        <territory name="Putrid Pond" water="true"/>
-        <territory name="Lake Moondeer" water="true"/>
-        <territory name="Loch Wellness" water="true"/>
-        <territory name="Black Lake" water="true"/>
-        <territory name="Lake Mudspit" water="true"/>
-        <territory name="Mining Pool" water="true"/>
-        <territory name="High Mere" water="true"/>
-        <territory name="Tarn Myrin" water="true"/>
-        <territory name="Lake Doom" water="true"/>
-        <territory name="Lake Bryol" water="true"/>
-        <territory name="Loch Hedan" water="true"/>
-        <territory name="Ice Basin" water="true"/>
+        <territory name="Adamant Mines"/>
+        <territory name="Antarctic Zone 1"/>
+        <territory name="Antarctic Zone 10"/>
+        <territory name="Antarctic Zone 11"/>
+        <territory name="Antarctic Zone 12"/>
+        <territory name="Antarctic Zone 13"/>
+        <territory name="Antarctic Zone 14"/>
+        <territory name="Antarctic Zone 15"/>
+        <territory name="Antarctic Zone 16"/>
+        <territory name="Antarctic Zone 2"/>
+        <territory name="Antarctic Zone 3"/>
+        <territory name="Antarctic Zone 4"/>
+        <territory name="Antarctic Zone 5"/>
+        <territory name="Antarctic Zone 6"/>
+        <territory name="Antarctic Zone 7"/>
+        <territory name="Antarctic Zone 8"/>
+        <territory name="Antarctic Zone 9"/>
         <territory name="Arctic Zone 1"/>
-        <territory name="Arctic Zone 2"/>
-        <territory name="Arctic Zone 3"/>
-        <territory name="Arctic Zone 4"/>
-        <territory name="Arctic Zone 5"/>
-        <territory name="Arctic Zone 6"/>
-        <territory name="Arctic Zone 7"/>
-        <territory name="Arctic Zone 8"/>
-        <territory name="Arctic Zone 9"/>
         <territory name="Arctic Zone 10"/>
         <territory name="Arctic Zone 11"/>
         <territory name="Arctic Zone 12"/>
@@ -72,6 +36,7 @@
         <territory name="Arctic Zone 17"/>
         <territory name="Arctic Zone 18"/>
         <territory name="Arctic Zone 19"/>
+        <territory name="Arctic Zone 2"/>
         <territory name="Arctic Zone 20"/>
         <territory name="Arctic Zone 21"/>
         <territory name="Arctic Zone 22"/>
@@ -82,246 +47,282 @@
         <territory name="Arctic Zone 27"/>
         <territory name="Arctic Zone 28"/>
         <territory name="Arctic Zone 29"/>
+        <territory name="Arctic Zone 3"/>
         <territory name="Arctic Zone 30"/>
         <territory name="Arctic Zone 31"/>
         <territory name="Arctic Zone 32"/>
-        <territory name="Hinderland Settlement"/>
-        <territory name="Hinderland Zone 2"/>
-        <territory name="Hinderland Zone 4"/>
-        <territory name="Hinderland Zone 6"/>
-        <territory name="Hinderland Zone 8"/>
-        <territory name="North Hinderlands"/>
-        <territory name="Far Freezelond"/>
-        <territory name="Near Freezelond"/>
-        <territory name="Hinderland Zone 9"/>
-        <territory name="Decaying Soils"/>
-        <territory name="Hinderland Zone 7"/>
-        <territory name="Hinderland Zone 5"/>
+        <territory name="Arctic Zone 4"/>
+        <territory name="Arctic Zone 5"/>
+        <territory name="Arctic Zone 6"/>
+        <territory name="Arctic Zone 7"/>
+        <territory name="Arctic Zone 8"/>
+        <territory name="Arctic Zone 9"/>
+        <territory name="Athondir"/>
+        <territory name="Avalonia"/>
+        <territory name="Badlands"/>
+        <territory name="Bahar Longcliff"/>
+        <territory name="Bahar Woods"/>
+        <territory name="Bahars Landing"/>
+        <territory name="Baldor Castle"/>
+        <territory name="Baldorian Crossing"/>
+        <territory name="Barrenbor"/>
+        <territory name="Black Lake" water="true"/>
         <territory name="Blackwell"/>
-        <territory name="Hinderland Zone 3"/>
-        <territory name="The Hinderlands"/>
-        <territory name="Safe Haven"/>
-        <territory name="Winterboar Hills"/>
-        <territory name="Troglodyte Coast"/>
-        <territory name="Gillshore"/>
-        <territory name="West Dolmor"/>
+        <territory name="Bleak Borderlands"/>
+        <territory name="Bleak Wall"/>
+        <territory name="Blood Hills"/>
+        <territory name="Blood Island"/>
+        <territory name="Bluebeard Island"/>
+        <territory name="Bog of Eternal Stench"/>
+        <territory name="Bridge of No Return"/>
+        <territory name="Broken Peninsula"/>
+        <territory name="Buccan Refuge"/>
+        <territory name="Cannibal Cays"/>
+        <territory name="Cape Despair"/>
+        <territory name="Caves of the Giant Lion"/>
+        <territory name="Coldrock"/>
+        <territory name="Crab Island"/>
+        <territory name="Crystal Strand"/>
+        <territory name="Dathic Coast"/>
+        <territory name="Dathic East"/>
+        <territory name="Dathic Hollows"/>
+        <territory name="Dathic Jungle"/>
+        <territory name="Dathic North"/>
+        <territory name="Dathic South"/>
+        <territory name="Dathic West"/>
+        <territory name="Dathiwatch"/>
+        <territory name="Deadrock"/>
+        <territory name="Decaying Soils"/>
+        <territory name="Deldrach"/>
+        <territory name="Dol Ulum"/>
+        <territory name="Dolmarsh"/>
+        <territory name="Doomed Bridge"/>
+        <territory name="Doomed Passage"/>
+        <territory name="Doryan Enclave"/> 
+        <territory name="Dragonback Island"/>
+        <territory name="Drake Island"/>
+        <territory name="Drake Peninsula"/>
+        <territory name="Drakeling Island"/>
+        <territory name="Dreadholm"/>
+        <territory name="Dreadpass"/>
+        <territory name="Durlan North Coast"/>
+        <territory name="Durlan Ranges"/>
+        <territory name="Durlan South Coast"/>
+        <territory name="Durlan Steppes"/>
+        <territory name="Duskwick"/>
+        <territory name="Dusty Heights"/>
+        <territory name="Dusty Mountains"/>
         <territory name="East Dolmor"/>
         <territory name="East Foothills"/>
-        <territory name="Sinfjord"/>
-        <territory name="Plagued Fields"/>
-        <territory name="Runedelf"/>
-        <territory name="Zool Twins"/>
-        <territory name="Dreadpass"/>
-        <territory name="Lifeless Barrens"/>
-        <territory name="Forsaken Mountains"/>
-        <territory name="Necroloft"/>
-        <territory name="Haunted Moorland"/>
-        <territory name="Misty Slopes"/>
-        <territory name="Lakelot"/>
-        <territory name="West Witching Mountains"/>
-        <territory name="Hexmire"/>
-        <territory name="North Witching Mountains"/>
-        <territory name="Bog of Eternal Stench"/>
-        <territory name="East Witching Mountains"/>
-        <territory name="Great Combe"/>
-        <territory name="The Witching Mountains"/>
-        <territory name="South Witching Mountains"/>
-        <territory name="Cape Despair"/>
-        <territory name="Hellbrook"/>
-        <territory name="Hells Crossing"/>
-        <territory name="Mount Chaos"/>
-        <territory name="Hells Bayou"/>
-        <territory name="Spectoria"/>
-        <territory name="Bridge of No Return"/>
-        <territory name="Wild Arids"/>
-        <territory name="Troll Mountains"/>
-        <territory name="Duskwick"/>
-        <territory name="Mount Terror"/>
-        <territory name="Lost Furlongs"/>
-        <territory name="Grimholt"/>
-        <territory name="Wilderpoint"/>
-        <territory name="Farhaven"/>
-        <territory name="Greenshore"/>
-        <territory name="Caves of the Giant Lion"/>
-        <territory name="Freegrass"/>
-        <territory name="Lion Heights"/>
-        <territory name="Jade Mountains"/>
-        <territory name="Illyria"/>
-        <territory name="Jade Rivers"/>
-        <territory name="Lionport"/>
-        <territory name="Lionian Plains"/>
-        <territory name="Gate of Illyria"/>
-        <territory name="Kingwood"/>
-        <territory name="Lionian Outback"/>
-        <territory name="Southern Illyria"/>
-        <territory name="Orangerock Mountains"/>
-        <territory name="Avalonia"/>
-        <territory name="Millshire"/>
-        <territory name="Seatopian Hills"/>
-        <territory name="Gemrock Mines"/>
-        <territory name="Fanebrow"/>
-        <territory name="Wolfendale"/>
-        <territory name="Morassia"/>
-        <territory name="Morassia Highlands"/>
-        <territory name="Grand Peaks"/>
-        <territory name="Scavendeep"/>
-        <territory name="Crystal Strand"/>
-        <territory name="Samarkum"/>
-        <territory name="East Samark"/>
-        <territory name="Old Slavenport"/>
-        <territory name="Slavebridge"/>
-        <territory name="Mid Samark"/>
-        <territory name="Scavenberg"/>
-        <territory name="South Samark"/>
-        <territory name="Halefoss Mountains"/>
-        <territory name="Goldenheim"/>
-        <territory name="Wetshore"/>
-        <territory name="Scorpion Coast"/>
-        <territory name="Stormcrag"/>
-        <territory name="Drake Peninsula"/>
-        <territory name="Dathic Coast"/>
-        <territory name="Dathiwatch"/>
-        <territory name="Wild Mire"/>
-        <territory name="Badlands"/>
-        <territory name="Dathic East"/>
-        <territory name="Dusty Heights"/>
-        <territory name="Dathic South"/>
-        <territory name="Dusty Mountains"/>
-        <territory name="Greyhood Holdings"/>
-        <territory name="Ironhorn"/>
-        <territory name="Halfling Meadows"/>
-        <territory name="Kumbadur Hills"/>
+        <territory name="East Lost Mountains"/>
+        <territory name="East Maroons"/>
         <territory name="East Parnesis Desert"/>
-        <territory name="Faranwall"/>
-        <territory name="West Parnesis Desert"/>
-        <territory name="Mithrildon"/>
-        <territory name="Maragorn"/>
-        <territory name="Garwald"/>
-        <territory name="Mount Thoril"/>
-        <territory name="Gnomen Lowland"/>
-        <territory name="Dol Ulum"/>
-        <territory name="Adamant Mines"/>
-        <territory name="Dathic Hollows"/>
-        <territory name="Mebach"/>
-        <territory name="Robach"/>
-        <territory name="Misty Forest"/>
-        <territory name="Bahar Longcliff"/>
-        <territory name="Silverdeep"/>
-        <territory name="Westerfoss"/>
-        <territory name="Dathic North"/>
-        <territory name="Dathic Jungle"/>
-        <territory name="Dathic West"/>
-        <territory name="Ogreville"/>
-        <territory name="Orcengor"/>
-        <territory name="North Goronmok"/>
-        <territory name="South Goronmok"/>
-        <territory name="Rackelton"/>
-        <territory name="Warg Caves"/>
-        <territory name="Kargolia"/>
-        <territory name="High Mocrag"/>
-        <territory name="Kargol Keep"/>
-        <territory name="Low Mocrag"/>
-        <territory name="Godheim Pass"/>
-        <territory name="Godheim"/>
-        <territory name="Godheim Reach"/>
-        <territory name="Bleak Wall"/>
-        <territory name="Bahars Landing"/>
-        <territory name="Bleak Borderlands"/>
+        <territory name="East Samark"/>
+        <territory name="East Savanna"/>
+        <territory name="East Winterpass"/>
+        <territory name="East Witching Mountains"/>
         <territory name="Eastern Pontic Desert"/>
-        <territory name="Bahar Woods"/>
+        <territory name="Eastern White Slopes"/>
+        <territory name="Fairy Islet"/>
+        <territory name="Fane Island"/>
+        <territory name="Fanebrow"/>
+        <territory name="Far Freezelond"/>
+        <territory name="Faranwall"/>
+        <territory name="Faraway"/>
+        <territory name="Farhaven"/>
+        <territory name="Forsaken Mountains"/>
+        <territory name="Freegrass"/>
+        <territory name="Fromont"/>
+        <territory name="Fruity Lagoon"/>
+        <territory name="Garwald"/>
+        <territory name="Gate of Illyria"/>
+        <territory name="Gelidost"/>
+        <territory name="Gemrock Mines"/>
+        <territory name="Gillshore"/>
+        <territory name="Glassville"/>
+        <territory name="Gnomen Lowland"/>
+        <territory name="Godheim Pass"/>
+        <territory name="Godheim Reach"/>
+        <territory name="Godheim"/>
+        <territory name="Goldenheim"/>
+        <territory name="Grand Peaks"/>
+        <territory name="Great Combe"/>
+        <territory name="Greenshore"/>
+        <territory name="Greyhood Holdings"/>
+        <territory name="Grimholt"/>
+        <territory name="Halefoss Mountains"/>
+        <territory name="Halfling Meadows"/>
+        <territory name="Haunted Moorland"/>
+        <territory name="Hellbrook"/>
+        <territory name="Hells Bayou"/>
+        <territory name="Hells Crossing"/>
+        <territory name="Hexmire"/>
+        <territory name="High Mere" water="true"/>
+        <territory name="High Mocrag"/>
+        <territory name="Hinderland Settlement"/>
+        <territory name="Hinderland Zone 2"/>
+        <territory name="Hinderland Zone 3"/>
+        <territory name="Hinderland Zone 4"/>
+        <territory name="Hinderland Zone 5"/>
+        <territory name="Hinderland Zone 6"/>
+        <territory name="Hinderland Zone 7"/>
+        <territory name="Hinderland Zone 8"/>
+        <territory name="Hinderland Zone 9"/>
+        <territory name="Hopeless Skerry"/>
+        <territory name="Huntingwath"/>
+        <territory name="Ice Basin" water="true"/>
+        <territory name="Iceburn"/>
+        <territory name="Icenholm"/>
+        <territory name="Illyria"/>
+        <territory name="Inland Sea" water="true"/>
+        <territory name="Ironhorn"/>
+        <territory name="Isle of Kings"/>
+        <territory name="Jade Mountains"/>
+        <territory name="Jade Rivers"/>
+        <territory name="Kallingbog"/>
+        <territory name="Kallingdor"/>
+        <territory name="Kallingholt"/>
+        <territory name="Kallingpass"/>
+        <territory name="Kallingrock"/>
+        <territory name="Kargol Keep"/>
+        <territory name="Kargolia"/>
+        <territory name="Kings Summit"/>
+        <territory name="Kingwood"/>
+        <territory name="Kumbadur Hills"/>
+        <territory name="Lake Bryol" water="true"/>
+        <territory name="Lake Doom" water="true"/>
+        <territory name="Lake Longtear" water="true"/>
+        <territory name="Lake Moondeer" water="true"/>
+        <territory name="Lake Mudspit" water="true"/>
+        <territory name="Lakelot"/>
+        <territory name="Lifeless Barrens"/>
+        <territory name="Lion Heights"/>
+        <territory name="Lionian Outback"/>
+        <territory name="Lionian Plains"/>
+        <territory name="Lionport"/>
+        <territory name="Loch Hedan" water="true"/>
+        <territory name="Loch Mordant" water="true"/>
+        <territory name="Loch Wellness" water="true"/>
+        <territory name="Lone Island"/>
+        <territory name="Longkey Island"/>
+        <territory name="Lost Furlongs"/>
+        <territory name="Lost Mountains"/>
+        <territory name="Low Mocrag"/>
+        <territory name="Maningscar"/>
+        <territory name="Maragorn"/>
+        <territory name="Mebach"/>
+        <territory name="Mid Samark"/>
+        <territory name="Millshire"/>
+        <territory name="Mining Pool" water="true"/>
+        <territory name="Misty Forest"/>
+        <territory name="Misty Slopes"/>
+        <territory name="Mithrildon"/>
+        <territory name="Morassia Highlands"/>
+        <territory name="Morassia"/>
+        <territory name="Mount Chaos"/>
+        <territory name="Mount Myrin"/>
+        <territory name="Mount Terror"/>
+        <territory name="Mount Thoril"/>
+        <territory name="Near Freezelond"/>
+        <territory name="Necroloft"/>
+        <territory name="North Durlan Hills"/>
+        <territory name="North Eastern Pontic Desert"/>
+        <territory name="North Goronmok"/>
+        <territory name="North Hinderlands"/>
+        <territory name="North Savanna"/>
+        <territory name="North Witching Mountains"/>
+        <territory name="Northern Baldoria"/>
+        <territory name="Northern Wilds"/>
         <territory name="Oboro Plains"/>
-        <territory name="Surigard"/>
-        <territory name="Southern Pontic Desert"/>
-        <territory name="South Western Pontic Desert"/>
+        <territory name="Ogrebog"/>
+        <territory name="Ogrehold"/>
+        <territory name="Ogreville"/>
+        <territory name="Old Slavenport"/>
+        <territory name="Oldengard"/>
+        <territory name="Oorsik Forest"/>
+        <territory name="Oorsik Hills"/>
+        <territory name="Oorsik Island"/>
+        <territory name="Oorsik Tirith"/>
+        <territory name="Orangerock Mountains"/>
+        <territory name="Orcengor"/>
+        <territory name="Plagued Fields"/>
         <territory name="Pontic Desert"/>
         <territory name="Pontic Salt Desert"/>
-        <territory name="North Eastern Pontic Desert"/>
-        <territory name="Kings Summit"/>
-        <territory name="West Bahar Woods"/>
-        <territory name="Baldorian Crossing"/>
-        <territory name="Baldor Castle"/>
-        <territory name="Northern Baldoria"/>
-        <territory name="Southern Baldoria"/>
-        <territory name="East Lost Mountains"/>
-        <territory name="Lost Mountains"/>
-        <territory name="Northern Wilds"/>
         <territory name="Ponticor"/>
-        <territory name="Trinity Coast"/>
-        <territory name="West Lost Mountains"/>
-        <territory name="Doomed Passage"/>
-        <territory name="Western Pontic Desert"/>
-        <territory name="Doomed Bridge"/>
-        <territory name="Volodar Point"/>
-        <territory name="Blood Hills"/>
-        <territory name="The Outlands"/>
-        <territory name="Durlan Ranges"/>
-        <territory name="North Durlan Hills"/>
-        <territory name="Durlan North Coast"/>
-        <territory name="South Durlan Hills"/>
-        <territory name="Durlan South Coast"/>
-        <territory name="Deldrach"/>
-        <territory name="Athondir"/>
-        <territory name="Durlan Steppes"/>
-        <territory name="North Savanna"/>
-        <territory name="East Savanna"/>
-        <territory name="South Savanna"/>
-        <territory name="West Savanna"/>
-        <territory name="Oorsik Hills"/>
-        <territory name="Oorsik Tirith"/>
-        <territory name="Oorsik Forest"/>
-        <territory name="Mount Myrin"/>
-        <territory name="Kallingpass"/>
-        <territory name="Kallingdor"/>
-        <territory name="Strydon Wetlands"/>
-        <territory name="Strydon Fields"/>
+        <territory name="Pool of Souls" water="true"/>
+        <territory name="Putrid Pond" water="true"/>
+        <territory name="Questos"/>
+        <territory name="Rackelton"/>
+        <territory name="Rimdell Backlands"/>
+        <territory name="Rimdell Inlands"/>
         <territory name="Rimdell"/>
+        <territory name="Robach"/>
+        <territory name="Runedelf"/>
+        <territory name="Safe Haven"/>
+        <territory name="Samarkum"/>
+        <territory name="Scavenberg"/>
+        <territory name="Scavendeep"/>
+        <territory name="Scorpion Coast"/>
+        <territory name="Sealonia"/>
+        <territory name="Seatopian Hills"/>
+        <territory name="Silverdeep"/>
+        <territory name="Sinfjord"/>
+        <territory name="Slavebridge"/>
+        <territory name="South Durlan Hills"/>
+        <territory name="South Goronmok"/>
+        <territory name="South Samark"/>
+        <territory name="South Savanna"/>
+        <territory name="South Western Pontic Desert"/>
+        <territory name="South Witching Mountains"/>
+        <territory name="Southern Baldoria"/>
+        <territory name="Southern Illyria"/>
+        <territory name="Southern Pontic Desert"/>
+        <territory name="Spectoria"/>
+        <territory name="Stormcrag"/>
+        <territory name="Stormwood"/>
+        <territory name="Strongnin"/>
+        <territory name="Strydon Fields"/>
         <territory name="Strydon Mountains"/>
         <territory name="Strydon Peak"/>
-        <territory name="Ogrehold"/>
-        <territory name="Ogrebog"/>
-        <territory name="Kallingbog"/>
-        <territory name="Huntingwath"/>
-        <territory name="Kallingrock"/>
-        <territory name="Kallingholt"/>
-        <territory name="Rimdell Inlands"/>
-        <territory name="Western White Slopes"/>
-        <territory name="Rimdell Backlands"/>
-        <territory name="White Slopes"/>
-        <territory name="Wetwood"/>
-        <territory name="Eastern White Slopes"/>
+        <territory name="Strydon Wetlands"/>
+        <territory name="Surigard"/>
+        <territory name="Tarn Myrin" water="true"/>
+        <territory name="The Hinderlands"/>
+        <territory name="The Outlands"/>
+        <territory name="The Starfish Chain"/>
+        <territory name="The Witching Mountains"/>
+        <territory name="Trinity Coast"/>
+        <territory name="Troglodyte Coast"/>
+        <territory name="Troll Mountains"/>
+        <territory name="Turtle Rock"/>
+        <territory name="Vile Deep" water="true"/>
+        <territory name="Volodar Point"/>
+        <territory name="Warg Caves"/>
+        <territory name="West Bahar Woods"/>
+        <territory name="West Dolmor"/>
+        <territory name="West Lost Mountains"/>
+        <territory name="West Maroons"/>
+        <territory name="West Parnesis Desert"/>
+        <territory name="West Savanna"/>
         <territory name="West Winterpass"/>
-        <territory name="Winterpass"/>
-        <territory name="East Winterpass"/>
-        <territory name="Antarctic Zone 1"/>
-        <territory name="Antarctic Zone 2"/>
-        <territory name="Antarctic Zone 3"/>
-        <territory name="Antarctic Zone 4"/>
-        <territory name="Antarctic Zone 5"/>
-        <territory name="Antarctic Zone 6"/>
-        <territory name="Antarctic Zone 7"/>
-        <territory name="Antarctic Zone 8"/>
-        <territory name="Gelidost"/>
-        <territory name="Antarctic Zone 9"/>
-        <territory name="Antarctic Zone 10"/>
-        <territory name="Antarctic Zone 11"/>
-        <territory name="Antarctic Zone 12"/>
-        <territory name="Antarctic Zone 13"/>
-        <territory name="Antarctic Zone 14"/>
-        <territory name="Antarctic Zone 15"/>
-        <territory name="Antarctic Zone 16"/>
-        <territory name="Dolmarsh"/>
+        <territory name="West Witching Mountains"/>
+        <territory name="Westerfoss"/>
+        <territory name="Western Pontic Desert"/>
+        <territory name="Western White Slopes"/>
+        <territory name="Wetshore"/>
+        <territory name="Wetwood"/>
+        <territory name="Whalebard"/>
+        <territory name="White Slopes"/>
+        <territory name="Whitebone Island"/>
+        <territory name="Wild Arids"/>
+        <territory name="Wild Mire"/>
+        <territory name="Wilderpoint"/>
         <territory name="Winterash"/>
-        <territory name="Maningscar"/>
-        <territory name="Barrenbor"/>
-        <territory name="Faraway"/>
-        <territory name="Iceburn"/>
-        <territory name="Oldengard"/>
-        <territory name="Stormwood"/>
-        <territory name="Fromont"/>
-        <territory name="Sealonia"/>
-        <territory name="Coldrock"/>
-        <territory name="Strongnin"/>
-        <territory name="Glassville"/>
+        <territory name="Winterboar Hills"/>
+        <territory name="Winterpass"/>
+        <territory name="Wolfendale"/>
+        <territory name="Zool Twins"/>
+
         <territory name="Sea Zone 1" water="true"/>
         <territory name="Sea Zone 2" water="true"/>
         <territory name="Sea Zone 3" water="true"/>
@@ -394,718 +395,31 @@
         <territory name="Sea Zone 70" water="true"/>
         <territory name="Sea Zone 71" water="true"/>
         <territory name="Sea Zone 72" water="true"/>
+
         <territory name="Unit List"/>
         <!-- Territory Connections -->
-        <connection t1="Whalebard" t2="Sea Zone 19"/>
-        <connection t1="The Starfish Chain" t2="Sea Zone 15"/>
-        <connection t1="Oorsik Island" t2="Sea Zone 5"/>
-        <connection t1="Oorsik Island" t2="Sea Zone 6"/>
-        <connection t1="Blood Island" t2="Sea Zone 21"/>
-        <connection t1="Blood Island" t2="Sea Zone 11"/>
-        <connection t1="Blood Island" t2="Sea Zone 13"/>
-        <connection t1="Questos" t2="Sea Zone 21"/>
-        <connection t1="Dragonback Island" t2="Sea Zone 29"/>
-        <connection t1="Dragonback Island" t2="Sea Zone 23"/>
-        <connection t1="Dragonback Island" t2="Sea Zone 24"/>
-        <connection t1="Lone Island" t2="Sea Zone 27"/>
-        <connection t1="Lone Island" t2="Sea Zone 25"/>
-        <connection t1="Lone Island" t2="Sea Zone 24"/>
-        <connection t1="Turtle Rock" t2="Sea Zone 22"/>
-        <connection t1="Turtle Rock" t2="Sea Zone 26"/>
-        <connection t1="Longkey Island" t2="Sea Zone 26"/>
-        <connection t1="Longkey Island" t2="Sea Zone 34"/>
-        <connection t1="Cannibal Cays" t2="Sea Zone 71"/>
-        <connection t1="Buccan Refuge" t2="Sea Zone 69"/>
-        <connection t1="Buccan Refuge" t2="Sea Zone 68"/>
-        <connection t1="Fruity Lagoon" t2="Sea Zone 28"/>
-        <connection t1="Whitebone Island" t2="Sea Zone 29"/>
-        <connection t1="Icenholm" t2="Sea Zone 33"/>
-        <connection t1="Icenholm" t2="Sea Zone 30"/>
-        <connection t1="Fairy Islet" t2="Sea Zone 38"/>
-        <connection t1="Drakeling Island" t2="Sea Zone 36"/>
-        <connection t1="Drakeling Island" t2="Sea Zone 37"/>
-        <connection t1="Drake Island" t2="Sea Zone 39"/>
-        <connection t1="Drake Island" t2="Sea Zone 40"/>
-        <connection t1="Drake Island" t2="Sea Zone 41"/>
-        <connection t1="Drake Island" t2="Sea Zone 36"/>
-        <connection t1="Drake Island" t2="Sea Zone 37"/>
-        <connection t1="Fane Island" t2="Sea Zone 36"/>
-        <connection t1="Dreadholm" t2="Sea Zone 39"/>
-        <connection t1="Dreadholm" t2="Sea Zone 40"/>
-        <connection t1="Dreadholm" t2="Sea Zone 44"/>
-        <connection t1="Doryan Enclave" t2="Sea Zone 43"/>
-        <connection t1="Doryan Enclave" t2="Sea Zone 44"/>
-        <connection t1="Doryan Enclave" t2="Sea Zone 41"/>
-        <connection t1="Isle of Kings" t2="Sea Zone 43"/>
-        <connection t1="Isle of Kings" t2="Sea Zone 41"/>
-        <connection t1="Crab Island" t2="Sea Zone 65"/>
-        <connection t1="Broken Peninsula" t2="Sea Zone 60"/>
-        <connection t1="Broken Peninsula" t2="Sea Zone 63"/>
-        <connection t1="Broken Peninsula" t2="Sea Zone 64"/>
-        <connection t1="Broken Peninsula" t2="Sea Zone 59"/>
-        <connection t1="West Maroons" t2="Sea Zone 63"/>
-        <connection t1="East Maroons" t2="Sea Zone 62"/>
-        <connection t1="Bluebeard Island" t2="Sea Zone 52"/>
-        <connection t1="Bluebeard Island" t2="Sea Zone 47"/>
-        <connection t1="Bluebeard Island" t2="Sea Zone 46"/>
-        <connection t1="Deadrock" t2="Sea Zone 52"/>
-        <connection t1="Deadrock" t2="Sea Zone 47"/>
-        <connection t1="Hopeless Skerry" t2="Sea Zone 49"/>
-        <connection t1="Hopeless Skerry" t2="Sea Zone 50"/>
-        <connection t1="Inland Sea" t2="Plagued Fields"/>
-        <connection t1="Inland Sea" t2="Forsaken Mountains"/>
-        <connection t1="Inland Sea" t2="Lifeless Barrens"/>
-        <connection t1="Pool of Souls" t2="Zool Twins"/>
-        <connection t1="Pool of Souls" t2="Dreadpass"/>
-        <connection t1="Pool of Souls" t2="Runedelf"/>
-        <connection t1="Lake Longtear" t2="Runedelf"/>
-        <connection t1="Lake Longtear" t2="Bridge of No Return"/>
-        <connection t1="Lake Longtear" t2="Troll Mountains"/>
-        <connection t1="Loch Mordant" t2="Lakelot"/>
-        <connection t1="Loch Mordant" t2="Zool Twins"/>
-        <connection t1="Loch Mordant" t2="Spectoria"/>
-        <connection t1="Loch Mordant" t2="Bridge of No Return"/>
-        <connection t1="Vile Deep" t2="Lakelot"/>
-        <connection t1="Vile Deep" t2="Mount Chaos"/>
-        <connection t1="Vile Deep" t2="Spectoria"/>
-        <connection t1="Vile Deep" t2="Great Combe"/>
-        <connection t1="Putrid Pond" t2="The Witching Mountains"/>
-        <connection t1="Putrid Pond" t2="Great Combe"/>
-        <connection t1="Lake Moondeer" t2="Bridge of No Return"/>
-        <connection t1="Lake Moondeer" t2="Duskwick"/>
-        <connection t1="Lake Moondeer" t2="Wild Arids"/>
-        <connection t1="Lake Moondeer" t2="Troll Mountains"/>
-        <connection t1="Loch Wellness" t2="Avalonia"/>
-        <connection t1="Loch Wellness" t2="Orangerock Mountains"/>
-        <connection t1="Loch Wellness" t2="Wolfendale"/>
-        <connection t1="Black Lake" t2="Southern Illyria"/>
-        <connection t1="Black Lake" t2="Crystal Strand"/>
-        <connection t1="Lake Mudspit" t2="Ogreville"/>
-        <connection t1="Lake Mudspit" t2="Dusty Mountains"/>
-        <connection t1="Lake Mudspit" t2="Orcengor"/>
-        <connection t1="Mining Pool" t2="Faranwall"/>
-        <connection t1="Mining Pool" t2="Mount Thoril"/>
-        <connection t1="Mining Pool" t2="Mithrildon"/>
-        <connection t1="High Mere" t2="Western White Slopes"/>
-        <connection t1="High Mere" t2="Strydon Peak"/>
-        <connection t1="High Mere" t2="Ogrehold"/>
-        <connection t1="Tarn Myrin" t2="Kallingpass"/>
-        <connection t1="Tarn Myrin" t2="Mount Myrin"/>
-        <connection t1="Lake Doom" t2="Ponticor"/>
-        <connection t1="Lake Doom" t2="Doomed Passage"/>
-        <connection t1="Lake Doom" t2="Western Pontic Desert"/>
-        <connection t1="Lake Bryol" t2="Oldengard"/>
-        <connection t1="Lake Bryol" t2="Stormwood"/>
-        <connection t1="Loch Hedan" t2="Oldengard"/>
-        <connection t1="Loch Hedan" t2="Strongnin"/>
-        <connection t1="Ice Basin" t2="Glassville"/>
-        <connection t1="Ice Basin" t2="Iceburn"/>
-        <connection t1="Ice Basin" t2="Strongnin"/>
-        <connection t1="Arctic Zone 1" t2="Sea Zone 18"/>
-        <connection t1="Arctic Zone 1" t2="Arctic Zone 3"/>
-        <connection t1="Arctic Zone 1" t2="Arctic Zone 2"/>
-        <connection t1="Arctic Zone 2" t2="Sea Zone 18"/>
-        <connection t1="Arctic Zone 2" t2="Arctic Zone 4"/>
-        <connection t1="Arctic Zone 3" t2="Arctic Zone 4"/>
-        <connection t1="Arctic Zone 3" t2="Arctic Zone 5"/>
-        <connection t1="Arctic Zone 4" t2="Sea Zone 19"/>
-        <connection t1="Arctic Zone 4" t2="Arctic Zone 6"/>
-        <connection t1="Arctic Zone 5" t2="Arctic Zone 7"/>
-        <connection t1="Arctic Zone 5" t2="Arctic Zone 6"/>
-        <connection t1="Arctic Zone 6" t2="Arctic Zone 7"/>
-        <connection t1="Arctic Zone 6" t2="Sea Zone 19"/>
-        <connection t1="Arctic Zone 6" t2="Sea Zone 20"/>
-        <connection t1="Arctic Zone 7" t2="Arctic Zone 8"/>
-        <connection t1="Arctic Zone 7" t2="Sea Zone 20"/>
-        <connection t1="Arctic Zone 8" t2="Arctic Zone 9"/>
-        <connection t1="Arctic Zone 8" t2="Sea Zone 20"/>
-        <connection t1="Arctic Zone 9" t2="Arctic Zone 10"/>
-        <connection t1="Arctic Zone 9" t2="Sea Zone 20"/>
-        <connection t1="Arctic Zone 9" t2="Sea Zone 23"/>
-        <connection t1="Arctic Zone 10" t2="Arctic Zone 11"/>
-        <connection t1="Arctic Zone 10" t2="Sea Zone 23"/>
-        <connection t1="Arctic Zone 11" t2="Arctic Zone 12"/>
-        <connection t1="Arctic Zone 11" t2="Sea Zone 23"/>
-        <connection t1="Arctic Zone 12" t2="Sea Zone 29"/>
-        <connection t1="Arctic Zone 12" t2="Arctic Zone 13"/>
-        <connection t1="Arctic Zone 12" t2="Sea Zone 23"/>
-        <connection t1="Arctic Zone 13" t2="Sea Zone 29"/>
-        <connection t1="Arctic Zone 13" t2="Arctic Zone 14"/>
-        <connection t1="Arctic Zone 13" t2="Arctic Zone 15"/>
-        <connection t1="Arctic Zone 14" t2="Arctic Zone 15"/>
-        <connection t1="Arctic Zone 14" t2="Arctic Zone 16"/>
-        <connection t1="Arctic Zone 14" t2="Arctic Zone 17"/>
-        <connection t1="Arctic Zone 15" t2="Sea Zone 29"/>
-        <connection t1="Arctic Zone 15" t2="Arctic Zone 16"/>
-        <connection t1="Arctic Zone 16" t2="Sea Zone 29"/>
-        <connection t1="Arctic Zone 16" t2="Arctic Zone 18"/>
-        <connection t1="Arctic Zone 16" t2="Sea Zone 30"/>
-        <connection t1="Arctic Zone 16" t2="Arctic Zone 17"/>
-        <connection t1="Arctic Zone 17" t2="Arctic Zone 18"/>
-        <connection t1="Arctic Zone 17" t2="Arctic Zone 19"/>
-        <connection t1="Arctic Zone 18" t2="Arctic Zone 20"/>
-        <connection t1="Arctic Zone 18" t2="Arctic Zone 19"/>
-        <connection t1="Arctic Zone 18" t2="Sea Zone 30"/>
-        <connection t1="Arctic Zone 19" t2="Arctic Zone 21"/>
-        <connection t1="Arctic Zone 19" t2="Arctic Zone 22"/>
-        <connection t1="Arctic Zone 19" t2="Arctic Zone 20"/>
-        <connection t1="Arctic Zone 20" t2="Arctic Zone 22"/>
-        <connection t1="Arctic Zone 20" t2="Sea Zone 30"/>
-        <connection t1="Arctic Zone 21" t2="Arctic Zone 22"/>
-        <connection t1="Arctic Zone 21" t2="Arctic Zone 23"/>
-        <connection t1="Arctic Zone 22" t2="Arctic Zone 23"/>
-        <connection t1="Arctic Zone 22" t2="Sea Zone 33"/>
-        <connection t1="Arctic Zone 22" t2="Sea Zone 30"/>
-        <connection t1="Arctic Zone 23" t2="Arctic Zone 24"/>
-        <connection t1="Arctic Zone 23" t2="Sea Zone 33"/>
-        <connection t1="Arctic Zone 24" t2="Hinderland Settlement"/>
-        <connection t1="Arctic Zone 24" t2="Arctic Zone 25"/>
-        <connection t1="Arctic Zone 24" t2="Hinderland Zone 2"/>
-        <connection t1="Arctic Zone 24" t2="Sea Zone 33"/>
-        <connection t1="Arctic Zone 25" t2="Arctic Zone 26"/>
-        <connection t1="Arctic Zone 25" t2="Hinderland Zone 2"/>
-        <connection t1="Arctic Zone 25" t2="Hinderland Zone 4"/>
-        <connection t1="Arctic Zone 26" t2="Hinderland Zone 6"/>
-        <connection t1="Arctic Zone 26" t2="Hinderland Zone 4"/>
-        <connection t1="Arctic Zone 26" t2="Arctic Zone 27"/>
-        <connection t1="Arctic Zone 27" t2="Hinderland Zone 6"/>
-        <connection t1="Arctic Zone 27" t2="Hinderland Zone 8"/>
-        <connection t1="Arctic Zone 27" t2="Arctic Zone 28"/>
-        <connection t1="Arctic Zone 28" t2="Hinderland Zone 8"/>
-        <connection t1="Arctic Zone 28" t2="Arctic Zone 29"/>
-        <connection t1="Arctic Zone 29" t2="Arctic Zone 30"/>
-        <connection t1="Arctic Zone 29" t2="Hinderland Zone 8"/>
-        <connection t1="Arctic Zone 29" t2="North Hinderlands"/>
-        <connection t1="Arctic Zone 30" t2="Arctic Zone 31"/>
-        <connection t1="Arctic Zone 30" t2="North Hinderlands"/>
-        <connection t1="Arctic Zone 31" t2="Arctic Zone 32"/>
-        <connection t1="Arctic Zone 31" t2="Sea Zone 50"/>
-        <connection t1="Arctic Zone 31" t2="North Hinderlands"/>
-        <connection t1="Arctic Zone 32" t2="Sea Zone 50"/>
-        <connection t1="Hinderland Settlement" t2="The Hinderlands"/>
-        <connection t1="Hinderland Settlement" t2="Hinderland Zone 2"/>
-        <connection t1="Hinderland Settlement" t2="Sea Zone 33"/>
-        <connection t1="Hinderland Zone 2" t2="The Hinderlands"/>
-        <connection t1="Hinderland Zone 2" t2="Hinderland Zone 4"/>
-        <connection t1="Hinderland Zone 2" t2="Hinderland Zone 3"/>
-        <connection t1="Hinderland Zone 4" t2="Hinderland Zone 5"/>
-        <connection t1="Hinderland Zone 4" t2="Hinderland Zone 6"/>
-        <connection t1="Hinderland Zone 4" t2="Hinderland Zone 3"/>
-        <connection t1="Hinderland Zone 6" t2="Hinderland Zone 7"/>
-        <connection t1="Hinderland Zone 6" t2="Hinderland Zone 5"/>
-        <connection t1="Hinderland Zone 6" t2="Hinderland Zone 8"/>
-        <connection t1="Hinderland Zone 8" t2="Hinderland Zone 7"/>
-        <connection t1="Hinderland Zone 8" t2="Hinderland Zone 9"/>
-        <connection t1="Hinderland Zone 8" t2="North Hinderlands"/>
-        <connection t1="North Hinderlands" t2="Hinderland Zone 9"/>
-        <connection t1="North Hinderlands" t2="Sea Zone 50"/>
-        <connection t1="North Hinderlands" t2="Far Freezelond"/>
-        <connection t1="Far Freezelond" t2="Sea Zone 49"/>
-        <connection t1="Far Freezelond" t2="Sea Zone 50"/>
-        <connection t1="Far Freezelond" t2="Near Freezelond"/>
-        <connection t1="Near Freezelond" t2="Sea Zone 49"/>
-        <connection t1="Near Freezelond" t2="Necroloft"/>
-        <connection t1="Hinderland Zone 9" t2="Hinderland Zone 7"/>
-        <connection t1="Hinderland Zone 9" t2="Decaying Soils"/>
-        <connection t1="Decaying Soils" t2="Hinderland Zone 7"/>
-        <connection t1="Decaying Soils" t2="Blackwell"/>
-        <connection t1="Decaying Soils" t2="Forsaken Mountains"/>
-        <connection t1="Hinderland Zone 7" t2="Hinderland Zone 5"/>
-        <connection t1="Hinderland Zone 5" t2="Hinderland Zone 3"/>
-        <connection t1="Hinderland Zone 3" t2="The Hinderlands"/>
-        <connection t1="The Hinderlands" t2="Plagued Fields"/>
-        <connection t1="The Hinderlands" t2="Runedelf"/>
-        <connection t1="Safe Haven" t2="Sea Zone 29"/>
-        <connection t1="Safe Haven" t2="Sea Zone 28"/>
-        <connection t1="Safe Haven" t2="Sea Zone 32"/>
-        <connection t1="Safe Haven" t2="Winterboar Hills"/>
-        <connection t1="Safe Haven" t2="Sea Zone 30"/>
-        <connection t1="Safe Haven" t2="Sea Zone 31"/>
-        <connection t1="Winterboar Hills" t2="West Dolmor"/>
-        <connection t1="Winterboar Hills" t2="Sea Zone 33"/>
-        <connection t1="Winterboar Hills" t2="Sea Zone 30"/>
-        <connection t1="Winterboar Hills" t2="Troglodyte Coast"/>
-        <connection t1="Winterboar Hills" t2="Gillshore"/>
-        <connection t1="Troglodyte Coast" t2="West Dolmor"/>
-        <connection t1="Troglodyte Coast" t2="East Dolmor"/>
-        <connection t1="Troglodyte Coast" t2="Sea Zone 32"/>
-        <connection t1="Gillshore" t2="East Foothills"/>
-        <connection t1="Gillshore" t2="West Dolmor"/>
-        <connection t1="Gillshore" t2="East Dolmor"/>
-        <connection t1="Gillshore" t2="Sea Zone 33"/>
-        <connection t1="West Dolmor" t2="East Dolmor"/>
-        <connection t1="East Dolmor" t2="East Foothills"/>
-        <connection t1="East Dolmor" t2="Sinfjord"/>
-        <connection t1="East Dolmor" t2="Sea Zone 32"/>
-        <connection t1="East Foothills" t2="Sinfjord"/>
-        <connection t1="Sinfjord" t2="Runedelf"/>
-        <connection t1="Sinfjord" t2="Sea Zone 32"/>
-        <connection t1="Plagued Fields" t2="Dreadpass"/>
-        <connection t1="Plagued Fields" t2="Forsaken Mountains"/>
-        <connection t1="Runedelf" t2="Zool Twins"/>
-        <connection t1="Zool Twins" t2="Lakelot"/>
-        <connection t1="Zool Twins" t2="Misty Slopes"/>
-        <connection t1="Zool Twins" t2="Dreadpass"/>
-        <connection t1="Zool Twins" t2="Bridge of No Return"/>
-        <connection t1="Dreadpass" t2="Misty Slopes"/>
-        <connection t1="Dreadpass" t2="Lifeless Barrens"/>
-        <connection t1="Lifeless Barrens" t2="Haunted Moorland"/>
-        <connection t1="Lifeless Barrens" t2="Misty Slopes"/>
-        <connection t1="Lifeless Barrens" t2="Sea Zone 51"/>
-        <connection t1="Lifeless Barrens" t2="Forsaken Mountains"/>
-        <connection t1="Forsaken Mountains" t2="Sea Zone 51"/>
-        <connection t1="Forsaken Mountains" t2="Necroloft"/>
-        <connection t1="Necroloft" t2="Sea Zone 49"/>
-        <connection t1="Necroloft" t2="Sea Zone 51"/>
-        <connection t1="Haunted Moorland" t2="West Witching Mountains"/>
-        <connection t1="Haunted Moorland" t2="Sea Zone 49"/>
-        <connection t1="Haunted Moorland" t2="Misty Slopes"/>
-        <connection t1="Haunted Moorland" t2="Sea Zone 51"/>
-        <connection t1="Misty Slopes" t2="Lakelot"/>
-        <connection t1="Misty Slopes" t2="West Witching Mountains"/>
-        <connection t1="West Witching Mountains" t2="Hexmire"/>
-        <connection t1="West Witching Mountains" t2="North Witching Mountains"/>
-        <connection t1="West Witching Mountains" t2="Great Combe"/>
-        <connection t1="Hexmire" t2="Sea Zone 49"/>
-        <connection t1="Hexmire" t2="North Witching Mountains"/>
-        <connection t1="North Witching Mountains" t2="East Witching Mountains"/>
-        <connection t1="North Witching Mountains" t2="Great Combe"/>
-        <connection t1="Bog of Eternal Stench" t2="Sea Zone 49"/>
-        <connection t1="Bog of Eternal Stench" t2="Sea Zone 48"/>
-        <connection t1="Bog of Eternal Stench" t2="East Witching Mountains"/>
-        <connection t1="East Witching Mountains" t2="The Witching Mountains"/>
-        <connection t1="East Witching Mountains" t2="Sea Zone 47"/>
-        <connection t1="East Witching Mountains" t2="Sea Zone 48"/>
-        <connection t1="East Witching Mountains" t2="Sea Zone 46"/>
-        <connection t1="The Witching Mountains" t2="Mount Chaos"/>
-        <connection t1="The Witching Mountains" t2="South Witching Mountains"/>
-        <connection t1="South Witching Mountains" t2="Cape Despair"/>
-        <connection t1="South Witching Mountains" t2="Hells Crossing"/>
-        <connection t1="South Witching Mountains" t2="Sea Zone 45"/>
-        <connection t1="South Witching Mountains" t2="Sea Zone 46"/>
-        <connection t1="Cape Despair" t2="Hellbrook"/>
-        <connection t1="Cape Despair" t2="Hells Crossing"/>
-        <connection t1="Cape Despair" t2="Jade Mountains"/>
-        <connection t1="Cape Despair" t2="Sea Zone 44"/>
-        <connection t1="Cape Despair" t2="Sea Zone 45"/>
-        <connection t1="Hellbrook" t2="Hells Crossing"/>
-        <connection t1="Hellbrook" t2="Sea Zone 44"/>
-        <connection t1="Hells Crossing" t2="Hells Bayou"/>
-        <connection t1="Mount Chaos" t2="Hells Bayou"/>
-        <connection t1="Mount Chaos" t2="Spectoria"/>
-        <connection t1="Hells Bayou" t2="Sea Zone 39"/>
-        <connection t1="Hells Bayou" t2="Spectoria"/>
-        <connection t1="Hells Bayou" t2="Sea Zone 44"/>
-        <connection t1="Spectoria" t2="Sea Zone 39"/>
-        <connection t1="Spectoria" t2="Bridge of No Return"/>
-        <connection t1="Spectoria" t2="Wild Arids"/>
-        <connection t1="Bridge of No Return" t2="Troll Mountains"/>
-        <connection t1="Wild Arids" t2="Lost Furlongs"/>
-        <connection t1="Wild Arids" t2="Sea Zone 39"/>
-        <connection t1="Troll Mountains" t2="Sea Zone 32"/>
-        <connection t1="Troll Mountains" t2="Duskwick"/>
-        <connection t1="Troll Mountains" t2="Mount Terror"/>
-        <connection t1="Duskwick" t2="Sea Zone 36"/>
-        <connection t1="Mount Terror" t2="Sea Zone 32"/>
-        <connection t1="Mount Terror" t2="Sea Zone 36"/>
-        <connection t1="Lost Furlongs" t2="Grimholt"/>
-        <connection t1="Lost Furlongs" t2="Sea Zone 39"/>
-        <connection t1="Lost Furlongs" t2="Sea Zone 36"/>
-        <connection t1="Grimholt" t2="Sea Zone 39"/>
-        <connection t1="Grimholt" t2="Sea Zone 36"/>
-        <connection t1="Wilderpoint" t2="Farhaven"/>
-        <connection t1="Wilderpoint" t2="Greenshore"/>
-        <connection t1="Wilderpoint" t2="Sea Zone 52"/>
-        <connection t1="Wilderpoint" t2="Sea Zone 53"/>
-        <connection t1="Wilderpoint" t2="Caves of the Giant Lion"/>
-        <connection t1="Wilderpoint" t2="Sea Zone 46"/>
-        <connection t1="Farhaven" t2="Sea Zone 54"/>
-        <connection t1="Farhaven" t2="Sea Zone 53"/>
-        <connection t1="Farhaven" t2="Caves of the Giant Lion"/>
-        <connection t1="Greenshore" t2="Lion Heights"/>
-        <connection t1="Greenshore" t2="Jade Mountains"/>
-        <connection t1="Greenshore" t2="Caves of the Giant Lion"/>
-        <connection t1="Greenshore" t2="Sea Zone 45"/>
-        <connection t1="Greenshore" t2="Sea Zone 46"/>
-        <connection t1="Caves of the Giant Lion" t2="Freegrass"/>
-        <connection t1="Caves of the Giant Lion" t2="Sea Zone 54"/>
-        <connection t1="Caves of the Giant Lion" t2="Lion Heights"/>
-        <connection t1="Freegrass" t2="Sea Zone 54"/>
-        <connection t1="Freegrass" t2="Lionport"/>
-        <connection t1="Freegrass" t2="Lion Heights"/>
-        <connection t1="Freegrass" t2="Sea Zone 56"/>
-        <connection t1="Lion Heights" t2="Jade Mountains"/>
-        <connection t1="Jade Mountains" t2="Illyria"/>
-        <connection t1="Jade Mountains" t2="Jade Rivers"/>
-        <connection t1="Jade Mountains" t2="Sea Zone 45"/>
-        <connection t1="Illyria" t2="Gate of Illyria"/>
-        <connection t1="Illyria" t2="Sea Zone 44"/>
-        <connection t1="Illyria" t2="Jade Rivers"/>
-        <connection t1="Illyria" t2="Sea Zone 45"/>
-        <connection t1="Jade Rivers" t2="Lionian Plains"/>
-        <connection t1="Jade Rivers" t2="Gate of Illyria"/>
-        <connection t1="Lionport" t2="Lionian Plains"/>
-        <connection t1="Lionport" t2="Kingwood"/>
-        <connection t1="Lionport" t2="Lionian Outback"/>
-        <connection t1="Lionport" t2="Sea Zone 59"/>
-        <connection t1="Lionport" t2="Sea Zone 56"/>
-        <connection t1="Lionian Plains" t2="Gate of Illyria"/>
-        <connection t1="Lionian Plains" t2="Lionian Outback"/>
-        <connection t1="Gate of Illyria" t2="Southern Illyria"/>
-        <connection t1="Gate of Illyria" t2="Orangerock Mountains"/>
-        <connection t1="Gate of Illyria" t2="Sea Zone 44"/>
-        <connection t1="Gate of Illyria" t2="Lionian Outback"/>
-        <connection t1="Kingwood" t2="Avalonia"/>
-        <connection t1="Kingwood" t2="Lionian Outback"/>
-        <connection t1="Kingwood" t2="Sea Zone 59"/>
-        <connection t1="Lionian Outback" t2="Orangerock Mountains"/>
-        <connection t1="Southern Illyria" t2="Orangerock Mountains"/>
-        <connection t1="Southern Illyria" t2="Sea Zone 43"/>
-        <connection t1="Southern Illyria" t2="Sea Zone 44"/>
-        <connection t1="Southern Illyria" t2="Crystal Strand"/>
-        <connection t1="Orangerock Mountains" t2="Crystal Strand"/>
-        <connection t1="Orangerock Mountains" t2="Grand Peaks"/>
-        <connection t1="Avalonia" t2="Fanebrow"/>
-        <connection t1="Avalonia" t2="Gemrock Mines"/>
-        <connection t1="Avalonia" t2="Millshire"/>
-        <connection t1="Millshire" t2="Seatopian Hills"/>
-        <connection t1="Millshire" t2="Gemrock Mines"/>
-        <connection t1="Millshire" t2="Sea Zone 59"/>
-        <connection t1="Seatopian Hills" t2="Gemrock Mines"/>
-        <connection t1="Seatopian Hills" t2="Sea Zone 64"/>
-        <connection t1="Seatopian Hills" t2="Sea Zone 59"/>
-        <connection t1="Gemrock Mines" t2="Sea Zone 64"/>
-        <connection t1="Fanebrow" t2="Wolfendale"/>
-        <connection t1="Fanebrow" t2="Sea Zone 64"/>
-        <connection t1="Wolfendale" t2="Sea Zone 65"/>
-        <connection t1="Wolfendale" t2="Sea Zone 64"/>
-        <connection t1="Wolfendale" t2="Grand Peaks"/>
-        <connection t1="Morassia" t2="Sea Zone 65"/>
-        <connection t1="Morassia" t2="Sea Zone 66"/>
-        <connection t1="Morassia" t2="Morassia Highlands"/>
-        <connection t1="Morassia Highlands" t2="Grand Peaks"/>
-        <connection t1="Grand Peaks" t2="Scavendeep"/>
-        <connection t1="Scavendeep" t2="Scavenberg"/>
-        <connection t1="Scavendeep" t2="East Samark"/>
-        <connection t1="Crystal Strand" t2="Sea Zone 43"/>
-        <connection t1="Crystal Strand" t2="Samarkum"/>
-        <connection t1="Crystal Strand" t2="Sea Zone 41"/>
-        <connection t1="Crystal Strand" t2="Sea Zone 42"/>
-        <connection t1="Samarkum" t2="Sea Zone 42"/>
-        <connection t1="Samarkum" t2="Old Slavenport"/>
-        <connection t1="Samarkum" t2="East Samark"/>
-        <connection t1="East Samark" t2="Mid Samark"/>
-        <connection t1="East Samark" t2="Old Slavenport"/>
-        <connection t1="Old Slavenport" t2="Dusty Heights"/>
-        <connection t1="Old Slavenport" t2="Slavebridge"/>
-        <connection t1="Old Slavenport" t2="Sea Zone 42"/>
-        <connection t1="Old Slavenport" t2="Badlands"/>
-        <connection t1="Slavebridge" t2="Sea Zone 72"/>
-        <connection t1="Slavebridge" t2="South Samark"/>
-        <connection t1="Slavebridge" t2="Stormcrag"/>
-        <connection t1="Mid Samark" t2="Scavenberg"/>
-        <connection t1="Scavenberg" t2="Halefoss Mountains"/>
-        <connection t1="South Samark" t2="Scorpion Coast"/>
-        <connection t1="South Samark" t2="Stormcrag"/>
-        <connection t1="South Samark" t2="Goldenheim"/>
-        <connection t1="South Samark" t2="Halefoss Mountains"/>
-        <connection t1="Halefoss Mountains" t2="Wetshore"/>
-        <connection t1="Halefoss Mountains" t2="Goldenheim"/>
-        <connection t1="Goldenheim" t2="Wetshore"/>
-        <connection t1="Goldenheim" t2="Scorpion Coast"/>
-        <connection t1="Wetshore" t2="Scorpion Coast"/>
-        <connection t1="Wetshore" t2="Sea Zone 66"/>
-        <connection t1="Scorpion Coast" t2="Sea Zone 66"/>
-        <connection t1="Scorpion Coast" t2="Stormcrag"/>
-        <connection t1="Scorpion Coast" t2="Sea Zone 67"/>
-        <connection t1="Stormcrag" t2="Sea Zone 72"/>
-        <connection t1="Drake Peninsula" t2="Sea Zone 41"/>
-        <connection t1="Drake Peninsula" t2="Sea Zone 42"/>
-        <connection t1="Drake Peninsula" t2="Sea Zone 37"/>
-        <connection t1="Drake Peninsula" t2="Wild Mire"/>
-        <connection t1="Drake Peninsula" t2="Dathiwatch"/>
-        <connection t1="Dathic Coast" t2="Sea Zone 38"/>
-        <connection t1="Dathic Coast" t2="Sea Zone 37"/>
-        <connection t1="Dathic Coast" t2="Dathic Hollows"/>
-        <connection t1="Dathiwatch" t2="Dathic North"/>
-        <connection t1="Dathiwatch" t2="Dathic Hollows"/>
-        <connection t1="Wild Mire" t2="Dathic East"/>
-        <connection t1="Wild Mire" t2="Sea Zone 42"/>
-        <connection t1="Wild Mire" t2="Badlands"/>
-        <connection t1="Badlands" t2="Dusty Heights"/>
-        <connection t1="Badlands" t2="Dathic East"/>
-        <connection t1="Badlands" t2="Dathic South"/>
-        <connection t1="Badlands" t2="Sea Zone 42"/>
-        <connection t1="Dathic East" t2="Dathic South"/>
-        <connection t1="Dathic East" t2="Dathic Jungle"/>
-        <connection t1="Dusty Heights" t2="Dusty Mountains"/>
-        <connection t1="Dusty Heights" t2="Sea Zone 72"/>
-        <connection t1="Dusty Heights" t2="Dathic South"/>
-        <connection t1="Dathic South" t2="Dusty Mountains"/>
-        <connection t1="Dusty Mountains" t2="Sea Zone 72"/>
-        <connection t1="Dusty Mountains" t2="Orcengor"/>
-        <connection t1="Greyhood Holdings" t2="Sea Zone 32"/>
-        <connection t1="Greyhood Holdings" t2="Sea Zone 31"/>
-        <connection t1="Greyhood Holdings" t2="Sea Zone 36"/>
-        <connection t1="Greyhood Holdings" t2="Ironhorn"/>
-        <connection t1="Ironhorn" t2="Kumbadur Hills"/>
-        <connection t1="Ironhorn" t2="Halfling Meadows"/>
-        <connection t1="Ironhorn" t2="Sea Zone 28"/>
-        <connection t1="Ironhorn" t2="East Parnesis Desert"/>
-        <connection t1="Ironhorn" t2="Sea Zone 31"/>
-        <connection t1="Halfling Meadows" t2="Gnomen Lowland"/>
-        <connection t1="Halfling Meadows" t2="Sea Zone 36"/>
-        <connection t1="Kumbadur Hills" t2="East Parnesis Desert"/>
-        <connection t1="Kumbadur Hills" t2="Faranwall"/>
-        <connection t1="East Parnesis Desert" t2="Sea Zone 27"/>
-        <connection t1="East Parnesis Desert" t2="Sea Zone 28"/>
-        <connection t1="East Parnesis Desert" t2="West Parnesis Desert"/>
-        <connection t1="East Parnesis Desert" t2="Faranwall"/>
-        <connection t1="Faranwall" t2="West Parnesis Desert"/>
-        <connection t1="Faranwall" t2="Mithrildon"/>
-        <connection t1="West Parnesis Desert" t2="Sea Zone 27"/>
-        <connection t1="West Parnesis Desert" t2="Sea Zone 26"/>
-        <connection t1="West Parnesis Desert" t2="Mithrildon"/>
-        <connection t1="Mithrildon" t2="Mount Thoril"/>
-        <connection t1="Mithrildon" t2="Sea Zone 26"/>
-        <connection t1="Mithrildon" t2="Maragorn"/>
-        <connection t1="Maragorn" t2="Sea Zone 26"/>
-        <connection t1="Garwald" t2="Adamant Mines"/>
-        <connection t1="Garwald" t2="Sea Zone 26"/>
-        <connection t1="Garwald" t2="Sea Zone 34"/>
-        <connection t1="Mount Thoril" t2="Adamant Mines"/>
-        <connection t1="Mount Thoril" t2="Dol Ulum"/>
-        <connection t1="Gnomen Lowland" t2="Dol Ulum"/>
-        <connection t1="Gnomen Lowland" t2="Sea Zone 38"/>
-        <connection t1="Gnomen Lowland" t2="Sea Zone 36"/>
-        <connection t1="Gnomen Lowland" t2="Sea Zone 37"/>
-        <connection t1="Dol Ulum" t2="Adamant Mines"/>
-        <connection t1="Dol Ulum" t2="Sea Zone 38"/>
-        <connection t1="Adamant Mines" t2="Sea Zone 38"/>
-        <connection t1="Adamant Mines" t2="Robach"/>
         <connection t1="Adamant Mines" t2="Misty Forest"/>
+        <connection t1="Adamant Mines" t2="Robach"/>
         <connection t1="Adamant Mines" t2="Sea Zone 34"/>
         <connection t1="Adamant Mines" t2="Sea Zone 35"/>
-        <connection t1="Dathic Hollows" t2="Sea Zone 38"/>
-        <connection t1="Dathic Hollows" t2="Dathic North"/>
-        <connection t1="Dathic Hollows" t2="Westerfoss"/>
-        <connection t1="Dathic Hollows" t2="Mebach"/>
-        <connection t1="Mebach" t2="Sea Zone 38"/>
-        <connection t1="Mebach" t2="Robach"/>
-        <connection t1="Mebach" t2="Westerfoss"/>
-        <connection t1="Robach" t2="Sea Zone 38"/>
-        <connection t1="Robach" t2="Misty Forest"/>
-        <connection t1="Robach" t2="Silverdeep"/>
-        <connection t1="Misty Forest" t2="Sea Zone 35"/>
-        <connection t1="Bahar Longcliff" t2="Silverdeep"/>
-        <connection t1="Bahar Longcliff" t2="Godheim"/>
-        <connection t1="Bahar Longcliff" t2="Low Mocrag"/>
-        <connection t1="Bahar Longcliff" t2="Sea Zone 35"/>
-        <connection t1="Silverdeep" t2="Dathic West"/>
-        <connection t1="Silverdeep" t2="Low Mocrag"/>
-        <connection t1="Westerfoss" t2="Dathic North"/>
-        <connection t1="Dathic Jungle" t2="Dathic West"/>
-        <connection t1="Dathic West" t2="High Mocrag"/>
-        <connection t1="Dathic West" t2="Low Mocrag"/>
-        <connection t1="Ogreville" t2="High Mocrag"/>
-        <connection t1="Orcengor" t2="Kargol Keep"/>
-        <connection t1="Orcengor" t2="Sea Zone 72"/>
-        <connection t1="Orcengor" t2="North Goronmok"/>
-        <connection t1="Orcengor" t2="Godheim Pass"/>
-        <connection t1="North Goronmok" t2="Sea Zone 72"/>
-        <connection t1="North Goronmok" t2="Kargolia"/>
-        <connection t1="North Goronmok" t2="South Goronmok"/>
-        <connection t1="North Goronmok" t2="Sea Zone 67"/>
-        <connection t1="South Goronmok" t2="Warg Caves"/>
-        <connection t1="South Goronmok" t2="Rackelton"/>
-        <connection t1="South Goronmok" t2="Sea Zone 67"/>
-        <connection t1="Rackelton" t2="Warg Caves"/>
-        <connection t1="Rackelton" t2="Sea Zone 67"/>
-        <connection t1="Rackelton" t2="Sea Zone 68"/>
-        <connection t1="Warg Caves" t2="Sea Zone 69"/>
-        <connection t1="Warg Caves" t2="Sea Zone 68"/>
-        <connection t1="Kargolia" t2="Kargol Keep"/>
-        <connection t1="Kargolia" t2="Sea Zone 70"/>
-        <connection t1="Kargolia" t2="Sea Zone 69"/>
-        <connection t1="High Mocrag" t2="Low Mocrag"/>
-        <connection t1="Kargol Keep" t2="Sea Zone 70"/>
-        <connection t1="Kargol Keep" t2="Bleak Wall"/>
-        <connection t1="Godheim Pass" t2="Godheim"/>
-        <connection t1="Godheim" t2="Godheim Reach"/>
-        <connection t1="Godheim Reach" t2="North Eastern Pontic Desert"/>
-        <connection t1="Bleak Wall" t2="Bleak Borderlands"/>
-        <connection t1="Bleak Wall" t2="Sea Zone 70"/>
-        <connection t1="Bahars Landing" t2="Bahar Woods"/>
-        <connection t1="Bahars Landing" t2="Oboro Plains"/>
-        <connection t1="Bahars Landing" t2="Sea Zone 35"/>
-        <connection t1="Bleak Borderlands" t2="Eastern Pontic Desert"/>
-        <connection t1="Bleak Borderlands" t2="Sea Zone 70"/>
-        <connection t1="Bleak Borderlands" t2="Surigard"/>
-        <connection t1="Eastern Pontic Desert" t2="Pontic Salt Desert"/>
-        <connection t1="Eastern Pontic Desert" t2="Surigard"/>
-        <connection t1="Bahar Woods" t2="Kings Summit"/>
-        <connection t1="Bahar Woods" t2="Oboro Plains"/>
-        <connection t1="Bahar Woods" t2="West Bahar Woods"/>
-        <connection t1="Bahar Woods" t2="Sea Zone 34"/>
-        <connection t1="Bahar Woods" t2="Sea Zone 35"/>
-        <connection t1="Oboro Plains" t2="Kings Summit"/>
-        <connection t1="Surigard" t2="Sea Zone 70"/>
-        <connection t1="Surigard" t2="Sea Zone 71"/>
-        <connection t1="Surigard" t2="Pontic Salt Desert"/>
-        <connection t1="Southern Pontic Desert" t2="Pontic Desert"/>
-        <connection t1="Southern Pontic Desert" t2="Kallingdor"/>
-        <connection t1="Southern Pontic Desert" t2="Sea Zone 71"/>
-        <connection t1="Southern Pontic Desert" t2="South Western Pontic Desert"/>
-        <connection t1="Southern Pontic Desert" t2="Pontic Salt Desert"/>
-        <connection t1="South Western Pontic Desert" t2="North Savanna"/>
-        <connection t1="South Western Pontic Desert" t2="East Savanna"/>
-        <connection t1="South Western Pontic Desert" t2="Pontic Desert"/>
-        <connection t1="South Western Pontic Desert" t2="Western Pontic Desert"/>
-        <connection t1="Pontic Desert" t2="Pontic Salt Desert"/>
-        <connection t1="Pontic Desert" t2="Ponticor"/>
-        <connection t1="Pontic Desert" t2="Western Pontic Desert"/>
-        <connection t1="Pontic Salt Desert" t2="Ponticor"/>
-        <connection t1="North Eastern Pontic Desert" t2="Kings Summit"/>
-        <connection t1="North Eastern Pontic Desert" t2="Northern Wilds"/>
-        <connection t1="Kings Summit" t2="Northern Wilds"/>
-        <connection t1="Kings Summit" t2="West Bahar Woods"/>
-        <connection t1="Kings Summit" t2="East Lost Mountains"/>
-        <connection t1="West Bahar Woods" t2="Sea Zone 34"/>
-        <connection t1="West Bahar Woods" t2="East Lost Mountains"/>
-        <connection t1="Baldorian Crossing" t2="Lost Mountains"/>
-        <connection t1="Baldorian Crossing" t2="Baldor Castle"/>
-        <connection t1="Baldorian Crossing" t2="Sea Zone 21"/>
-        <connection t1="Baldorian Crossing" t2="Sea Zone 34"/>
-        <connection t1="Baldor Castle" t2="Northern Baldoria"/>
-        <connection t1="Baldor Castle" t2="Southern Baldoria"/>
-        <connection t1="Baldor Castle" t2="Sea Zone 21"/>
-        <connection t1="Baldor Castle" t2="Sea Zone 26"/>
-        <connection t1="Baldor Castle" t2="Sea Zone 34"/>
-        <connection t1="Northern Baldoria" t2="Southern Baldoria"/>
-        <connection t1="Northern Baldoria" t2="Sea Zone 21"/>
-        <connection t1="Northern Baldoria" t2="Sea Zone 22"/>
-        <connection t1="Southern Baldoria" t2="Sea Zone 21"/>
-        <connection t1="East Lost Mountains" t2="Lost Mountains"/>
-        <connection t1="East Lost Mountains" t2="Northern Wilds"/>
-        <connection t1="Lost Mountains" t2="Trinity Coast"/>
-        <connection t1="Lost Mountains" t2="Sea Zone 21"/>
-        <connection t1="Lost Mountains" t2="Northern Wilds"/>
-        <connection t1="Lost Mountains" t2="West Lost Mountains"/>
-        <connection t1="Northern Wilds" t2="Ponticor"/>
-        <connection t1="Northern Wilds" t2="Doomed Passage"/>
-        <connection t1="Ponticor" t2="Western Pontic Desert"/>
-        <connection t1="Trinity Coast" t2="Sea Zone 21"/>
-        <connection t1="Trinity Coast" t2="West Lost Mountains"/>
-        <connection t1="West Lost Mountains" t2="Blood Hills"/>
-        <connection t1="West Lost Mountains" t2="Doomed Passage"/>
-        <connection t1="Doomed Passage" t2="Doomed Bridge"/>
-        <connection t1="Western Pontic Desert" t2="North Savanna"/>
-        <connection t1="Western Pontic Desert" t2="Doomed Bridge"/>
-        <connection t1="Doomed Bridge" t2="The Outlands"/>
-        <connection t1="Doomed Bridge" t2="Blood Hills"/>
-        <connection t1="Blood Hills" t2="Sea Zone 21"/>
-        <connection t1="Blood Hills" t2="Sea Zone 11"/>
-        <connection t1="Volodar Point" t2="Sea Zone 11"/>
-        <connection t1="Volodar Point" t2="Durlan North Coast"/>
-        <connection t1="Volodar Point" t2="North Durlan Hills"/>
-        <connection t1="Blood Hills" t2="Trinity Coast"/>
-        <connection t1="The Outlands" t2="Durlan Ranges"/>
-        <connection t1="The Outlands" t2="North Durlan Hills"/>
-        <connection t1="Durlan Ranges" t2="North Durlan Hills"/>
-        <connection t1="Durlan Ranges" t2="Durlan Steppes"/>
-        <connection t1="Durlan Ranges" t2="South Durlan Hills"/>
-        <connection t1="North Durlan Hills" t2="Durlan North Coast"/>
-        <connection t1="North Durlan Hills" t2="South Durlan Hills"/>
-        <connection t1="Durlan North Coast" t2="Sea Zone 11"/>
-        <connection t1="Durlan North Coast" t2="Sea Zone 9"/>
-        <connection t1="Durlan North Coast" t2="Durlan South Coast"/>
-        <connection t1="Durlan North Coast" t2="South Durlan Hills"/>
-        <connection t1="South Durlan Hills" t2="Durlan Steppes"/>
-        <connection t1="South Durlan Hills" t2="Deldrach"/>
-        <connection t1="South Durlan Hills" t2="Durlan South Coast"/>
-        <connection t1="Durlan South Coast" t2="Sea Zone 9"/>
-        <connection t1="Deldrach" t2="Durlan Steppes"/>
-        <connection t1="Deldrach" t2="Sea Zone 8"/>
-        <connection t1="Deldrach" t2="Sea Zone 9"/>
-        <connection t1="Deldrach" t2="Athondir"/>
-        <connection t1="Athondir" t2="Durlan Steppes"/>
-        <connection t1="Athondir" t2="Sea Zone 8"/>
-        <connection t1="Durlan Steppes" t2="West Savanna"/>
-        <connection t1="North Savanna" t2="West Savanna"/>
-        <connection t1="North Savanna" t2="East Savanna"/>
-        <connection t1="North Savanna" t2="South Savanna"/>
-        <connection t1="East Savanna" t2="Mount Myrin"/>
-        <connection t1="East Savanna" t2="South Savanna"/>
-        <connection t1="South Savanna" t2="West Savanna"/>
-        <connection t1="South Savanna" t2="Oorsik Hills"/>
-        <connection t1="South Savanna" t2="Mount Myrin"/>
-        <connection t1="West Savanna" t2="Oorsik Hills"/>
-        <connection t1="Oorsik Hills" t2="Oorsik Tirith"/>
-        <connection t1="Oorsik Hills" t2="Sea Zone 6"/>
-        <connection t1="Oorsik Tirith" t2="Oorsik Forest"/>
-        <connection t1="Oorsik Tirith" t2="Sea Zone 6"/>
-        <connection t1="Oorsik Forest" t2="Sea Zone 7"/>
-        <connection t1="Oorsik Forest" t2="Sea Zone 8"/>
-        <connection t1="Oorsik Forest" t2="Sea Zone 6"/>
-        <connection t1="Mount Myrin" t2="Kallingpass"/>
-        <connection t1="Kallingpass" t2="Strydon Mountains"/>
-        <connection t1="Kallingpass" t2="Kallingbog"/>
-        <connection t1="Kallingpass" t2="Kallingdor"/>
-        <connection t1="Kallingpass" t2="Ogrebog"/>
-        <connection t1="Kallingdor" t2="Kallingbog"/>
-        <connection t1="Kallingdor" t2="Kallingrock"/>
-        <connection t1="Kallingdor" t2="Sea Zone 71"/>
-        <connection t1="Kallingdor" t2="Kallingholt"/>
-        <connection t1="Strydon Wetlands" t2="Strydon Mountains"/>
-        <connection t1="Strydon Wetlands" t2="Strydon Fields"/>
-        <connection t1="Strydon Wetlands" t2="Sea Zone 6"/>
-        <connection t1="Strydon Fields" t2="Strydon Mountains"/>
-        <connection t1="Strydon Fields" t2="Strydon Peak"/>
-        <connection t1="Strydon Fields" t2="Sea Zone 5"/>
-        <connection t1="Strydon Fields" t2="Sea Zone 6"/>
-        <connection t1="Rimdell" t2="Sea Zone 1"/>
-        <connection t1="Rimdell" t2="Sea Zone 2"/>
-        <connection t1="Rimdell" t2="Rimdell Inlands"/>
-        <connection t1="Rimdell" t2="Sea Zone 5"/>
-        <connection t1="Strydon Mountains" t2="Strydon Peak"/>
-        <connection t1="Strydon Mountains" t2="Ogrebog"/>
-        <connection t1="Strydon Mountains" t2="Ogrehold"/>
-        <connection t1="Ogrehold" t2="Huntingwath"/>
-        <connection t1="Ogrehold" t2="Western White Slopes"/>
-        <connection t1="Ogrehold" t2="Ogrebog"/>
-        <connection t1="Ogrebog" t2="Huntingwath"/>
-        <connection t1="Kallingbog" t2="Kallingrock"/>
-        <connection t1="Kallingrock" t2="Kallingholt"/>
-        <connection t1="Kallingholt" t2="Wetwood"/>
-        <connection t1="Kallingholt" t2="Sea Zone 71"/>
-        <connection t1="Rimdell Inlands" t2="Sea Zone 1"/>
-        <connection t1="Rimdell Inlands" t2="Western White Slopes"/>
-        <connection t1="Rimdell Inlands" t2="Rimdell Backlands"/>
-        <connection t1="Western White Slopes" t2="White Slopes"/>
-        <connection t1="Western White Slopes" t2="Wetwood"/>
-        <connection t1="Western White Slopes" t2="Rimdell Backlands"/>
-        <connection t1="Rimdell Backlands" t2="White Slopes"/>
-        <connection t1="Rimdell Backlands" t2="Sea Zone 1"/>
-        <connection t1="Rimdell Backlands" t2="West Winterpass"/>
-        <connection t1="White Slopes" t2="Wetwood"/>
-        <connection t1="White Slopes" t2="West Winterpass"/>
-        <connection t1="White Slopes" t2="Eastern White Slopes"/>
-        <connection t1="Wetwood" t2="Eastern White Slopes"/>
-        <connection t1="Wetwood" t2="Sea Zone 71"/>
-        <connection t1="Wetwood" t2="Sea Zone 69"/>
-        <connection t1="Eastern White Slopes" t2="East Winterpass"/>
-        <connection t1="Eastern White Slopes" t2="West Winterpass"/>
-        <connection t1="Eastern White Slopes" t2="Winterpass"/>
-        <connection t1="Eastern White Slopes" t2="Sea Zone 69"/>
-        <connection t1="West Winterpass" t2="Antarctic Zone 1"/>
-        <connection t1="West Winterpass" t2="Sea Zone 1"/>
-        <connection t1="West Winterpass" t2="Winterpass"/>
-        <connection t1="East Winterpass" t2="Sea Zone 68"/>
-        <connection t1="Winterpass" t2="Antarctic Zone 2"/>
-        <connection t1="Winterpass" t2="East Winterpass"/>
-        <connection t1="East Winterpass" t2="Antarctic Zone 3"/>
+        <connection t1="Adamant Mines" t2="Sea Zone 38"/>
         <connection t1="Antarctic Zone 1" t2="Antarctic Zone 2"/>
         <connection t1="Antarctic Zone 1" t2="Sea Zone 1"/>
+        <connection t1="Antarctic Zone 10" t2="Antarctic Zone 11"/>
+        <connection t1="Antarctic Zone 10" t2="Antarctic Zone 12"/>
+        <connection t1="Antarctic Zone 10" t2="Sea Zone 66"/>
+        <connection t1="Antarctic Zone 11" t2="Antarctic Zone 12"/>
+        <connection t1="Antarctic Zone 12" t2="Antarctic Zone 13"/>
+        <connection t1="Antarctic Zone 12" t2="Sea Zone 65"/>
+        <connection t1="Antarctic Zone 12" t2="Sea Zone 66"/>
+        <connection t1="Antarctic Zone 13" t2="Antarctic Zone 14"/>
+        <connection t1="Antarctic Zone 13" t2="Sea Zone 65"/>
+        <connection t1="Antarctic Zone 14" t2="Antarctic Zone 15"/>
+        <connection t1="Antarctic Zone 14" t2="Sea Zone 65"/>
+        <connection t1="Antarctic Zone 15" t2="Antarctic Zone 16"/>
+        <connection t1="Antarctic Zone 15" t2="Sea Zone 64"/>
+        <connection t1="Antarctic Zone 16" t2="Sea Zone 63"/>
+        <connection t1="Antarctic Zone 16" t2="Sea Zone 64"/>
         <connection t1="Antarctic Zone 2" t2="Antarctic Zone 3"/>
         <connection t1="Antarctic Zone 3" t2="Antarctic Zone 4"/>
         <connection t1="Antarctic Zone 3" t2="Sea Zone 68"/>
@@ -1120,142 +434,802 @@
         <connection t1="Antarctic Zone 8" t2="Antarctic Zone 9"/>
         <connection t1="Antarctic Zone 8" t2="Gelidost"/>
         <connection t1="Antarctic Zone 8" t2="Sea Zone 67"/>
-        <connection t1="Gelidost" t2="Antarctic Zone 9"/>
-        <connection t1="Gelidost" t2="Sea Zone 66"/>
-        <connection t1="Gelidost" t2="Sea Zone 67"/>
         <connection t1="Antarctic Zone 9" t2="Antarctic Zone 10"/>
         <connection t1="Antarctic Zone 9" t2="Antarctic Zone 11"/>
         <connection t1="Antarctic Zone 9" t2="Sea Zone 66"/>
-        <connection t1="Antarctic Zone 10" t2="Antarctic Zone 11"/>
-        <connection t1="Antarctic Zone 10" t2="Sea Zone 66"/>
-        <connection t1="Antarctic Zone 10" t2="Antarctic Zone 12"/>
-        <connection t1="Antarctic Zone 11" t2="Antarctic Zone 12"/>
-        <connection t1="Antarctic Zone 12" t2="Sea Zone 65"/>
-        <connection t1="Antarctic Zone 12" t2="Sea Zone 66"/>
-        <connection t1="Antarctic Zone 12" t2="Antarctic Zone 13"/>
-        <connection t1="Antarctic Zone 13" t2="Sea Zone 65"/>
-        <connection t1="Antarctic Zone 13" t2="Antarctic Zone 14"/>
-        <connection t1="Antarctic Zone 14" t2="Sea Zone 65"/>
-        <connection t1="Antarctic Zone 14" t2="Antarctic Zone 15"/>
-        <connection t1="Antarctic Zone 15" t2="Antarctic Zone 16"/>
-        <connection t1="Antarctic Zone 15" t2="Sea Zone 64"/>
-        <connection t1="Antarctic Zone 16" t2="Sea Zone 63"/>
-        <connection t1="Antarctic Zone 16" t2="Sea Zone 64"/>
-        <connection t1="Dolmarsh" t2="Winterash"/>
-        <connection t1="Dolmarsh" t2="Maningscar"/>
-        <connection t1="Dolmarsh" t2="Oldengard"/>
-        <connection t1="Dolmarsh" t2="Sea Zone 22"/>
-        <connection t1="Winterash" t2="Maningscar"/>
-        <connection t1="Winterash" t2="Barrenbor"/>
-        <connection t1="Winterash" t2="Sea Zone 21"/>
-        <connection t1="Winterash" t2="Sea Zone 22"/>
-        <connection t1="Maningscar" t2="Barrenbor"/>
-        <connection t1="Maningscar" t2="Oldengard"/>
-        <connection t1="Maningscar" t2="Faraway"/>
-        <connection t1="Maningscar" t2="Iceburn"/>
-        <connection t1="Barrenbor" t2="Sea Zone 16"/>
-        <connection t1="Barrenbor" t2="Sea Zone 21"/>
+        <connection t1="Arctic Zone 1" t2="Arctic Zone 2"/>
+        <connection t1="Arctic Zone 1" t2="Arctic Zone 3"/>
+        <connection t1="Arctic Zone 1" t2="Sea Zone 18"/>
+        <connection t1="Arctic Zone 10" t2="Arctic Zone 11"/>
+        <connection t1="Arctic Zone 10" t2="Sea Zone 23"/>
+        <connection t1="Arctic Zone 11" t2="Arctic Zone 12"/>
+        <connection t1="Arctic Zone 11" t2="Sea Zone 23"/>
+        <connection t1="Arctic Zone 12" t2="Arctic Zone 13"/>
+        <connection t1="Arctic Zone 12" t2="Sea Zone 23"/>
+        <connection t1="Arctic Zone 12" t2="Sea Zone 29"/>
+        <connection t1="Arctic Zone 13" t2="Arctic Zone 14"/>
+        <connection t1="Arctic Zone 13" t2="Arctic Zone 15"/>
+        <connection t1="Arctic Zone 13" t2="Sea Zone 29"/>
+        <connection t1="Arctic Zone 14" t2="Arctic Zone 15"/>
+        <connection t1="Arctic Zone 14" t2="Arctic Zone 16"/>
+        <connection t1="Arctic Zone 14" t2="Arctic Zone 17"/>
+        <connection t1="Arctic Zone 15" t2="Arctic Zone 16"/>
+        <connection t1="Arctic Zone 15" t2="Sea Zone 29"/>
+        <connection t1="Arctic Zone 16" t2="Arctic Zone 17"/>
+        <connection t1="Arctic Zone 16" t2="Arctic Zone 18"/>
+        <connection t1="Arctic Zone 16" t2="Sea Zone 29"/>
+        <connection t1="Arctic Zone 16" t2="Sea Zone 30"/>
+        <connection t1="Arctic Zone 17" t2="Arctic Zone 18"/>
+        <connection t1="Arctic Zone 17" t2="Arctic Zone 19"/>
+        <connection t1="Arctic Zone 18" t2="Arctic Zone 19"/>
+        <connection t1="Arctic Zone 18" t2="Arctic Zone 20"/>
+        <connection t1="Arctic Zone 18" t2="Sea Zone 30"/>
+        <connection t1="Arctic Zone 19" t2="Arctic Zone 20"/>
+        <connection t1="Arctic Zone 19" t2="Arctic Zone 21"/>
+        <connection t1="Arctic Zone 19" t2="Arctic Zone 22"/>
+        <connection t1="Arctic Zone 2" t2="Arctic Zone 4"/>
+        <connection t1="Arctic Zone 2" t2="Sea Zone 18"/>
+        <connection t1="Arctic Zone 20" t2="Arctic Zone 22"/>
+        <connection t1="Arctic Zone 20" t2="Sea Zone 30"/>
+        <connection t1="Arctic Zone 21" t2="Arctic Zone 22"/>
+        <connection t1="Arctic Zone 21" t2="Arctic Zone 23"/>
+        <connection t1="Arctic Zone 22" t2="Arctic Zone 23"/>
+        <connection t1="Arctic Zone 22" t2="Sea Zone 30"/>
+        <connection t1="Arctic Zone 22" t2="Sea Zone 33"/>
+        <connection t1="Arctic Zone 23" t2="Arctic Zone 24"/>
+        <connection t1="Arctic Zone 23" t2="Sea Zone 33"/>
+        <connection t1="Arctic Zone 24" t2="Arctic Zone 25"/>
+        <connection t1="Arctic Zone 24" t2="Hinderland Settlement"/>
+        <connection t1="Arctic Zone 24" t2="Hinderland Zone 2"/>
+        <connection t1="Arctic Zone 24" t2="Sea Zone 33"/>
+        <connection t1="Arctic Zone 25" t2="Arctic Zone 26"/>
+        <connection t1="Arctic Zone 25" t2="Hinderland Zone 2"/>
+        <connection t1="Arctic Zone 25" t2="Hinderland Zone 4"/>
+        <connection t1="Arctic Zone 26" t2="Arctic Zone 27"/>
+        <connection t1="Arctic Zone 26" t2="Hinderland Zone 4"/>
+        <connection t1="Arctic Zone 26" t2="Hinderland Zone 6"/>
+        <connection t1="Arctic Zone 27" t2="Arctic Zone 28"/>
+        <connection t1="Arctic Zone 27" t2="Hinderland Zone 6"/>
+        <connection t1="Arctic Zone 27" t2="Hinderland Zone 8"/>
+        <connection t1="Arctic Zone 28" t2="Arctic Zone 29"/>
+        <connection t1="Arctic Zone 28" t2="Hinderland Zone 8"/>
+        <connection t1="Arctic Zone 29" t2="Arctic Zone 30"/>
+        <connection t1="Arctic Zone 29" t2="Hinderland Zone 8"/>
+        <connection t1="Arctic Zone 29" t2="North Hinderlands"/>
+        <connection t1="Arctic Zone 3" t2="Arctic Zone 4"/>
+        <connection t1="Arctic Zone 3" t2="Arctic Zone 5"/>
+        <connection t1="Arctic Zone 30" t2="Arctic Zone 31"/>
+        <connection t1="Arctic Zone 30" t2="North Hinderlands"/>
+        <connection t1="Arctic Zone 31" t2="Arctic Zone 32"/>
+        <connection t1="Arctic Zone 31" t2="North Hinderlands"/>
+        <connection t1="Arctic Zone 31" t2="Sea Zone 50"/>
+        <connection t1="Arctic Zone 32" t2="Sea Zone 50"/>
+        <connection t1="Arctic Zone 4" t2="Arctic Zone 6"/>
+        <connection t1="Arctic Zone 4" t2="Sea Zone 19"/>
+        <connection t1="Arctic Zone 5" t2="Arctic Zone 6"/>
+        <connection t1="Arctic Zone 5" t2="Arctic Zone 7"/>
+        <connection t1="Arctic Zone 6" t2="Arctic Zone 7"/>
+        <connection t1="Arctic Zone 6" t2="Sea Zone 19"/>
+        <connection t1="Arctic Zone 6" t2="Sea Zone 20"/>
+        <connection t1="Arctic Zone 7" t2="Arctic Zone 8"/>
+        <connection t1="Arctic Zone 7" t2="Sea Zone 20"/>
+        <connection t1="Arctic Zone 8" t2="Arctic Zone 9"/>
+        <connection t1="Arctic Zone 8" t2="Sea Zone 20"/>
+        <connection t1="Arctic Zone 9" t2="Arctic Zone 10"/>
+        <connection t1="Arctic Zone 9" t2="Sea Zone 20"/>
+        <connection t1="Arctic Zone 9" t2="Sea Zone 23"/>
+        <connection t1="Athondir" t2="Durlan Steppes"/>
+        <connection t1="Athondir" t2="Oorsik Forest"/>
+        <connection t1="Athondir" t2="Oorsik Tirith"/>
+        <connection t1="Athondir" t2="Sea Zone 8"/>
+        <connection t1="Avalonia" t2="Fanebrow"/>
+        <connection t1="Avalonia" t2="Gemrock Mines"/>
+        <connection t1="Avalonia" t2="Lionian Outback"/>
+        <connection t1="Avalonia" t2="Millshire"/>
+        <connection t1="Avalonia" t2="Orangerock Mountains"/>
+        <connection t1="Avalonia" t2="Wolfendale"/>
+        <connection t1="Badlands" t2="Dathic East"/>
+        <connection t1="Badlands" t2="Dathic South"/>
+        <connection t1="Badlands" t2="Dusty Heights"/>
+        <connection t1="Badlands" t2="Sea Zone 42"/>
+        <connection t1="Bahar Longcliff" t2="Bahars Landing"/>
+        <connection t1="Bahar Longcliff" t2="Godheim"/>
+        <connection t1="Bahar Longcliff" t2="Low Mocrag"/>
+        <connection t1="Bahar Longcliff" t2="Misty Forest"/>
+        <connection t1="Bahar Longcliff" t2="Sea Zone 35"/>
+        <connection t1="Bahar Longcliff" t2="Silverdeep"/>
+        <connection t1="Bahar Woods" t2="Kings Summit"/>
+        <connection t1="Bahar Woods" t2="Oboro Plains"/>
+        <connection t1="Bahar Woods" t2="Sea Zone 34"/>
+        <connection t1="Bahar Woods" t2="Sea Zone 35"/>
+        <connection t1="Bahar Woods" t2="West Bahar Woods"/>
+        <connection t1="Bahars Landing" t2="Bahar Woods"/>
+        <connection t1="Bahars Landing" t2="Godheim Reach"/>
+        <connection t1="Bahars Landing" t2="Godheim"/>
+        <connection t1="Bahars Landing" t2="Oboro Plains"/>
+        <connection t1="Bahars Landing" t2="Sea Zone 35"/>
+        <connection t1="Baldor Castle" t2="Northern Baldoria"/>
+        <connection t1="Baldor Castle" t2="Sea Zone 21"/>
+        <connection t1="Baldor Castle" t2="Sea Zone 26"/>
+        <connection t1="Baldor Castle" t2="Sea Zone 34"/>
+        <connection t1="Baldor Castle" t2="Southern Baldoria"/>
+        <connection t1="Baldorian Crossing" t2="Baldor Castle"/>
+        <connection t1="Baldorian Crossing" t2="Lost Mountains"/>
+        <connection t1="Baldorian Crossing" t2="Sea Zone 21"/>
+        <connection t1="Baldorian Crossing" t2="Sea Zone 34"/>
+        <connection t1="Baldorian Crossing" t2="West Bahar Woods"/>
         <connection t1="Barrenbor" t2="Faraway"/>
         <connection t1="Barrenbor" t2="Sea Zone 14"/>
-        <connection t1="Faraway" t2="Sea Zone 16"/>
-        <connection t1="Faraway" t2="Sea Zone 17"/>
-        <connection t1="Faraway" t2="Iceburn"/>
-        <connection t1="Iceburn" t2="Sea Zone 19"/>
-        <connection t1="Iceburn" t2="Sea Zone 17"/>
-        <connection t1="Iceburn" t2="Oldengard"/>
-        <connection t1="Iceburn" t2="Glassville"/>
-        <connection t1="Oldengard" t2="Sea Zone 22"/>
-        <connection t1="Oldengard" t2="Stormwood"/>
-        <connection t1="Stormwood" t2="Fromont"/>
-        <connection t1="Stormwood" t2="Sea Zone 22"/>
-        <connection t1="Stormwood" t2="Sea Zone 25"/>
-        <connection t1="Fromont" t2="Sealonia"/>
-        <connection t1="Fromont" t2="Sea Zone 25"/>
-        <connection t1="Fromont" t2="Sea Zone 24"/>
-        <connection t1="Sealonia" t2="Sea Zone 20"/>
-        <connection t1="Sealonia" t2="Coldrock"/>
-        <connection t1="Sealonia" t2="Sea Zone 23"/>
-        <connection t1="Sealonia" t2="Sea Zone 24"/>
+        <connection t1="Barrenbor" t2="Sea Zone 16"/>
+        <connection t1="Barrenbor" t2="Sea Zone 21"/>
+        <connection t1="Black Lake" t2="Crystal Strand"/>
+        <connection t1="Black Lake" t2="Southern Illyria"/>
+        <connection t1="Blackwell" t2="Forsaken Mountains"/>
+        <connection t1="Blackwell" t2="Hinderland Zone 3"/>
+        <connection t1="Blackwell" t2="Hinderland Zone 5"/>
+        <connection t1="Blackwell" t2="Hinderland Zone 7"/>
+        <connection t1="Blackwell" t2="Plagued Fields"/>
+        <connection t1="Blackwell" t2="The Hinderlands"/>
+        <connection t1="Bleak Borderlands" t2="Eastern Pontic Desert"/>
+        <connection t1="Bleak Borderlands" t2="Godheim Reach"/>
+        <connection t1="Bleak Borderlands" t2="Godheim"/>
+        <connection t1="Bleak Borderlands" t2="Sea Zone 70"/>
+        <connection t1="Bleak Borderlands" t2="Surigard"/>
+        <connection t1="Bleak Wall" t2="Bleak Borderlands"/>
+        <connection t1="Bleak Wall" t2="Godheim Pass"/>
+        <connection t1="Bleak Wall" t2="Godheim"/>
+        <connection t1="Bleak Wall" t2="Sea Zone 70"/>
+        <connection t1="Blood Hills" t2="Sea Zone 11"/>
+        <connection t1="Blood Hills" t2="Sea Zone 21"/>
+        <connection t1="Blood Hills" t2="The Outlands"/>
+        <connection t1="Blood Hills" t2="Trinity Coast"/>
+        <connection t1="Blood Hills" t2="Volodar Point"/>
+        <connection t1="Blood Island" t2="Sea Zone 11"/>
+        <connection t1="Blood Island" t2="Sea Zone 13"/>
+        <connection t1="Blood Island" t2="Sea Zone 21"/>
+        <connection t1="Bluebeard Island" t2="Sea Zone 46"/>
+        <connection t1="Bluebeard Island" t2="Sea Zone 47"/>
+        <connection t1="Bluebeard Island" t2="Sea Zone 52"/>
+        <connection t1="Bog of Eternal Stench" t2="East Witching Mountains"/>
+        <connection t1="Bog of Eternal Stench" t2="Hexmire"/>
+        <connection t1="Bog of Eternal Stench" t2="North Witching Mountains"/>
+        <connection t1="Bog of Eternal Stench" t2="Sea Zone 48"/>
+        <connection t1="Bog of Eternal Stench" t2="Sea Zone 49"/>
+        <connection t1="Bridge of No Return" t2="Runedelf"/>
+        <connection t1="Bridge of No Return" t2="Troll Mountains"/>
+        <connection t1="Bridge of No Return" t2="Wild Arids"/>
+        <connection t1="Broken Peninsula" t2="Sea Zone 59"/>
+        <connection t1="Broken Peninsula" t2="Sea Zone 60"/>
+        <connection t1="Broken Peninsula" t2="Sea Zone 63"/>
+        <connection t1="Broken Peninsula" t2="Sea Zone 64"/>
+        <connection t1="Buccan Refuge" t2="Sea Zone 68"/>
+        <connection t1="Buccan Refuge" t2="Sea Zone 69"/>
+        <connection t1="Cannibal Cays" t2="Sea Zone 71"/>
+        <connection t1="Cape Despair" t2="Hellbrook"/>
+        <connection t1="Cape Despair" t2="Hells Crossing"/>
+        <connection t1="Cape Despair" t2="Jade Mountains"/>
+        <connection t1="Cape Despair" t2="Sea Zone 44"/>
+        <connection t1="Cape Despair" t2="Sea Zone 45"/>
+        <connection t1="Caves of the Giant Lion" t2="Freegrass"/>
+        <connection t1="Caves of the Giant Lion" t2="Lion Heights"/>
+        <connection t1="Caves of the Giant Lion" t2="Sea Zone 54"/>
         <connection t1="Coldrock" t2="Glassville"/>
         <connection t1="Coldrock" t2="Sea Zone 20"/>
         <connection t1="Coldrock" t2="Strongnin"/>
-        <connection t1="Strongnin" t2="Glassville"/>
+        <connection t1="Crab Island" t2="Sea Zone 65"/>
+        <connection t1="Crystal Strand" t2="East Samark"/>
+        <connection t1="Crystal Strand" t2="Samarkum"/>
+        <connection t1="Crystal Strand" t2="Sea Zone 41"/>
+        <connection t1="Crystal Strand" t2="Sea Zone 42"/>
+        <connection t1="Crystal Strand" t2="Sea Zone 43"/>
+        <connection t1="Dathic Coast" t2="Dathic Hollows"/>
+        <connection t1="Dathic Coast" t2="Dathiwatch"/>
+        <connection t1="Dathic Coast" t2="Sea Zone 37"/>
+        <connection t1="Dathic Coast" t2="Sea Zone 38"/>
+        <connection t1="Dathic East" t2="Dathic Jungle"/>
+        <connection t1="Dathic East" t2="Dathic North"/>
+        <connection t1="Dathic East" t2="Dathic South"/>
+        <connection t1="Dathic East" t2="Dathiwatch"/>
+        <connection t1="Dathic Hollows" t2="Dathic North"/>
+        <connection t1="Dathic Hollows" t2="Mebach"/>
+        <connection t1="Dathic Hollows" t2="Sea Zone 38"/>
+        <connection t1="Dathic Hollows" t2="Westerfoss"/>
+        <connection t1="Dathic Jungle" t2="Dathic North"/>
+        <connection t1="Dathic Jungle" t2="Dathic South"/>
+        <connection t1="Dathic Jungle" t2="Dathic West"/>
+        <connection t1="Dathic Jungle" t2="Westerfoss"/>
+        <connection t1="Dathic South" t2="Dathic West"/>
+        <connection t1="Dathic South" t2="Dusty Mountains"/>
+        <connection t1="Dathic South" t2="Ogreville"/>
+        <connection t1="Dathic West" t2="High Mocrag"/>
+        <connection t1="Dathic West" t2="Low Mocrag"/>
+        <connection t1="Dathic West" t2="Ogreville"/>
+        <connection t1="Dathic West" t2="Westerfoss"/>
+        <connection t1="Dathiwatch" t2="Dathic Hollows"/>
+        <connection t1="Dathiwatch" t2="Dathic North"/>
+        <connection t1="Dathiwatch" t2="Wild Mire"/>
+        <connection t1="Deadrock" t2="Sea Zone 47"/>
+        <connection t1="Deadrock" t2="Sea Zone 52"/>
+        <connection t1="Decaying Soils" t2="Blackwell"/>
+        <connection t1="Decaying Soils" t2="Forsaken Mountains"/>
+        <connection t1="Decaying Soils" t2="Hinderland Zone 7"/>
+        <connection t1="Decaying Soils" t2="Near Freezelond"/>
+        <connection t1="Decaying Soils" t2="Necroloft"/>
+        <connection t1="Deldrach" t2="Athondir"/>
+        <connection t1="Deldrach" t2="Durlan Steppes"/>
+        <connection t1="Deldrach" t2="Sea Zone 8"/>
+        <connection t1="Deldrach" t2="Sea Zone 9"/>
+        <connection t1="Dol Ulum" t2="Adamant Mines"/>
+        <connection t1="Dol Ulum" t2="Kumbadur Hills"/>
+        <connection t1="Dol Ulum" t2="Mount Thoril"/>
+        <connection t1="Dol Ulum" t2="Sea Zone 38"/>
+        <connection t1="Dolmarsh" t2="Maningscar"/>
+        <connection t1="Dolmarsh" t2="Oldengard"/>
+        <connection t1="Dolmarsh" t2="Sea Zone 22"/>
+        <connection t1="Dolmarsh" t2="Winterash"/>
+        <connection t1="Doomed Bridge" t2="Blood Hills"/>
+        <connection t1="Doomed Bridge" t2="The Outlands"/>
+        <connection t1="Doomed Passage" t2="Doomed Bridge"/>
+        <connection t1="Doomed Passage" t2="Ponticor"/>
+        <connection t1="Doomed Passage" t2="Western Pontic Desert"/>
+        <connection t1="Doryan Enclave" t2="Sea Zone 41"/>
+        <connection t1="Doryan Enclave" t2="Sea Zone 43"/>
+        <connection t1="Doryan Enclave" t2="Sea Zone 44"/>
+        <connection t1="Dragonback Island" t2="Sea Zone 23"/>
+        <connection t1="Dragonback Island" t2="Sea Zone 24"/>
+        <connection t1="Dragonback Island" t2="Sea Zone 29"/>
+        <connection t1="Drake Island" t2="Sea Zone 36"/>
+        <connection t1="Drake Island" t2="Sea Zone 37"/>
+        <connection t1="Drake Island" t2="Sea Zone 39"/>
+        <connection t1="Drake Island" t2="Sea Zone 40"/>
+        <connection t1="Drake Island" t2="Sea Zone 41"/>
+        <connection t1="Drake Peninsula" t2="Dathiwatch"/>
+        <connection t1="Drake Peninsula" t2="Sea Zone 37"/>
+        <connection t1="Drake Peninsula" t2="Sea Zone 41"/>
+        <connection t1="Drake Peninsula" t2="Sea Zone 42"/>
+        <connection t1="Drake Peninsula" t2="Wild Mire"/>
+        <connection t1="Drakeling Island" t2="Sea Zone 36"/>
+        <connection t1="Drakeling Island" t2="Sea Zone 37"/>
+        <connection t1="Dreadholm" t2="Sea Zone 39"/>
+        <connection t1="Dreadholm" t2="Sea Zone 40"/>
+        <connection t1="Dreadholm" t2="Sea Zone 44"/>
+        <connection t1="Dreadpass" t2="Lifeless Barrens"/>
+        <connection t1="Dreadpass" t2="Misty Slopes"/>
+        <connection t1="Durlan North Coast" t2="Durlan South Coast"/>
+        <connection t1="Durlan North Coast" t2="Sea Zone 11"/>
+        <connection t1="Durlan North Coast" t2="Sea Zone 9"/>
+        <connection t1="Durlan North Coast" t2="South Durlan Hills"/>
+        <connection t1="Durlan Ranges" t2="Durlan Steppes"/>
+        <connection t1="Durlan Ranges" t2="North Durlan Hills"/>
+        <connection t1="Durlan Ranges" t2="North Savanna"/>
+        <connection t1="Durlan Ranges" t2="South Durlan Hills"/>
+        <connection t1="Durlan Ranges" t2="West Savanna"/>
+        <connection t1="Durlan South Coast" t2="Sea Zone 9"/>
+        <connection t1="Durlan Steppes" t2="Oorsik Hills"/>
+        <connection t1="Durlan Steppes" t2="Oorsik Tirith"/>
+        <connection t1="Durlan Steppes" t2="West Savanna"/>
+        <connection t1="Duskwick" t2="Lost Furlongs"/>
+        <connection t1="Duskwick" t2="Mount Terror"/>
+        <connection t1="Duskwick" t2="Sea Zone 36"/>
+        <connection t1="Duskwick" t2="Wild Arids"/>
+        <connection t1="Dusty Heights" t2="Dathic South"/>
+        <connection t1="Dusty Heights" t2="Dusty Mountains"/>
+        <connection t1="Dusty Heights" t2="Sea Zone 72"/>
+        <connection t1="Dusty Heights" t2="Slavebridge"/>
+        <connection t1="Dusty Mountains" t2="Ogreville"/>
+        <connection t1="Dusty Mountains" t2="Orcengor"/>
+        <connection t1="Dusty Mountains" t2="Sea Zone 72"/>
+        <connection t1="East Dolmor" t2="East Foothills"/>
+        <connection t1="East Dolmor" t2="Sea Zone 32"/>
+        <connection t1="East Dolmor" t2="Sinfjord"/>
+        <connection t1="East Foothills" t2="Runedelf"/>
+        <connection t1="East Foothills" t2="Sinfjord"/>
+        <connection t1="East Foothills" t2="The Hinderlands"/>
+        <connection t1="East Lost Mountains" t2="Lost Mountains"/>
+        <connection t1="East Lost Mountains" t2="Northern Wilds"/>
+        <connection t1="East Maroons" t2="Sea Zone 62"/>
+        <connection t1="East Parnesis Desert" t2="Faranwall"/>
+        <connection t1="East Parnesis Desert" t2="Sea Zone 27"/>
+        <connection t1="East Parnesis Desert" t2="Sea Zone 28"/>
+        <connection t1="East Parnesis Desert" t2="West Parnesis Desert"/>
+        <connection t1="East Samark" t2="Mid Samark"/>
+        <connection t1="East Samark" t2="Old Slavenport"/>
+        <connection t1="East Samark" t2="Slavebridge"/>
+        <connection t1="East Savanna" t2="Mount Myrin"/>
+        <connection t1="East Savanna" t2="South Savanna"/>
+        <connection t1="East Winterpass" t2="Antarctic Zone 3"/>
+        <connection t1="East Winterpass" t2="Sea Zone 68"/>
+        <connection t1="East Witching Mountains" t2="Sea Zone 46"/>
+        <connection t1="East Witching Mountains" t2="Sea Zone 47"/>
+        <connection t1="East Witching Mountains" t2="Sea Zone 48"/>
+        <connection t1="East Witching Mountains" t2="South Witching Mountains"/>
+        <connection t1="East Witching Mountains" t2="The Witching Mountains"/>
+        <connection t1="Eastern Pontic Desert" t2="Godheim Reach"/>
+        <connection t1="Eastern Pontic Desert" t2="North Eastern Pontic Desert"/>
+        <connection t1="Eastern Pontic Desert" t2="Pontic Salt Desert"/>
+        <connection t1="Eastern Pontic Desert" t2="Surigard"/>
+        <connection t1="Eastern White Slopes" t2="East Winterpass"/>
+        <connection t1="Eastern White Slopes" t2="Sea Zone 69"/>
+        <connection t1="Eastern White Slopes" t2="West Winterpass"/>
+        <connection t1="Eastern White Slopes" t2="Winterpass"/>
+        <connection t1="Fairy Islet" t2="Sea Zone 38"/>
+        <connection t1="Fane Island" t2="Sea Zone 36"/>
+        <connection t1="Fanebrow" t2="Gemrock Mines"/>
+        <connection t1="Fanebrow" t2="Sea Zone 64"/>
+        <connection t1="Fanebrow" t2="Wolfendale"/>
+        <connection t1="Far Freezelond" t2="Hinderland Zone 9"/>
+        <connection t1="Far Freezelond" t2="Near Freezelond"/>
+        <connection t1="Far Freezelond" t2="Sea Zone 49"/>
+        <connection t1="Far Freezelond" t2="Sea Zone 50"/>
+        <connection t1="Faranwall" t2="Mithrildon"/>
+        <connection t1="Faranwall" t2="Mount Thoril"/>
+        <connection t1="Faranwall" t2="West Parnesis Desert"/>
+        <connection t1="Faraway" t2="Iceburn"/>
+        <connection t1="Faraway" t2="Sea Zone 16"/>
+        <connection t1="Faraway" t2="Sea Zone 17"/>
+        <connection t1="Farhaven" t2="Caves of the Giant Lion"/>
+        <connection t1="Farhaven" t2="Sea Zone 53"/>
+        <connection t1="Farhaven" t2="Sea Zone 54"/>
+        <connection t1="Forsaken Mountains" t2="Necroloft"/>
+        <connection t1="Forsaken Mountains" t2="Sea Zone 51"/>
+        <connection t1="Freegrass" t2="Jade Rivers"/>
+        <connection t1="Freegrass" t2="Lion Heights"/>
+        <connection t1="Freegrass" t2="Lionian Plains"/>
+        <connection t1="Freegrass" t2="Lionport"/>
+        <connection t1="Freegrass" t2="Sea Zone 54"/>
+        <connection t1="Freegrass" t2="Sea Zone 56"/>
+        <connection t1="Fromont" t2="Sea Zone 24"/>
+        <connection t1="Fromont" t2="Sea Zone 25"/>
+        <connection t1="Fromont" t2="Sealonia"/>
+        <connection t1="Fromont" t2="Sealonia"/>
+        <connection t1="Fruity Lagoon" t2="Sea Zone 28"/>
+        <connection t1="Garwald" t2="Adamant Mines"/>
+        <connection t1="Garwald" t2="Maragorn"/>
+        <connection t1="Garwald" t2="Mount Thoril"/>
+        <connection t1="Garwald" t2="Sea Zone 26"/>
+        <connection t1="Garwald" t2="Sea Zone 34"/>
+        <connection t1="Gate of Illyria" t2="Lionian Outback"/>
+        <connection t1="Gate of Illyria" t2="Orangerock Mountains"/>
+        <connection t1="Gate of Illyria" t2="Sea Zone 44"/>
+        <connection t1="Gate of Illyria" t2="Southern Illyria"/>
+        <connection t1="Gelidost" t2="Antarctic Zone 9"/>
+        <connection t1="Gelidost" t2="Sea Zone 66"/>
+        <connection t1="Gelidost" t2="Sea Zone 67"/>
+        <connection t1="Gemrock Mines" t2="Sea Zone 64"/>
+        <connection t1="Gillshore" t2="East Dolmor"/>
+        <connection t1="Gillshore" t2="East Foothills"/>
+        <connection t1="Gillshore" t2="Hinderland Settlement"/>
+        <connection t1="Gillshore" t2="Sea Zone 33"/>
+        <connection t1="Gillshore" t2="The Hinderlands"/>
+        <connection t1="Gillshore" t2="West Dolmor"/>
         <connection t1="Glassville" t2="Sea Zone 19"/>
         <connection t1="Glassville" t2="Sea Zone 20"/>
+        <connection t1="Gnomen Lowland" t2="Dol Ulum"/>
+        <connection t1="Gnomen Lowland" t2="Kumbadur Hills"/>
+        <connection t1="Gnomen Lowland" t2="Sea Zone 36"/>
+        <connection t1="Gnomen Lowland" t2="Sea Zone 37"/>
+        <connection t1="Gnomen Lowland" t2="Sea Zone 38"/>
+        <connection t1="Godheim Pass" t2="Godheim"/>
+        <connection t1="Godheim Pass" t2="High Mocrag"/>
+        <connection t1="Godheim Pass" t2="Kargol Keep"/>
+        <connection t1="Godheim Pass" t2="Low Mocrag"/>
+        <connection t1="Godheim Reach" t2="North Eastern Pontic Desert"/>
+        <connection t1="Godheim Reach" t2="Oboro Plains"/>
+        <connection t1="Godheim" t2="Godheim Reach"/>
+        <connection t1="Godheim" t2="Low Mocrag"/>
+        <connection t1="Goldenheim" t2="Scorpion Coast"/>
+        <connection t1="Goldenheim" t2="Wetshore"/>
+        <connection t1="Grand Peaks" t2="Halefoss Mountains"/>
+        <connection t1="Grand Peaks" t2="Scavenberg"/>
+        <connection t1="Grand Peaks" t2="Scavendeep"/>
+        <connection t1="Grand Peaks" t2="Wetshore"/>
+        <connection t1="Great Combe" t2="Lakelot"/>
+        <connection t1="Great Combe" t2="Mount Chaos"/>
+        <connection t1="Great Combe" t2="The Witching Mountains"/>
+        <connection t1="Greenshore" t2="Caves of the Giant Lion"/>
+        <connection t1="Greenshore" t2="Jade Mountains"/>
+        <connection t1="Greenshore" t2="Lion Heights"/>
+        <connection t1="Greenshore" t2="Sea Zone 45"/>
+        <connection t1="Greenshore" t2="Sea Zone 46"/>
+        <connection t1="Greyhood Holdings" t2="Halfling Meadows"/>
+        <connection t1="Greyhood Holdings" t2="Ironhorn"/>
+        <connection t1="Greyhood Holdings" t2="Sea Zone 31"/>
+        <connection t1="Greyhood Holdings" t2="Sea Zone 32"/>
+        <connection t1="Greyhood Holdings" t2="Sea Zone 36"/>
+        <connection t1="Grimholt" t2="Sea Zone 36"/>
+        <connection t1="Grimholt" t2="Sea Zone 39"/>
+        <connection t1="Halefoss Mountains" t2="Goldenheim"/>
+        <connection t1="Halefoss Mountains" t2="Wetshore"/>
+        <connection t1="Halfling Meadows" t2="Gnomen Lowland"/>
+        <connection t1="Halfling Meadows" t2="Kumbadur Hills"/>
+        <connection t1="Halfling Meadows" t2="Sea Zone 36"/>
+        <connection t1="Haunted Moorland" t2="Hexmire"/>
+        <connection t1="Haunted Moorland" t2="Misty Slopes"/>
+        <connection t1="Haunted Moorland" t2="Sea Zone 49"/>
+        <connection t1="Haunted Moorland" t2="Sea Zone 51"/>
+        <connection t1="Haunted Moorland" t2="West Witching Mountains"/>
+        <connection t1="Hellbrook" t2="Hells Bayou"/>
+        <connection t1="Hellbrook" t2="Hells Crossing"/>
+        <connection t1="Hellbrook" t2="Sea Zone 44"/>
+        <connection t1="Hells Bayou" t2="Sea Zone 39"/>
+        <connection t1="Hells Bayou" t2="Sea Zone 44"/>
+        <connection t1="Hells Bayou" t2="Spectoria"/>
+        <connection t1="Hells Crossing" t2="Hells Bayou"/>
+        <connection t1="Hexmire" t2="North Witching Mountains"/>
+        <connection t1="Hexmire" t2="Sea Zone 49"/>
+        <connection t1="High Mere" t2="Ogrehold"/>
+        <connection t1="High Mere" t2="Strydon Peak"/>
+        <connection t1="High Mere" t2="Western White Slopes"/>
+        <connection t1="High Mocrag" t2="Low Mocrag"/>
+        <connection t1="High Mocrag" t2="Orcengor"/>
+        <connection t1="Hinderland Settlement" t2="Hinderland Zone 2"/>
+        <connection t1="Hinderland Settlement" t2="Sea Zone 33"/>
+        <connection t1="Hinderland Settlement" t2="The Hinderlands"/>
+        <connection t1="Hinderland Zone 2" t2="Hinderland Zone 3"/>
+        <connection t1="Hinderland Zone 2" t2="Hinderland Zone 4"/>
+        <connection t1="Hinderland Zone 2" t2="The Hinderlands"/>
+        <connection t1="Hinderland Zone 3" t2="The Hinderlands"/>
+        <connection t1="Hinderland Zone 4" t2="Hinderland Zone 3"/>
+        <connection t1="Hinderland Zone 4" t2="Hinderland Zone 5"/>
+        <connection t1="Hinderland Zone 4" t2="Hinderland Zone 6"/>
+        <connection t1="Hinderland Zone 5" t2="Hinderland Zone 3"/>
+        <connection t1="Hinderland Zone 6" t2="Hinderland Zone 5"/>
+        <connection t1="Hinderland Zone 6" t2="Hinderland Zone 7"/>
+        <connection t1="Hinderland Zone 6" t2="Hinderland Zone 8"/>
+        <connection t1="Hinderland Zone 7" t2="Hinderland Zone 5"/>
+        <connection t1="Hinderland Zone 8" t2="Hinderland Zone 7"/>
+        <connection t1="Hinderland Zone 8" t2="Hinderland Zone 9"/>
+        <connection t1="Hinderland Zone 8" t2="North Hinderlands"/>
+        <connection t1="Hinderland Zone 9" t2="Decaying Soils"/>
+        <connection t1="Hinderland Zone 9" t2="Hinderland Zone 7"/>
+        <connection t1="Hinderland Zone 9" t2="Near Freezelond"/>
+        <connection t1="Hopeless Skerry" t2="Sea Zone 49"/>
+        <connection t1="Hopeless Skerry" t2="Sea Zone 50"/>
+        <connection t1="Huntingwath" t2="Kallingbog"/>
+        <connection t1="Huntingwath" t2="Kallingrock"/>
+        <connection t1="Huntingwath" t2="Wetwood"/>
+        <connection t1="Ice Basin" t2="Glassville"/>
+        <connection t1="Ice Basin" t2="Iceburn"/>
+        <connection t1="Ice Basin" t2="Strongnin"/>
+        <connection t1="Iceburn" t2="Glassville"/>
+        <connection t1="Iceburn" t2="Oldengard"/>
+        <connection t1="Iceburn" t2="Sea Zone 17"/>
+        <connection t1="Iceburn" t2="Sea Zone 19"/>
+        <connection t1="Iceburn" t2="Strongnin"/>
+        <connection t1="Icenholm" t2="Sea Zone 30"/>
+        <connection t1="Icenholm" t2="Sea Zone 33"/>
+        <connection t1="Illyria" t2="Gate of Illyria"/>
+        <connection t1="Illyria" t2="Jade Rivers"/>
+        <connection t1="Illyria" t2="Sea Zone 44"/>
+        <connection t1="Illyria" t2="Sea Zone 45"/>
+        <connection t1="Inland Sea" t2="Forsaken Mountains"/>
+        <connection t1="Inland Sea" t2="Lifeless Barrens"/>
+        <connection t1="Inland Sea" t2="Plagued Fields"/>
+        <connection t1="Ironhorn" t2="East Parnesis Desert"/>
+        <connection t1="Ironhorn" t2="Halfling Meadows"/>
+        <connection t1="Ironhorn" t2="Kumbadur Hills"/>
+        <connection t1="Ironhorn" t2="Sea Zone 28"/>
+        <connection t1="Ironhorn" t2="Sea Zone 31"/>
+        <connection t1="Isle of Kings" t2="Sea Zone 41"/>
+        <connection t1="Isle of Kings" t2="Sea Zone 43"/>
+        <connection t1="Jade Mountains" t2="Illyria"/>
+        <connection t1="Jade Mountains" t2="Jade Rivers"/>
+        <connection t1="Jade Mountains" t2="Sea Zone 45"/>
+        <connection t1="Jade Rivers" t2="Gate of Illyria"/>
+        <connection t1="Jade Rivers" t2="Lion Heights"/>
+        <connection t1="Jade Rivers" t2="Lionian Plains"/>
+        <connection t1="Kallingbog" t2="Kallingrock"/>
+        <connection t1="Kallingbog" t2="Ogrebog"/>
+        <connection t1="Kallingdor" t2="Kallingbog"/>
+        <connection t1="Kallingdor" t2="Kallingholt"/>
+        <connection t1="Kallingdor" t2="Kallingrock"/>
+        <connection t1="Kallingdor" t2="Sea Zone 71"/>
+        <connection t1="Kallingholt" t2="Sea Zone 71"/>
+        <connection t1="Kallingholt" t2="Wetwood"/>
+        <connection t1="Kallingpass" t2="Kallingbog"/>
+        <connection t1="Kallingpass" t2="Kallingdor"/>
+        <connection t1="Kallingpass" t2="Ogrebog"/>
+        <connection t1="Kallingpass" t2="South Western Pontic Desert"/>
+        <connection t1="Kallingpass" t2="Southern Pontic Desert"/>
+        <connection t1="Kallingpass" t2="Strydon Mountains"/>
+        <connection t1="Kallingrock" t2="Kallingholt"/>
+        <connection t1="Kallingrock" t2="Wetwood"/>
+        <connection t1="Kargol Keep" t2="Bleak Wall"/>
+        <connection t1="Kargol Keep" t2="Sea Zone 70"/>
+        <connection t1="Kargolia" t2="Kargol Keep"/>
+        <connection t1="Kargolia" t2="Orcengor"/>
+        <connection t1="Kargolia" t2="Sea Zone 69"/>
+        <connection t1="Kargolia" t2="Sea Zone 70"/>
+        <connection t1="Kargolia" t2="South Goronmok"/>
+        <connection t1="Kargolia" t2="Warg Caves"/>
+        <connection t1="Kings Summit" t2="East Lost Mountains"/>
+        <connection t1="Kings Summit" t2="Northern Wilds"/>
+        <connection t1="Kings Summit" t2="West Bahar Woods"/>
+        <connection t1="Kingwood" t2="Avalonia"/>
+        <connection t1="Kingwood" t2="Lionian Outback"/>
+        <connection t1="Kingwood" t2="Millshire"/>
+        <connection t1="Kingwood" t2="Sea Zone 59"/>
+        <connection t1="Kumbadur Hills" t2="East Parnesis Desert"/>
+        <connection t1="Kumbadur Hills" t2="Faranwall"/>
+        <connection t1="Kumbadur Hills" t2="Mount Thoril"/>
+        <connection t1="Lake Bryol" t2="Oldengard"/>
+        <connection t1="Lake Bryol" t2="Stormwood"/>
+        <connection t1="Lake Doom" t2="Doomed Passage"/>
+        <connection t1="Lake Doom" t2="Ponticor"/>
+        <connection t1="Lake Doom" t2="Western Pontic Desert"/>
+        <connection t1="Lake Longtear" t2="Bridge of No Return"/>
+        <connection t1="Lake Longtear" t2="Runedelf"/>
+        <connection t1="Lake Longtear" t2="Troll Mountains"/>
+        <connection t1="Lake Moondeer" t2="Bridge of No Return"/>
+        <connection t1="Lake Moondeer" t2="Duskwick"/>
+        <connection t1="Lake Moondeer" t2="Troll Mountains"/>
+        <connection t1="Lake Moondeer" t2="Wild Arids"/>
+        <connection t1="Lake Mudspit" t2="Dusty Mountains"/>
+        <connection t1="Lake Mudspit" t2="Ogreville"/>
+        <connection t1="Lake Mudspit" t2="Orcengor"/>
+        <connection t1="Lakelot" t2="Spectoria"/>
+        <connection t1="Lakelot" t2="West Witching Mountains"/>
+        <connection t1="Lifeless Barrens" t2="Forsaken Mountains"/>
+        <connection t1="Lifeless Barrens" t2="Haunted Moorland"/>
+        <connection t1="Lifeless Barrens" t2="Misty Slopes"/>
+        <connection t1="Lifeless Barrens" t2="Plagued Fields"/>
+        <connection t1="Lifeless Barrens" t2="Sea Zone 51"/>
+        <connection t1="Lion Heights" t2="Jade Mountains"/>
+        <connection t1="Lionian Outback" t2="Orangerock Mountains"/>
+        <connection t1="Lionian Plains" t2="Gate of Illyria"/>
+        <connection t1="Lionian Plains" t2="Lionian Outback"/>
+        <connection t1="Lionport" t2="Kingwood"/>
+        <connection t1="Lionport" t2="Lionian Outback"/>
+        <connection t1="Lionport" t2="Lionian Plains"/>
+        <connection t1="Lionport" t2="Sea Zone 56"/>
+        <connection t1="Lionport" t2="Sea Zone 59"/>
+        <connection t1="Loch Hedan" t2="Oldengard"/>
+        <connection t1="Loch Hedan" t2="Strongnin"/>
+        <connection t1="Loch Mordant" t2="Bridge of No Return"/>
+        <connection t1="Loch Mordant" t2="Lakelot"/>
+        <connection t1="Loch Mordant" t2="Spectoria"/>
+        <connection t1="Loch Mordant" t2="Zool Twins"/>
+        <connection t1="Loch Wellness" t2="Avalonia"/>
+        <connection t1="Loch Wellness" t2="Orangerock Mountains"/>
+        <connection t1="Loch Wellness" t2="Wolfendale"/>
+        <connection t1="Lone Island" t2="Sea Zone 24"/>
+        <connection t1="Lone Island" t2="Sea Zone 25"/>
+        <connection t1="Lone Island" t2="Sea Zone 27"/>
+        <connection t1="Longkey Island" t2="Sea Zone 26"/>
+        <connection t1="Longkey Island" t2="Sea Zone 34"/>
+        <connection t1="Lost Furlongs" t2="Grimholt"/>
+        <connection t1="Lost Furlongs" t2="Sea Zone 36"/>
+        <connection t1="Lost Furlongs" t2="Sea Zone 39"/>
+        <connection t1="Lost Mountains" t2="Northern Wilds"/>
+        <connection t1="Lost Mountains" t2="Sea Zone 21"/>
+        <connection t1="Lost Mountains" t2="Trinity Coast"/>
+        <connection t1="Lost Mountains" t2="West Lost Mountains"/>
+        <connection t1="Maningscar" t2="Barrenbor"/>
+        <connection t1="Maningscar" t2="Faraway"/>
+        <connection t1="Maningscar" t2="Iceburn"/>
+        <connection t1="Maningscar" t2="Oldengard"/>
+        <connection t1="Maragorn" t2="Mount Thoril"/>
+        <connection t1="Maragorn" t2="Sea Zone 26"/>
+        <connection t1="Mebach" t2="Robach"/>
+        <connection t1="Mebach" t2="Sea Zone 38"/>
+        <connection t1="Mebach" t2="Silverdeep"/>
+        <connection t1="Mebach" t2="Westerfoss"/>
+        <connection t1="Mid Samark" t2="Scavenberg"/>
+        <connection t1="Mid Samark" t2="Slavebridge"/>
+        <connection t1="Mid Samark" t2="South Samark"/>
+        <connection t1="Millshire" t2="Gemrock Mines"/>
+        <connection t1="Millshire" t2="Sea Zone 59"/>
+        <connection t1="Millshire" t2="Seatopian Hills"/>
+        <connection t1="Mining Pool" t2="Faranwall"/>
+        <connection t1="Mining Pool" t2="Mithrildon"/>
+        <connection t1="Mining Pool" t2="Mount Thoril"/>
+        <connection t1="Misty Forest" t2="Sea Zone 35"/>
+        <connection t1="Misty Slopes" t2="Lakelot"/>
+        <connection t1="Misty Slopes" t2="West Witching Mountains"/>
+        <connection t1="Mithrildon" t2="Maragorn"/>
+        <connection t1="Mithrildon" t2="Mount Thoril"/>
+        <connection t1="Mithrildon" t2="Sea Zone 26"/>
+        <connection t1="Morassia Highlands" t2="Grand Peaks"/>
+        <connection t1="Morassia Highlands" t2="Wetshore"/>
+        <connection t1="Morassia Highlands" t2="Wolfendale"/>
+        <connection t1="Morassia" t2="Morassia Highlands"/>
+        <connection t1="Morassia" t2="Sea Zone 65"/>
+        <connection t1="Morassia" t2="Sea Zone 66"/>
+        <connection t1="Morassia" t2="Wetshore"/>
+        <connection t1="Morassia" t2="Wolfendale"/>
+        <connection t1="Mount Chaos" t2="Hells Bayou"/>
+        <connection t1="Mount Chaos" t2="South Witching Mountains"/>
+        <connection t1="Mount Chaos" t2="Spectoria"/>
+        <connection t1="Mount Myrin" t2="Kallingpass"/>
+        <connection t1="Mount Myrin" t2="South Western Pontic Desert"/>
+        <connection t1="Mount Myrin" t2="Strydon Mountains"/>
+        <connection t1="Mount Terror" t2="Sea Zone 32"/>
+        <connection t1="Mount Terror" t2="Sea Zone 36"/>
+        <connection t1="Mount Thoril" t2="Adamant Mines"/>
+        <connection t1="Near Freezelond" t2="Necroloft"/>
+        <connection t1="Near Freezelond" t2="Sea Zone 49"/>
+        <connection t1="Necroloft" t2="Sea Zone 49"/>
+        <connection t1="Necroloft" t2="Sea Zone 51"/>
+        <connection t1="North Durlan Hills" t2="Durlan North Coast"/>
+        <connection t1="North Durlan Hills" t2="South Durlan Hills"/>
+        <connection t1="North Eastern Pontic Desert" t2="Kings Summit"/>
+        <connection t1="North Eastern Pontic Desert" t2="Northern Wilds"/>
+        <connection t1="North Eastern Pontic Desert" t2="Oboro Plains"/>
+        <connection t1="North Eastern Pontic Desert" t2="Pontic Salt Desert"/>
+        <connection t1="North Eastern Pontic Desert" t2="Ponticor"/>
+        <connection t1="North Goronmok" t2="Kargolia"/>
+        <connection t1="North Goronmok" t2="Sea Zone 67"/>
+        <connection t1="North Goronmok" t2="Sea Zone 72"/>
+        <connection t1="North Goronmok" t2="South Goronmok"/>
+        <connection t1="North Hinderlands" t2="Far Freezelond"/>
+        <connection t1="North Hinderlands" t2="Hinderland Zone 9"/>
+        <connection t1="North Hinderlands" t2="Sea Zone 50"/>
+        <connection t1="North Savanna" t2="East Savanna"/>
+        <connection t1="North Savanna" t2="South Savanna"/>
+        <connection t1="North Savanna" t2="The Outlands"/>
+        <connection t1="North Savanna" t2="West Savanna"/>
+        <connection t1="North Witching Mountains" t2="East Witching Mountains"/>
+        <connection t1="North Witching Mountains" t2="Great Combe"/>
+        <connection t1="North Witching Mountains" t2="The Witching Mountains"/>
+        <connection t1="Northern Baldoria" t2="Sea Zone 21"/>
+        <connection t1="Northern Baldoria" t2="Sea Zone 22"/>
+        <connection t1="Northern Baldoria" t2="Southern Baldoria"/>
+        <connection t1="Northern Baldoria" t2="Southern Baldoria"/>
+        <connection t1="Northern Wilds" t2="Doomed Passage"/>
+        <connection t1="Northern Wilds" t2="Ponticor"/>
+        <connection t1="Oboro Plains" t2="Kings Summit"/>
+        <connection t1="Ogrebog" t2="Huntingwath"/>
+        <connection t1="Ogrehold" t2="Huntingwath"/>
+        <connection t1="Ogrehold" t2="Ogrebog"/>
+        <connection t1="Ogrehold" t2="Western White Slopes"/>
+        <connection t1="Ogreville" t2="High Mocrag"/>
+        <connection t1="Ogreville" t2="Orcengor"/>
+        <connection t1="Old Slavenport" t2="Badlands"/>
+        <connection t1="Old Slavenport" t2="Dusty Heights"/>
+        <connection t1="Old Slavenport" t2="Sea Zone 42"/>
+        <connection t1="Old Slavenport" t2="Slavebridge"/>
+        <connection t1="Oldengard" t2="Sea Zone 22"/>
+        <connection t1="Oldengard" t2="Sealonia"/>
+        <connection t1="Oldengard" t2="Stormwood"/>
+        <connection t1="Oldengard" t2="Strongnin"/>
+        <connection t1="Oorsik Forest" t2="Sea Zone 6"/>
+        <connection t1="Oorsik Forest" t2="Sea Zone 7"/>
+        <connection t1="Oorsik Forest" t2="Sea Zone 8"/>
+        <connection t1="Oorsik Hills" t2="Oorsik Tirith"/>
+        <connection t1="Oorsik Hills" t2="Sea Zone 6"/>
+        <connection t1="Oorsik Hills" t2="Strydon Wetlands"/>
+        <connection t1="Oorsik Island" t2="Sea Zone 5"/>
+        <connection t1="Oorsik Island" t2="Sea Zone 6"/>
+        <connection t1="Oorsik Tirith" t2="Oorsik Forest"/>
+        <connection t1="Oorsik Tirith" t2="Sea Zone 6"/>
+        <connection t1="Orangerock Mountains" t2="Crystal Strand"/>
+        <connection t1="Orangerock Mountains" t2="Grand Peaks"/>
+        <connection t1="Orangerock Mountains" t2="Scavendeep"/>
+        <connection t1="Orangerock Mountains" t2="Wolfendale"/>
+        <connection t1="Orcengor" t2="Godheim Pass"/>
+        <connection t1="Orcengor" t2="Kargol Keep"/>
+        <connection t1="Orcengor" t2="North Goronmok"/>
+        <connection t1="Orcengor" t2="Sea Zone 72"/>
+        <connection t1="Plagued Fields" t2="Dreadpass"/>
+        <connection t1="Plagued Fields" t2="Forsaken Mountains"/>
+        <connection t1="Plagued Fields" t2="Runedelf"/>
+        <connection t1="Pontic Desert" t2="Pontic Salt Desert"/>
+        <connection t1="Pontic Desert" t2="Ponticor"/>
+        <connection t1="Pontic Desert" t2="Western Pontic Desert"/>
+        <connection t1="Pontic Salt Desert" t2="Ponticor"/>
+        <connection t1="Ponticor" t2="Western Pontic Desert"/>
+        <connection t1="Pool of Souls" t2="Dreadpass"/>
+        <connection t1="Pool of Souls" t2="Runedelf"/>
+        <connection t1="Pool of Souls" t2="Zool Twins"/>
+        <connection t1="Putrid Pond" t2="Great Combe"/>
+        <connection t1="Putrid Pond" t2="The Witching Mountains"/>
+        <connection t1="Questos" t2="Sea Zone 21"/>
+        <connection t1="Rackelton" t2="Sea Zone 67"/>
+        <connection t1="Rackelton" t2="Sea Zone 68"/>
+        <connection t1="Rackelton" t2="Warg Caves"/>
+        <connection t1="Rimdell Backlands" t2="Sea Zone 1"/>
+        <connection t1="Rimdell Backlands" t2="West Winterpass"/>
+        <connection t1="Rimdell Backlands" t2="White Slopes"/>
+        <connection t1="Rimdell Inlands" t2="Rimdell Backlands"/>
+        <connection t1="Rimdell Inlands" t2="Sea Zone 1"/>
+        <connection t1="Rimdell Inlands" t2="Strydon Peak"/>
+        <connection t1="Rimdell Inlands" t2="Western White Slopes"/>
+        <connection t1="Rimdell" t2="Rimdell Inlands"/>
+        <connection t1="Rimdell" t2="Sea Zone 1"/>
+        <connection t1="Rimdell" t2="Sea Zone 2"/>
+        <connection t1="Rimdell" t2="Sea Zone 5"/>
+        <connection t1="Rimdell" t2="Strydon Fields"/>
+        <connection t1="Robach" t2="Misty Forest"/>
+        <connection t1="Robach" t2="Sea Zone 38"/>
+        <connection t1="Robach" t2="Silverdeep"/>
+        <connection t1="Runedelf" t2="Dreadpass"/>
+        <connection t1="Runedelf" t2="Troll Mountains"/>
+        <connection t1="Runedelf" t2="Zool Twins"/>
+        <connection t1="Safe Haven" t2="Sea Zone 28"/>
+        <connection t1="Safe Haven" t2="Sea Zone 29"/>
+        <connection t1="Safe Haven" t2="Sea Zone 30"/>
+        <connection t1="Safe Haven" t2="Sea Zone 31"/>
+        <connection t1="Safe Haven" t2="Sea Zone 32"/>
+        <connection t1="Safe Haven" t2="Troglodyte Coast"/>
+        <connection t1="Safe Haven" t2="Winterboar Hills"/>
+        <connection t1="Samarkum" t2="East Samark"/>
+        <connection t1="Samarkum" t2="Old Slavenport"/>
+        <connection t1="Samarkum" t2="Sea Zone 42"/>
+        <connection t1="Scavenberg" t2="Halefoss Mountains"/>
+        <connection t1="Scavendeep" t2="East Samark"/>
+        <connection t1="Scavendeep" t2="Scavenberg"/>
+        <connection t1="Scorpion Coast" t2="Sea Zone 66"/>
+        <connection t1="Scorpion Coast" t2="Sea Zone 67"/>
+        <connection t1="Scorpion Coast" t2="Stormcrag"/>
         <connection t1="Sea Zone 1" t2="Sea Zone 2"/>
-        <connection t1="Sea Zone 2" t2="Sea Zone 3"/>
-        <connection t1="Sea Zone 2" t2="Sea Zone 5"/>
-        <connection t1="Sea Zone 3" t2="Sea Zone 4"/>
-        <connection t1="Sea Zone 4" t2="Sea Zone 7"/>
-        <connection t1="Sea Zone 4" t2="Sea Zone 5"/>
-        <connection t1="Sea Zone 5" t2="Sea Zone 6"/>
-        <connection t1="Sea Zone 6" t2="Sea Zone 7"/>
-        <connection t1="Sea Zone 7" t2="Sea Zone 8"/>
-        <connection t1="Sea Zone 8" t2="Sea Zone 9"/>
-        <connection t1="Sea Zone 9" t2="Sea Zone 10"/>
-        <connection t1="Sea Zone 9" t2="Sea Zone 11"/>
         <connection t1="Sea Zone 10" t2="Sea Zone 11"/>
         <connection t1="Sea Zone 10" t2="Sea Zone 12"/>
-        <connection t1="Sea Zone 11" t2="Sea Zone 21"/>
         <connection t1="Sea Zone 11" t2="Sea Zone 12"/>
         <connection t1="Sea Zone 11" t2="Sea Zone 13"/>
+        <connection t1="Sea Zone 11" t2="Sea Zone 21"/>
+        <connection t1="Sea Zone 12" t2="Sea Zone 13"/>
         <connection t1="Sea Zone 12" t2="Sea Zone 14"/>
         <connection t1="Sea Zone 12" t2="Sea Zone 15"/>
-        <connection t1="Sea Zone 12" t2="Sea Zone 13"/>
-        <connection t1="Sea Zone 13" t2="Sea Zone 21"/>
         <connection t1="Sea Zone 13" t2="Sea Zone 14"/>
+        <connection t1="Sea Zone 13" t2="Sea Zone 21"/>
+        <connection t1="Sea Zone 14" t2="Sea Zone 15"/>
         <connection t1="Sea Zone 14" t2="Sea Zone 16"/>
         <connection t1="Sea Zone 14" t2="Sea Zone 21"/>
-        <connection t1="Sea Zone 14" t2="Sea Zone 15"/>
         <connection t1="Sea Zone 15" t2="Sea Zone 16"/>
         <connection t1="Sea Zone 16" t2="Sea Zone 17"/>
         <connection t1="Sea Zone 17" t2="Sea Zone 18"/>
         <connection t1="Sea Zone 17" t2="Sea Zone 19"/>
         <connection t1="Sea Zone 18" t2="Sea Zone 19"/>
         <connection t1="Sea Zone 19" t2="Sea Zone 20"/>
+        <connection t1="Sea Zone 2" t2="Sea Zone 3"/>
+        <connection t1="Sea Zone 2" t2="Sea Zone 5"/>
         <connection t1="Sea Zone 20" t2="Sea Zone 23"/>
         <connection t1="Sea Zone 21" t2="Sea Zone 22"/>
         <connection t1="Sea Zone 22" t2="Sea Zone 25"/>
         <connection t1="Sea Zone 22" t2="Sea Zone 26"/>
-        <connection t1="Sea Zone 23" t2="Sea Zone 29"/>
         <connection t1="Sea Zone 23" t2="Sea Zone 24"/>
-        <connection t1="Sea Zone 24" t2="Sea Zone 29"/>
-        <connection t1="Sea Zone 24" t2="Sea Zone 27"/>
+        <connection t1="Sea Zone 23" t2="Sea Zone 29"/>
         <connection t1="Sea Zone 24" t2="Sea Zone 25"/>
-        <connection t1="Sea Zone 25" t2="Sea Zone 27"/>
+        <connection t1="Sea Zone 24" t2="Sea Zone 27"/>
+        <connection t1="Sea Zone 24" t2="Sea Zone 29"/>
         <connection t1="Sea Zone 25" t2="Sea Zone 26"/>
+        <connection t1="Sea Zone 25" t2="Sea Zone 27"/>
         <connection t1="Sea Zone 26" t2="Sea Zone 27"/>
         <connection t1="Sea Zone 26" t2="Sea Zone 34"/>
-        <connection t1="Sea Zone 27" t2="Sea Zone 29"/>
         <connection t1="Sea Zone 27" t2="Sea Zone 28"/>
+        <connection t1="Sea Zone 27" t2="Sea Zone 29"/>
         <connection t1="Sea Zone 28" t2="Sea Zone 29"/>
         <connection t1="Sea Zone 28" t2="Sea Zone 31"/>
         <connection t1="Sea Zone 29" t2="Sea Zone 30"/>
+        <connection t1="Sea Zone 3" t2="Sea Zone 4"/>
         <connection t1="Sea Zone 30" t2="Sea Zone 33"/>
         <connection t1="Sea Zone 31" t2="Sea Zone 32"/>
         <connection t1="Sea Zone 32" t2="Sea Zone 36"/>
         <connection t1="Sea Zone 34" t2="Sea Zone 35"/>
-        <connection t1="Sea Zone 36" t2="Sea Zone 39"/>
         <connection t1="Sea Zone 36" t2="Sea Zone 37"/>
+        <connection t1="Sea Zone 36" t2="Sea Zone 39"/>
         <connection t1="Sea Zone 37" t2="Sea Zone 38"/>
         <connection t1="Sea Zone 37" t2="Sea Zone 41"/>
         <connection t1="Sea Zone 39" t2="Sea Zone 40"/>
         <connection t1="Sea Zone 39" t2="Sea Zone 44"/>
-        <connection t1="Sea Zone 40" t2="Sea Zone 44"/>
+        <connection t1="Sea Zone 4" t2="Sea Zone 5"/>
+        <connection t1="Sea Zone 4" t2="Sea Zone 7"/>
         <connection t1="Sea Zone 40" t2="Sea Zone 41"/>
+        <connection t1="Sea Zone 40" t2="Sea Zone 44"/>
+        <connection t1="Sea Zone 41" t2="Sea Zone 42"/>
         <connection t1="Sea Zone 41" t2="Sea Zone 43"/>
         <connection t1="Sea Zone 41" t2="Sea Zone 44"/>
-        <connection t1="Sea Zone 41" t2="Sea Zone 42"/>
         <connection t1="Sea Zone 43" t2="Sea Zone 44"/>
         <connection t1="Sea Zone 44" t2="Sea Zone 45"/>
         <connection t1="Sea Zone 45" t2="Sea Zone 46"/>
-        <connection t1="Sea Zone 46" t2="Sea Zone 52"/>
         <connection t1="Sea Zone 46" t2="Sea Zone 47"/>
-        <connection t1="Sea Zone 47" t2="Sea Zone 52"/>
+        <connection t1="Sea Zone 46" t2="Sea Zone 52"/>
         <connection t1="Sea Zone 47" t2="Sea Zone 48"/>
+        <connection t1="Sea Zone 47" t2="Sea Zone 52"/>
         <connection t1="Sea Zone 48" t2="Sea Zone 49"/>
         <connection t1="Sea Zone 49" t2="Sea Zone 50"/>
         <connection t1="Sea Zone 49" t2="Sea Zone 51"/>
+        <connection t1="Sea Zone 5" t2="Sea Zone 6"/>
         <connection t1="Sea Zone 52" t2="Sea Zone 53"/>
         <connection t1="Sea Zone 53" t2="Sea Zone 54"/>
         <connection t1="Sea Zone 53" t2="Sea Zone 55"/>
@@ -1264,13 +1238,14 @@
         <connection t1="Sea Zone 55" t2="Sea Zone 57"/>
         <connection t1="Sea Zone 56" t2="Sea Zone 58"/>
         <connection t1="Sea Zone 56" t2="Sea Zone 59"/>
-        <connection t1="Sea Zone 57" t2="Sea Zone 61"/>
         <connection t1="Sea Zone 57" t2="Sea Zone 58"/>
-        <connection t1="Sea Zone 58" t2="Sea Zone 60"/>
+        <connection t1="Sea Zone 57" t2="Sea Zone 61"/>
         <connection t1="Sea Zone 58" t2="Sea Zone 59"/>
+        <connection t1="Sea Zone 58" t2="Sea Zone 60"/>
         <connection t1="Sea Zone 59" t2="Sea Zone 60"/>
         <connection t1="Sea Zone 59" t2="Sea Zone 63"/>
         <connection t1="Sea Zone 59" t2="Sea Zone 64"/>
+        <connection t1="Sea Zone 6" t2="Sea Zone 7"/>
         <connection t1="Sea Zone 60" t2="Sea Zone 61"/>
         <connection t1="Sea Zone 60" t2="Sea Zone 63"/>
         <connection t1="Sea Zone 61" t2="Sea Zone 62"/>
@@ -1279,156 +1254,181 @@
         <connection t1="Sea Zone 64" t2="Sea Zone 65"/>
         <connection t1="Sea Zone 65" t2="Sea Zone 66"/>
         <connection t1="Sea Zone 66" t2="Sea Zone 67"/>
-        <connection t1="Sea Zone 67" t2="Sea Zone 72"/>
         <connection t1="Sea Zone 67" t2="Sea Zone 68"/>
+        <connection t1="Sea Zone 67" t2="Sea Zone 72"/>
         <connection t1="Sea Zone 68" t2="Sea Zone 69"/>
         <connection t1="Sea Zone 69" t2="Sea Zone 70"/>
         <connection t1="Sea Zone 69" t2="Sea Zone 71"/>
+        <connection t1="Sea Zone 7" t2="Sea Zone 8"/>
         <connection t1="Sea Zone 70" t2="Sea Zone 71"/>
-        
-        <connection t1="Athondir" t2="Oorsik Forest"/>
-        <connection t1="Athondir" t2="Oorsik Tirith"/>
-        <connection t1="Avalonia" t2="Lionian Outback"/>
-        <connection t1="Avalonia" t2="Orangerock Mountains"/>
-        <connection t1="Avalonia" t2="Wolfendale"/>
-        <connection t1="Bahar Longcliff" t2="Bahars Landing"/>
-        <connection t1="Bahar Longcliff" t2="Misty Forest"/>
-        <connection t1="Bahars Landing" t2="Godheim"/>
-        <connection t1="Bahars Landing" t2="Godheim Reach"/>
-        <connection t1="Baldorian Crossing" t2="West Bahar Woods"/>
-        <connection t1="Blackwell" t2="Forsaken Mountains"/>
-        <connection t1="Blackwell" t2="Hinderland Zone 3"/>
-        <connection t1="Blackwell" t2="Hinderland Zone 5"/>
-        <connection t1="Blackwell" t2="Hinderland Zone 7"/>
-        <connection t1="Blackwell" t2="Plagued Fields"/>
-        <connection t1="Blackwell" t2="The Hinderlands"/>
-        <connection t1="Bleak Borderlands" t2="Godheim"/>
-        <connection t1="Bleak Borderlands" t2="Godheim Reach"/>
-        <connection t1="Bleak Wall" t2="Godheim"/>
-        <connection t1="Bleak Wall" t2="Godheim Pass"/>
-        <connection t1="Blood Hills" t2="Volodar Point"/>
-        <connection t1="Blood Hills" t2="The Outlands"/>
-        <connection t1="Bog of Eternal Stench" t2="Hexmire"/>
-        <connection t1="Bog of Eternal Stench" t2="North Witching Mountains"/>
-        <connection t1="Bridge of No Return" t2="Runedelf"/>
-        <connection t1="Bridge of No Return" t2="Wild Arids"/>
-        <connection t1="Crystal Strand" t2="East Samark"/>
-        <connection t1="Dathic Coast" t2="Dathiwatch"/>
-        <connection t1="Dathic East" t2="Dathic North"/>
-        <connection t1="Dathic East" t2="Dathiwatch"/>
-        <connection t1="Dathic Jungle" t2="Dathic North"/>
-        <connection t1="Dathic Jungle" t2="Dathic South"/>
-        <connection t1="Dathic Jungle" t2="Westerfoss"/>
-        <connection t1="Dathic South" t2="Dathic West"/>
-        <connection t1="Dathic South" t2="Ogreville"/>
-        <connection t1="Dathic West" t2="Ogreville"/>
-        <connection t1="Dathic West" t2="Westerfoss"/>
-        <connection t1="Dathiwatch" t2="Wild Mire"/>
-        <connection t1="Decaying Soils" t2="Near Freezelond"/>
-        <connection t1="Decaying Soils" t2="Necroloft"/>
-        <connection t1="Dol Ulum" t2="Kumbadur Hills"/>
-        <connection t1="Dol Ulum" t2="Mount Thoril"/>
-        <connection t1="Doomed Passage" t2="Ponticor"/>
-        <connection t1="Doomed Passage" t2="Western Pontic Desert"/>
-        <connection t1="Durlan Ranges" t2="North Savanna"/>
-        <connection t1="Durlan Ranges" t2="West Savanna"/>
-        <connection t1="Durlan Steppes" t2="Oorsik Hills"/>
-        <connection t1="Durlan Steppes" t2="Oorsik Tirith"/>
-        <connection t1="Duskwick" t2="Lost Furlongs"/>
-        <connection t1="Duskwick" t2="Mount Terror"/>
-        <connection t1="Duskwick" t2="Wild Arids"/>
-        <connection t1="Dusty Heights" t2="Slavebridge"/>
-        <connection t1="Dusty Mountains" t2="Ogreville"/>
-        <connection t1="East Foothills" t2="Runedelf"/>
-        <connection t1="East Foothills" t2="The Hinderlands"/>
-        <connection t1="East Samark" t2="Slavebridge"/>
-        <connection t1="East Witching Mountains" t2="South Witching Mountains"/>
-        <connection t1="Eastern Pontic Desert" t2="Godheim Reach"/>
-        <connection t1="Eastern Pontic Desert" t2="North Eastern Pontic Desert"/>
-        <connection t1="Fanebrow" t2="Gemrock Mines"/>
-        <connection t1="Far Freezelond" t2="Hinderland Zone 9"/>
-        <connection t1="Faranwall" t2="Mount Thoril"/>
-        <connection t1="Freegrass" t2="Jade Rivers"/>
-        <connection t1="Freegrass" t2="Lionian Plains"/>
-        <connection t1="Fromont" t2="Sealonia"/>
-        <connection t1="Garwald" t2="Maragorn"/>
-        <connection t1="Garwald" t2="Mount Thoril"/>
-        <connection t1="Gillshore" t2="Hinderland Settlement"/>
-        <connection t1="Gillshore" t2="The Hinderlands"/>
-        <connection t1="Gnomen Lowland" t2="Kumbadur Hills"/>
-        <connection t1="Godheim" t2="Low Mocrag"/>
-        <connection t1="Godheim Pass" t2="High Mocrag"/>
-        <connection t1="Godheim Pass" t2="Kargol Keep"/>
-        <connection t1="Godheim Pass" t2="Low Mocrag"/>
-        <connection t1="Godheim Reach" t2="Oboro Plains"/>
-        <connection t1="Grand Peaks" t2="Halefoss Mountains"/>
-        <connection t1="Grand Peaks" t2="Scavenberg"/>
-        <connection t1="Grand Peaks" t2="Wetshore"/>
-        <connection t1="Great Combe" t2="Lakelot"/>
-        <connection t1="Great Combe" t2="Mount Chaos"/>
-        <connection t1="Great Combe" t2="The Witching Mountains"/>
-        <connection t1="Greyhood Holdings" t2="Halfling Meadows"/>
-        <connection t1="Halfling Meadows" t2="Kumbadur Hills"/>
-        <connection t1="Haunted Moorland" t2="Hexmire"/>
-        <connection t1="Hellbrook" t2="Hells Bayou"/>
-        <connection t1="High Mocrag" t2="Orcengor"/>
-        <connection t1="Hinderland Zone 9" t2="Near Freezelond"/>
-        <connection t1="Huntingwath" t2="Kallingbog"/>
-        <connection t1="Huntingwath" t2="Kallingrock"/>
-        <connection t1="Huntingwath" t2="Wetwood"/>
-        <connection t1="Iceburn" t2="Strongnin"/>
-        <connection t1="Jade Rivers" t2="Lion Heights"/>
-        <connection t1="Kallingbog" t2="Ogrebog"/>
-        <connection t1="Kallingpass" t2="South Western Pontic Desert"/>
-        <connection t1="Kallingpass" t2="Southern Pontic Desert"/>
-        <connection t1="Kallingrock" t2="Wetwood"/>
-        <connection t1="Kargolia" t2="Orcengor"/>
-        <connection t1="Kargolia" t2="South Goronmok"/>
-        <connection t1="Kargolia" t2="Warg Caves"/>
-        <connection t1="Kingwood" t2="Millshire"/>
-        <connection t1="Kumbadur Hills" t2="Mount Thoril"/>
-        <connection t1="Lakelot" t2="Spectoria"/>
-        <connection t1="Lakelot" t2="West Witching Mountains"/>
-        <connection t1="Lifeless Barrens" t2="Plagued Fields"/>
-        <connection t1="Maragorn" t2="Mount Thoril"/>
-        <connection t1="Mebach" t2="Silverdeep"/>
-        <connection t1="Mid Samark" t2="Slavebridge"/>
-        <connection t1="Mid Samark" t2="South Samark"/>
-        <connection t1="Morassia" t2="Wetshore"/>
-        <connection t1="Morassia" t2="Wolfendale"/>
-        <connection t1="Morassia Highlands" t2="Wetshore"/>
-        <connection t1="Morassia Highlands" t2="Wolfendale"/>
-        <connection t1="Mount Chaos" t2="South Witching Mountains"/>
-        <connection t1="Mount Myrin" t2="South Western Pontic Desert"/>
-        <connection t1="Mount Myrin" t2="Strydon Mountains"/>
-        <connection t1="North Eastern Pontic Desert" t2="Oboro Plains"/>
-        <connection t1="North Eastern Pontic Desert" t2="Pontic Salt Desert"/>
-        <connection t1="North Eastern Pontic Desert" t2="Ponticor"/>
-        <connection t1="North Savanna" t2="The Outlands"/>
-        <connection t1="North Witching Mountains" t2="The Witching Mountains"/>
-        <connection t1="Northern Baldoria" t2="Southern Baldoria"/>
-        <connection t1="Ogreville" t2="Orcengor"/>
-        <connection t1="Oldengard" t2="Sealonia"/>
-        <connection t1="Oldengard" t2="Strongnin"/>
-        <connection t1="Oorsik Hills" t2="Strydon Wetlands"/>
-        <connection t1="Orangerock Mountains" t2="Scavendeep"/>
-        <connection t1="Orangerock Mountains" t2="Wolfendale"/>
-        <connection t1="Plagued Fields" t2="Runedelf"/>
-        <connection t1="Rimdell" t2="Strydon Fields"/>
-        <connection t1="Rimdell Inlands" t2="Strydon Peak"/>
-        <connection t1="Runedelf" t2="Dreadpass"/>
-        <connection t1="Runedelf" t2="Troll Mountains"/>
+        <connection t1="Sea Zone 8" t2="Sea Zone 9"/>
+        <connection t1="Sea Zone 9" t2="Sea Zone 10"/>
+        <connection t1="Sea Zone 9" t2="Sea Zone 11"/>
+        <connection t1="Sealonia" t2="Coldrock"/>
+        <connection t1="Sealonia" t2="Sea Zone 20"/>
+        <connection t1="Sealonia" t2="Sea Zone 23"/>
+        <connection t1="Sealonia" t2="Sea Zone 24"/>
         <connection t1="Sealonia" t2="Stormwood"/>
         <connection t1="Sealonia" t2="Strongnin"/>
+        <connection t1="Seatopian Hills" t2="Gemrock Mines"/>
+        <connection t1="Seatopian Hills" t2="Sea Zone 59"/>
+        <connection t1="Seatopian Hills" t2="Sea Zone 64"/>
+        <connection t1="Silverdeep" t2="Dathic West"/>
+        <connection t1="Silverdeep" t2="Low Mocrag"/>
         <connection t1="Silverdeep" t2="Westerfoss"/>
+        <connection t1="Sinfjord" t2="Runedelf"/>
+        <connection t1="Sinfjord" t2="Sea Zone 32"/>
         <connection t1="Sinfjord" t2="Troll Mountains"/>
+        <connection t1="Slavebridge" t2="Sea Zone 72"/>
+        <connection t1="Slavebridge" t2="South Samark"/>
+        <connection t1="Slavebridge" t2="Stormcrag"/>
+        <connection t1="South Durlan Hills" t2="Deldrach"/>
+        <connection t1="South Durlan Hills" t2="Durlan South Coast"/>
+        <connection t1="South Durlan Hills" t2="Durlan Steppes"/>
+        <connection t1="South Goronmok" t2="Rackelton"/>
+        <connection t1="South Goronmok" t2="Sea Zone 67"/>
+        <connection t1="South Goronmok" t2="Warg Caves"/>
+        <connection t1="South Samark" t2="Goldenheim"/>
+        <connection t1="South Samark" t2="Halefoss Mountains"/>
+        <connection t1="South Samark" t2="Scorpion Coast"/>
+        <connection t1="South Samark" t2="Stormcrag"/>
+        <connection t1="South Savanna" t2="Mount Myrin"/>
+        <connection t1="South Savanna" t2="Oorsik Hills"/>
         <connection t1="South Savanna" t2="Strydon Wetlands"/>
+        <connection t1="South Savanna" t2="West Savanna"/>
+        <connection t1="South Western Pontic Desert" t2="East Savanna"/>
+        <connection t1="South Western Pontic Desert" t2="North Savanna"/>
+        <connection t1="South Western Pontic Desert" t2="Pontic Desert"/>
+        <connection t1="South Western Pontic Desert" t2="Western Pontic Desert"/>
+        <connection t1="South Witching Mountains" t2="Cape Despair"/>
+        <connection t1="South Witching Mountains" t2="Hells Crossing"/>
+        <connection t1="South Witching Mountains" t2="Sea Zone 45"/>
+        <connection t1="South Witching Mountains" t2="Sea Zone 46"/>
+        <connection t1="Southern Baldoria" t2="Sea Zone 21"/>
+        <connection t1="Southern Illyria" t2="Crystal Strand"/>
+        <connection t1="Southern Illyria" t2="Orangerock Mountains"/>
+        <connection t1="Southern Illyria" t2="Sea Zone 43"/>
+        <connection t1="Southern Illyria" t2="Sea Zone 44"/>
+        <connection t1="Southern Pontic Desert" t2="Kallingdor"/>
+        <connection t1="Southern Pontic Desert" t2="Pontic Desert"/>
+        <connection t1="Southern Pontic Desert" t2="Pontic Salt Desert"/>
+        <connection t1="Southern Pontic Desert" t2="Sea Zone 71"/>
+        <connection t1="Southern Pontic Desert" t2="South Western Pontic Desert"/>
         <connection t1="Southern Pontic Desert" t2="Surigard"/>
+        <connection t1="Spectoria" t2="Bridge of No Return"/>
+        <connection t1="Spectoria" t2="Sea Zone 39"/>
+        <connection t1="Spectoria" t2="Wild Arids"/>
+        <connection t1="Stormcrag" t2="Sea Zone 72"/>
+        <connection t1="Stormwood" t2="Fromont"/>
+        <connection t1="Stormwood" t2="Sea Zone 22"/>
+        <connection t1="Stormwood" t2="Sea Zone 25"/>
+        <connection t1="Strongnin" t2="Glassville"/>
+        <connection t1="Strydon Fields" t2="Sea Zone 5"/>
+        <connection t1="Strydon Fields" t2="Sea Zone 6"/>
+        <connection t1="Strydon Fields" t2="Strydon Mountains"/>
+        <connection t1="Strydon Fields" t2="Strydon Peak"/>
+        <connection t1="Strydon Mountains" t2="Ogrebog"/>
+        <connection t1="Strydon Mountains" t2="Ogrehold"/>
+        <connection t1="Strydon Mountains" t2="Strydon Peak"/>
         <connection t1="Strydon Peak" t2="Ogrehold"/>
         <connection t1="Strydon Peak" t2="Western White Slopes"/>
+        <connection t1="Strydon Wetlands" t2="Sea Zone 6"/>
+        <connection t1="Strydon Wetlands" t2="Strydon Fields"/>
+        <connection t1="Strydon Wetlands" t2="Strydon Mountains"/>
+        <connection t1="Surigard" t2="Pontic Salt Desert"/>
+        <connection t1="Surigard" t2="Sea Zone 70"/>
+        <connection t1="Surigard" t2="Sea Zone 71"/>
+        <connection t1="Tarn Myrin" t2="Kallingpass"/>
+        <connection t1="Tarn Myrin" t2="Mount Myrin"/>
+        <connection t1="The Hinderlands" t2="Plagued Fields"/>
+        <connection t1="The Hinderlands" t2="Runedelf"/>
+        <connection t1="The Outlands" t2="Durlan Ranges"/>
+        <connection t1="The Outlands" t2="North Durlan Hills"/>
         <connection t1="The Outlands" t2="Volodar Point"/>
         <connection t1="The Outlands" t2="Western Pontic Desert"/>
-        <connection t1="Safe Haven" t2="Troglodyte Coast"/>
+        <connection t1="The Starfish Chain" t2="Sea Zone 15"/>
+        <connection t1="The Witching Mountains" t2="Mount Chaos"/>
+        <connection t1="The Witching Mountains" t2="South Witching Mountains"/>
+        <connection t1="Trinity Coast" t2="Sea Zone 21"/>
+        <connection t1="Trinity Coast" t2="West Lost Mountains"/>
+        <connection t1="Troglodyte Coast" t2="East Dolmor"/>
+        <connection t1="Troglodyte Coast" t2="Sea Zone 32"/>
+        <connection t1="Troglodyte Coast" t2="West Dolmor"/>
+        <connection t1="Troll Mountains" t2="Duskwick"/>
+        <connection t1="Troll Mountains" t2="Mount Terror"/>
+        <connection t1="Troll Mountains" t2="Sea Zone 32"/>
+        <connection t1="Turtle Rock" t2="Sea Zone 22"/>
+        <connection t1="Turtle Rock" t2="Sea Zone 26"/>
+        <connection t1="Vile Deep" t2="Great Combe"/>
+        <connection t1="Vile Deep" t2="Lakelot"/>
+        <connection t1="Vile Deep" t2="Mount Chaos"/>
+        <connection t1="Vile Deep" t2="Spectoria"/>
+        <connection t1="Volodar Point" t2="Durlan North Coast"/>
+        <connection t1="Volodar Point" t2="North Durlan Hills"/>
+        <connection t1="Volodar Point" t2="Sea Zone 11"/>
+        <connection t1="Warg Caves" t2="Sea Zone 68"/>
+        <connection t1="Warg Caves" t2="Sea Zone 69"/>
+        <connection t1="West Bahar Woods" t2="East Lost Mountains"/>
+        <connection t1="West Bahar Woods" t2="Sea Zone 34"/>
+        <connection t1="West Dolmor" t2="East Dolmor"/>
+        <connection t1="West Lost Mountains" t2="Blood Hills"/>
+        <connection t1="West Lost Mountains" t2="Doomed Passage"/>
+        <connection t1="West Maroons" t2="Sea Zone 63"/>
+        <connection t1="West Parnesis Desert" t2="Mithrildon"/>
+        <connection t1="West Parnesis Desert" t2="Sea Zone 26"/>
+        <connection t1="West Parnesis Desert" t2="Sea Zone 27"/>
+        <connection t1="West Savanna" t2="Oorsik Hills"/>
+        <connection t1="West Winterpass" t2="Antarctic Zone 1"/>
+        <connection t1="West Winterpass" t2="Sea Zone 1"/>
+        <connection t1="West Winterpass" t2="Winterpass"/>
+        <connection t1="West Witching Mountains" t2="Great Combe"/>
+        <connection t1="West Witching Mountains" t2="Hexmire"/>
+        <connection t1="West Witching Mountains" t2="North Witching Mountains"/>
+        <connection t1="Westerfoss" t2="Dathic North"/>
+        <connection t1="Western Pontic Desert" t2="Doomed Bridge"/>
+        <connection t1="Western Pontic Desert" t2="North Savanna"/>
+        <connection t1="Western White Slopes" t2="Rimdell Backlands"/>
+        <connection t1="Western White Slopes" t2="Wetwood"/>
+        <connection t1="Western White Slopes" t2="White Slopes"/>
+        <connection t1="Wetshore" t2="Scorpion Coast"/>
+        <connection t1="Wetshore" t2="Sea Zone 66"/>
+        <connection t1="Wetwood" t2="Eastern White Slopes"/>
+        <connection t1="Wetwood" t2="Sea Zone 69"/>
+        <connection t1="Wetwood" t2="Sea Zone 71"/>
+        <connection t1="Whalebard" t2="Sea Zone 19"/>
+        <connection t1="White Slopes" t2="Eastern White Slopes"/>
+        <connection t1="White Slopes" t2="West Winterpass"/>
+        <connection t1="White Slopes" t2="Wetwood"/>
+        <connection t1="Whitebone Island" t2="Sea Zone 29"/>
+        <connection t1="Wild Arids" t2="Lost Furlongs"/>
+        <connection t1="Wild Arids" t2="Sea Zone 39"/>
+        <connection t1="Wild Mire" t2="Badlands"/>
+        <connection t1="Wild Mire" t2="Dathic East"/>
+        <connection t1="Wild Mire" t2="Sea Zone 42"/>
+        <connection t1="Wilderpoint" t2="Caves of the Giant Lion"/>
+        <connection t1="Wilderpoint" t2="Farhaven"/>
+        <connection t1="Wilderpoint" t2="Greenshore"/>
+        <connection t1="Wilderpoint" t2="Sea Zone 46"/>
+        <connection t1="Wilderpoint" t2="Sea Zone 52"/>
+        <connection t1="Wilderpoint" t2="Sea Zone 53"/>
+        <connection t1="Winterash" t2="Barrenbor"/>
+        <connection t1="Winterash" t2="Maningscar"/>
+        <connection t1="Winterash" t2="Sea Zone 21"/>
+        <connection t1="Winterash" t2="Sea Zone 22"/>
+        <connection t1="Winterboar Hills" t2="Gillshore"/>
+        <connection t1="Winterboar Hills" t2="Sea Zone 30"/>
+        <connection t1="Winterboar Hills" t2="Sea Zone 33"/>
+        <connection t1="Winterboar Hills" t2="Troglodyte Coast"/>
+        <connection t1="Winterboar Hills" t2="West Dolmor"/>
+        <connection t1="Winterpass" t2="Antarctic Zone 2"/>
+        <connection t1="Winterpass" t2="East Winterpass"/>
+        <connection t1="Wolfendale" t2="Grand Peaks"/>
+        <connection t1="Wolfendale" t2="Sea Zone 64"/>
+        <connection t1="Wolfendale" t2="Sea Zone 65"/>
+        <connection t1="Zool Twins" t2="Bridge of No Return"/>
+        <connection t1="Zool Twins" t2="Dreadpass"/>
+        <connection t1="Zool Twins" t2="Lakelot"/>
+        <connection t1="Zool Twins" t2="Misty Slopes"/>
     </map>
 
     <resourceList>
@@ -5548,17 +5548,6 @@
         </attachment>
         <attachment name="canalAttachmentDol Ulum - Kumbadur Hills" attachTo="Kumbadur Hills" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
           <option name="canalName" value="a bridge between Dol Ulum and Kumbadur Hills"/>
-          <option name="landTerritories" value="Unit List"/>
-          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
-        </attachment>
-    
-        <attachment name="canalAttachmentDol Ulum - Mount Thoril" attachTo="Dol Ulum" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-          <option name="canalName" value="a bridge between Dol Ulum and Mount Thoril"/>
-          <option name="landTerritories" value="Unit List"/>
-          <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
-        </attachment>
-        <attachment name="canalAttachmentDol Ulum - Mount Thoril" attachTo="Mount Thoril" javaClass="games.strategy.triplea.attachments.CanalAttachment" type="territory">
-          <option name="canalName" value="a bridge between Dol Ulum and Mount Thoril"/>
           <option name="landTerritories" value="Unit List"/>
           <option name="excludedUnits" value="Air-Balloon:Air-Ship:Crow-Swarm:Giant-Bat:Giant-Eagle:Green-Dragon:Brown-Dragon:White-Dragon:Blue-Dragon:Red-Dragon:Young-Green-Dragon:Young-Brown-Dragon:Young-White-Dragon:Young-Blue-Dragon:Young-Red-Dragon:Zombie-Plague"/>
         </attachment>
